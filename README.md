@@ -1,5 +1,2 @@
-<<<<<<< HEAD
-#情報物理研究室NewTopページ
-=======
 # 2015年度　情報物理研究室NewTopページ
->>>>>>> e1fe81d7b65389492805debee6651b7a25ca169d
+##以前のTOPは[コチラ](https://github.com/jouhoubuturi2015/toppage)です．
