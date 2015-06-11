@@ -1,22 +1,26 @@
-<!DOCTYPE html><!--HTML5で書く-->
-<html lang="ja"><!--日本語で書く-->
+<!DOCTYPE html>
+<html lang="ja">
 	<head>
 		<meta  charset="UTF-8">
-		<style type="text/css" ></style>
+		<link rel="stylesheet" href="base.css">
 		<title>2015年度　情報物理研究室</title>
 	</head>
 	<body>
-<p>test</p>
-<p>second ==test</p>
-	</body>
-
-
-
-
-
-
-
-
-
+        <header>
+            <h1>2015年度　情報物理研究室</h1>
+        </header>
+        <p>test</p>
+        <p>second ==test</p>
+	
+    
+    
+    
+    
+    
+    
+    
+    
+        
+    </body>
 
 </html>
