@@ -12,6 +12,23 @@
             <h1>2015年度情報物理研究室</h1>
         </header>
         
+        <section id="page_body">
+            
+            <section id="member_state">
+
+            </section>
+
+            <section id="sns">
+
+            </section>
+
+            <section id="event">
+
+            </section>
+
+            <section id="history">
+
+            </section>
         
         
         
@@ -23,9 +40,6 @@
         
         
         
-        
-        
-        
-        
+      </section>   
     </body>
 </html>
