@@ -1,3 +1,4 @@
+<?php require "spheader.php";//データベース読み込み用 ?>
 <!DOCTYPE html>
 <html lang="ja">
     <head>
