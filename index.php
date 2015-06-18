@@ -25,7 +25,7 @@
         <section id="page_body">
             
             <section id="member_state">
-                <h1>メンバー</h1>
+                <h1>メンバー・在室状況</h1>
                 <?php
                 $pdo = new PDO("mysql:dbname={$_SESSION['dbname']}", "{$_SESSION['dbusername']}", "{$_SESSION['dbpass']}");
 
@@ -43,23 +43,22 @@
                     $lnRuby = htmlspecialchars($row['lnRuby']);
                     $situation = htmlspecialchars($row['situation']);
               
-                    echo "<p><a href='http://buturi.heteml.jp/student/2015/$lnRuby/' target='_blank'><img src=http://buturi.heteml.jp/student/2015/images/profile/$lnRuby.jpg class=' profile' width=100 height=100 alt='No image'><img src=images/situation/$situation.gif class='situ' width=60 height=60 alt='$situation'><br /><name>$name</name></a></p>";
+                    echo "<p><a href='http://buturi.heteml.jp/student/2015/$lnRuby/' target='_blank'>\n<img src=http://buturi.heteml.jp/student/2015/images/profile/$lnRuby.jpg class=' profile' width=100 height=100 alt='$name'><img src=images/situation/$situation.gif class='situ' width=60 height=60 alt='$situation'><br /><name>$name</name></a></p>\n\n";
                 }
                 
-                
-                
                 ?>
-                
-
             </section>
             
             <section id="schedule">
                 <h1>予定</h1>
+                <!--卒研支援ページで過ぎた予定を消すのをやめて記録・表示-->
             
             </section>
 
             <section id="sns">
                 <h1>ツイッター</h1>
+                <a class="twitter-timeline" href="https://twitter.com/j_b_2015" data-widget-id="611469774460051457">@j_b_2015さんのツイート</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
             </section>
 
