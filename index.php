@@ -18,7 +18,7 @@
         
         <nav id="menu">
             <a href="#top">トップ</a>
-            <a href="#member_state">メンバー</a>
+            <a href="#member">メンバー</a>
             <a href="#schedule">予定</a>
             <a href="#products">制作物</a>
             <a href="#sns">ツイッター</a>
@@ -29,7 +29,7 @@
         
         <article id="page_body">
             
-            <section id="member_state">
+            <section id="member">
                 <h1>メンバー・在室状況</h1>
                 <?php
                 $pdo = new PDO("mysql:dbname={$_SESSION['dbname']}", "{$_SESSION['dbusername']}", "{$_SESSION['dbpass']}");
