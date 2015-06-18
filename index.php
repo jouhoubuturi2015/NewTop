@@ -6,6 +6,9 @@
         <title>2015年度情報物理研究室</title>
         <link rel="stylesheet" href="base.css">
         <link rel="shortcut icon" href="images/favi.gif">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        
+        <script src="move.js"></script>
 
     </head>
     <body>
@@ -16,6 +19,7 @@
         <nav id="menu">
             <a href="#member_state">メンバー</a>
             <a href="#schedule">予定</a>
+            <a href="#products">制作物</a>
             <a href="#sns">ツイッター</a>
             <a href="#event">イベント</a>
             <a href="#history">沿革</a>
@@ -70,6 +74,11 @@
                 </table>
             
             </section>
+            
+            <section id="products">
+                <h1>制作物</h1>
+            
+            </section>
 
             <section id="sns">
                 <h1>ツイッター</h1>
@@ -109,6 +118,14 @@
                 <table>
                 
                 </table>
+                
+                <?php//データベースから沿革取得
+                //今月を取得しそこまで
+                
+                
+                
+                
+                ?>
 
             </section>
             
