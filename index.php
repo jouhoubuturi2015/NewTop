@@ -13,10 +13,11 @@
     </head>
     <body>
         <header>
-            <h1><a href="index.php">2015年度情報物理研究室</a></h1>
+            <h1><a href="index.php" id="top">2015年度情報物理研究室</a></h1>
         </header>
         
         <nav id="menu">
+            <a href="#top">トップ</a>
             <a href="#member_state">メンバー</a>
             <a href="#schedule">予定</a>
             <a href="#products">制作物</a>
