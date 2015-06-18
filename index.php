@@ -93,7 +93,7 @@
                     </ul>
                    </li>
 
-                   <li ><input type="checkbox" id="2" /><label for="2">IT系ニュース（利用しているものが他に有ればついかしてください）</label>
+                   <li ><input type="checkbox" id="2" /><label for="2">IT系ニュース</label>
                     <ul >
                         <li><a href="http://www.atmarkit.co.jp/" target="blank">＠IT</a></li>
                         <li><a href="http://ggsoku.com/" target="blank">GGSOKU - ガジェット速報</a></li>
@@ -105,7 +105,7 @@
                     </ul>
                    </li>
 
-                   <li ><input type="checkbox" id="3" /><label for="3">IT系（IT系なら何でも追加してください）</label>
+                   <li ><input type="checkbox" id="3" /><label for="3">IT系</label>
                     <ul >
                         <li><a href="http://paiza.hatenablog.com/" target="blank">paiza開発日誌</a></li>
                         <li><a href="https://www.google.com/calendar/embed?src=5udlp7brhcnbuv0mq7t0jcmh04@group.calendar.google.com" target="blank">広島IT勉強会カレンダー(仮) </a></li>
@@ -117,7 +117,7 @@
                     </ul>
                    </li>
 
-                   <li ><input type="checkbox" id="4" /><label for="4">WEB　IDE（利用してみて使えそうなもを追加してください）</label>
+                   <li ><input type="checkbox" id="4" /><label for="4">WEB　IDE</label>
                     <ul >
                         <li><a href="https://paiza.io/?locale=ja-jp" target="blank">paiza.IO</a></li>
                         <li><a href="http://jsdo.it/" target="blank">jsdo.it</a></li>
@@ -126,7 +126,7 @@
                     </ul>
                    </li>
 
-                   <li ><input type="checkbox" id="5" /><label for="5">HP作成の時に便利（参考にしたサイト等追加してください）</label>
+                   <li ><input type="checkbox" id="5" /><label for="5">HP作成の時に便利</label>
                     <ul >
                         <li><a href="http://www.htmq.com/index.htm" target="blank">HTMLクイックリファレンス</a></li>
                         <li><a href="http://jsdo.it/" target="blank">jsdo.it</a></li>
@@ -140,7 +140,7 @@
                     </ul>
                    </li>
 
-                   <li ><input type="checkbox" id="6"/><label for="6">プログラミング勉強（追加してください）</label>
+                   <li ><input type="checkbox" id="6"/><label for="6">プログラミング勉強</label>
                     <ul >
                         <li><a href="http://dotinstall.com/" target="blank">ドットインストール</a></li>
                         <li><a href="http://prog-8.com/" target="blank">Progate | プログラミングの入門なら、基礎から学べるProgate (プロゲート)</a></li>
@@ -151,7 +151,7 @@
                     </ul>
                    </li>
 
-                   <li ><input type="checkbox" id="7"/><label for="7">職業サイト（追加してください）</label>
+                   <li ><input type="checkbox" id="7"/><label for="7">職業サイト</label>
                     <ul >
                         <li><a href="http://www.kansyuken.com/" target="blank">関就研｜関西学生就職指導研究会</a></li>
                         <li><a href="https://www.ac-lab.jp/" target="blank">就活ラボ</a></li>
@@ -166,7 +166,7 @@
                    </li>
 
 
-                   <li ><input type="checkbox" id="8"/><label for="8">フリー素材（追加してください）</label>
+                   <li ><input type="checkbox" id="8"/><label for="8">フリー素材</label>
                     <ul >
                         <li><a href="http://musmus.main.jp/" target="blank">フリーBGM・音楽素材 MusMus</a></li>
                         <li><a href="http://free-texture.net/" target="blank">フリーテクスチャ素材館</a></li>
