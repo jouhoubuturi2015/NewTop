@@ -4,6 +4,7 @@
 body {
     margin: 0;
     width: 98vw;
+    overflow-x: hidden;
         
     
     
@@ -47,25 +48,45 @@ header {
     
 }
 
+#page_body>section {
+    width: 100%;
+    
+    
+    
+    
+}
+
 /*-------------------------------------
 メンバー
 -------------------------------------*/
 #member {
-    
+   
     
     
     
     
     
 }
+
+#member img{
+    
+    
+    
+}
+
 /*状況画像（在室等）*/
 img.situ {
     position: relative;
     top: 0px;
     left: -60px;
+    margin-right: -60px;
     
     
     
+    
+}
+#member name {
+    display: none;
     
 }
 
