@@ -52,6 +52,22 @@
             <section id="schedule">
                 <h1>予定</h1>
                 <!--卒研支援ページで過ぎた予定を消すのをやめて記録・表示-->
+                <table><tr><th>日付</th><th>時間</th><th>場所</th><th>内容</th></tr>
+                <?php 
+                $today = date("Y-m-d");//本日の日付取得
+                $pdo = new PDO("mysql:dbname={$_SESSION['dbname']}", "{$_SESSION['dbusername']}", "{$_SESSION['dbpass']}");
+                $st = $pdo->query("SELECT * FROM task WHERE date >= '$today' AND id IS NULL ORDER BY date ASC");//今日以降の予定を表示
+
+                while ($row = $st->fetch()) {
+                    $date = htmlspecialchars($row['date']);
+                    $time = htmlspecialchars($row['time']);
+                    $place = htmlspecialchars($row['place']);
+                    $content = htmlspecialchars($row['content']);
+                    echo "<tr><td>$date</td><td>$time</td><td>$place</td><td>$content</td></tr>";  
+                }
+
+                ?>
+                </table>
             
             </section>
 
