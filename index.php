@@ -22,7 +22,7 @@
             <a href="#link" >リンク</a>
         </nav>
         
-        <section id="page_body">
+        <article id="page_body">
             
             <section id="member_state">
                 <h1>メンバー・在室状況</h1>
@@ -185,6 +185,6 @@
         
         
         
-      </section>   
+      </article>   
     </body>
 </html>
