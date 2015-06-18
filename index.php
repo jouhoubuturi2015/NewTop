@@ -48,7 +48,8 @@
                     $lnRuby = htmlspecialchars($row['lnRuby']);
                     $situation = htmlspecialchars($row['situation']);
               
-                    echo "<p><a href='http://buturi.heteml.jp/student/2015/$lnRuby/' target='_blank'>\n<img src=http://buturi.heteml.jp/student/2015/images/profile/$lnRuby.jpg class=' profile' width=100 height=100 alt='$name'><img src=images/situation/$situation.gif class='situ' width=60 height=60 alt='$situation'><br /><name>$name</name></a></p>\n\n";
+                    echo "<a href='http://buturi.heteml.jp/student/2015/$lnRuby/' target='_blank'><img src=http://buturi.heteml.jp/student/2015/images/profile/$lnRuby.jpg class=' profile' width=100 height=100 alt='$name'><img src=images/situation/$situation.gif class='situ' width=60 height=60 alt='$situation'></a>";
+                    echo "<name>$name</name>";
                 }
                 
                 ?>
