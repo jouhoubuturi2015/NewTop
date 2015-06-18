@@ -85,6 +85,30 @@
 
             <section id="history">
                 <h1>沿革</h1>
+                <h2>通年</h2>
+                <table>
+                    <tr><td>毎週月・木曜日</td><td>ランチミーティング</td></tr>
+                
+                </table>
+                <h2>2月</h2>
+                <table>
+                    <tr><td><time>2/5</time></td><td>企業情報・就活情報の交換</td></tr>
+                    <tr><td><time>2/5</time></td><td>企業情報・就活情報の交換</td></tr>
+                    <tr><td><time>2/6</time></td><td>企業情報・就活情報の交換</td></tr>
+                    <tr><td><time>2/17</time></td><td>先輩の卒研発表練習を聴く</td></tr>
+                    <tr><td><time>2/18</time></td><td>卒研発表</td></tr>
+                </table>
+                
+                <h2>5月</h2>
+                <table>
+                    <tr><td><time>5/9</time></td><td>公開講座補助</td></tr>
+                    <tr><td><time>5/22</time></td><td>今年度初　福山大ミーティング</td></tr>
+                </table>
+                
+                <h2>6月</h2>
+                <table>
+                
+                </table>
 
             </section>
             
