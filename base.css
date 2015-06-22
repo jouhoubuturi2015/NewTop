@@ -35,10 +35,12 @@ header {
     width: 100%;
     background-color: #FF1493;
     
-    /*透過*/
+    background-color: rgba(255,0,255,0.5);
+    
+    /*透過
     filter:alpha(opacity=50);
     -moz-opacity: 0.5;
-    opacity: 0.5;
+    opacity: 0.5;*/
     
     
     
