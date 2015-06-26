@@ -103,6 +103,14 @@ img.situ {
     
 }
 
+#member iframe {
+    display: inline-block;
+    width: 8em;
+    height: 12em;
+    
+    
+}
+
 
 /*-------------------------------------
 予定
