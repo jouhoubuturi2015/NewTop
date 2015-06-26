@@ -84,6 +84,8 @@ header {
     
 }
 
+
+
 #member img{
     width: 100px;
     height: 100px;
@@ -113,9 +115,9 @@ img.situ {
 
 
 /*-------------------------------------
-予定
+更新情報
 -------------------------------------*/
-#schedule {
+#update {
     
     
     
@@ -136,15 +138,27 @@ img.situ {
 .member_products {
     display: inline-block;
     width: 20%;
+    text-align: center;
+    
+    
+    border: solid;
+    
+    
+}
+
+.member_products img {
+    width: 70px;
+    
     
     
     
 }
 
 /*-------------------------------------
-SNS
+twitter
 -------------------------------------*/
-#sns {
+#twitter {
+    display: inline-block;
     
     
     
