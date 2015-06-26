@@ -111,7 +111,7 @@
                         $situation = "授業";
                         
               
-                    echo "<li><name>$name</name> $situation</li>";
+                    echo "<li>$name $situation</li>";
                 }
                 ?>
                 </ul>
