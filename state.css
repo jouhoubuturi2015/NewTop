@@ -1,0 +1,88 @@
+
+#pagebody{
+    width: 100%;
+    max-width: 1200px;
+    background-color: deepskyblue;  					/*内容全体の背景色*/
+    margin: 0 auto;
+    /*text-align:center;							/* テキストをセンター揃え */
+    
+}
+
+
+
+
+/*==================================
+すべての表
+====================================*/
+#today table {
+    color: darkgreen;
+    background-color: lemonchiffon;
+    margin: 0 auto;
+    text-align:center;							/* テキストをセンター揃え */
+    
+}
+
+/*==================================
+在室状況
+====================================*/
+#now{
+    text-align:center;							/* テキストをセンター揃え */
+    
+    
+}
+
+#now h2 {
+    //margin: 3px;
+    
+}
+
+
+#member ul{
+    //width: 100%;
+    margin: 0 auto;
+}
+#member ul li{
+    list-style-type:none;						/* リストマーカー無しにする */
+    text-align:center;							/* テキストをセンター揃え */
+}
+
+
+
+
+
+/*==================================
+本日の予定
+====================================*/
+#today{
+    color: floralwhite;
+    margin:0 auto;
+    text-align: center;
+    
+}
+
+#today h2{
+    margin-bottom: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
