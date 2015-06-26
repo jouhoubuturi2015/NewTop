@@ -85,7 +85,8 @@ header {
 }
 
 #member img{
-    
+    width: 100px;
+    height: 100px;
     
     
 }
@@ -101,10 +102,7 @@ img.situ {
     
     
 }
-#member name {
-    display: none;
-    
-}
+
 
 /*-------------------------------------
 予定
