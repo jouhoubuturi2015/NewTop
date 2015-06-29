@@ -5,7 +5,7 @@ body{
     //background-color: deepskyblue;  					/*内容全体の背景色*/
     margin: 0 auto;
     text-align:center;							/* テキストをセンター揃え */
-    
+    background: none;
     
 }
 

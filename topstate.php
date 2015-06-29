@@ -8,9 +8,12 @@
         <title>在室状況</title>
     </head>
     <body>       
-        <h1>現在の在室状況</h1>
+        <h1>現在の在室状況<style>co</style></h1>
         <ul>
         <?php
+
+        $color = "black";
+
         $yesterday = date("Y-m-d", strtotime("- 1 day"));//本日の日付取得
         $pdo = new PDO("mysql:dbname={$_SESSION['dbname']}", "{$_SESSION['dbusername']}", "{$_SESSION['dbpass']}");
 
@@ -28,23 +31,37 @@
             $lnRuby = htmlspecialchars($row['lnRuby']);
             $situation = htmlspecialchars($row['situation']);
                     
-            if($situation == "kitaku")
+            if($situation == "kitaku"){
                 $situation = "帰宅";
-            else if($situation == "zaishitsu")
+                $color = "Cyan";
+            }
+            else if($situation == "zaishitsu"){
                 $situation = "在室";
-            else if($situation == "kisei")
+                $color = "red";
+            }
+            else if($situation == "kisei"){
                 $situation = "帰省";
-            else if($situation == "kounai")
+                $color = "DarkViolet";
+            }
+            else if($situation == "kounai"){
                 $situation = "校内";
-            else if($situation == "syokuji")
+                $color = "LawnGreen";
+            }
+            else if($situation == "syokuji"){
                 $situation = "食事";
-            else if($situation == "syuukatsu")
+                $color = "Yellow";
+            }
+            else if($situation == "syuukatsu"){
                 $situation = "就活";
-            else
+                $color = "black";
+            }
+            else{
                 $situation = "授業";
+                $color = "Orange";
+            }
                         
               
-            echo "<li>$name $situation</li>";
+            echo "<li>$name <span style='color: $color;'>$situation</span></li>";
         }
         ?>
         </ul>             

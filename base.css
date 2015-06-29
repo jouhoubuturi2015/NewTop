@@ -3,8 +3,8 @@
 -------------------------------------*/
 body {
     margin: 0;
-    width: 98vw;
-    overflow-x: hidden;
+    width: 100vw;
+    //overflow-x: hidden;
         
     
     
@@ -13,6 +13,12 @@ body {
 
 a {
     text-decoration: none;
+    
+    
+}
+
+article#page_body>section {
+    position: relative;
     
     
 }
@@ -31,6 +37,7 @@ header {
 -------------------------------------*/
 #menu {
     position: fixed;
+    z-index: 1000;
     top: 0;
     width: 100%;
     background-color: #FF1493;
@@ -76,7 +83,7 @@ header {
 メンバー
 -------------------------------------*/
 #member {
-   
+   position: relative;
     
     
     
@@ -84,7 +91,19 @@ header {
     
 }
 
+.member_list {
+    display: inline-block;
+    
+    
+    
+}
 
+.member_list:hover {
+    
+    
+    
+    
+}
 
 #member img{
     width: 100px;
@@ -105,13 +124,51 @@ img.situ {
     
 }
 
+#member2ndline {
+    position: relative;
+    width: 100%;
+    
+    
+    
+}
+
 #member iframe {
+    position: relative;
     display: inline-block;
     width: 8em;
     height: 12em;
     
     
 }
+
+#profile_area {
+    position: absolute;
+    display: inline-block;
+    margin-left: 5px;
+    width: 50%;
+    height: 12em;
+    border: solid 1px blue;
+    
+    
+}
+
+/*--------
+プロフィール
+--------*/
+.profile {
+    display: none;
+    
+    
+    
+}
+
+#default {
+    display: inline;
+    
+    
+}
+
+
 
 
 /*-------------------------------------
@@ -136,6 +193,7 @@ img.situ {
 }
 
 .member_products {
+    position: relative;
     display: inline-block;
     width: 20%;
     text-align: center;
@@ -147,10 +205,21 @@ img.situ {
 }
 
 .member_products img {
+    text-align: center;
     width: 70px;
     
     
     
+    
+}
+
+.member_products a {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
     
 }
 
@@ -205,9 +274,48 @@ twitter
     
 }
 
+#link ul>li>ul>li{
+    display:none;
+    padding-top:5px;
+	    
+}
+/*  #link ul>li:hover>ul>li {
+    background-color:moccasin;  
+    display:block;  
+}*/
+#link ul>li:hover{
+    background-color:lightyellow;
+    
+}
+#link ul{
+    background-color:lightblue;
+    list-style:none;
+    margin-top:5px;
+    
+}
+#link ul>li>ul>li:hover{
+    background-color:#ffb5c3;  
+}
+#link a,label{
+    display:block; 
+}
 
+#link input:checked ~ul>li {
+    background-color:moccasin;  
+    display:block;  
+}/* インプットがチェックされて 後ろにあるulの子要素li */
+#link input{
+    display:none;
+    
+}
 
-
+#link * {
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
 
 
 

@@ -10,30 +10,63 @@ $(function(){
         });
     });
 
-/*----------------------------------マウスオーバー基本形（jquery使用）-----------------*/
-$('#hoge').hover(
-    function(){ //マウスオーバー処理 
-        
-    },
-    function(){ //マウスアウト処理
-        
-    }
-);
 
-
-/*----------------------------------マウスオーバー基本形（jquery使用）-----------------*/
+/*----------------------------------マウスオーバープロフィール画面（jquery使用）-----------------*/
 $(function(){
-    $('.profile').hover(function() {
-        $(this).animate({
-            'width':'200px',
-            'height':'200px',
-            'marginLeft':'3px'
-        }, 300);//左を3px空ける事でテキストを右にずらす
-    },function() {
-        $(this).animate({
-            'width':'100px',
-            'height':'100px',
-            'marginLeft':'0px'
-        }, 300);
-    });
+    $('#misawa').hover(
+        function(){ //マウスオーバー処理
+            $('#default').css("display","none");
+            $('#misawa_profile').css("display","inline");
+        },
+        function(){ //マウスアウト処理
+            $('#misawa_profile').css("display","none");
+            $('#default').css("display","inline");
+        }
+    );
 });
+
+
+
+/*
+$(function(){
+    var memberlist = ["matsubara", "misawa", "nishi", "nizato", "okada", "sone", "toyota"];
+    for(var i=0 ; i<memberlist.length; i++){
+        console.log(memberlist[i]);
+        $('#' + memberlist[i]).hover(
+            function(){ //マウスオーバー処理
+                console.log(memberlist[i]);
+                $('#default').css("display","none");
+                $('#'+memberlist[i]+'_profile').css("display","inline");
+            },
+            function(){ //マウスアウト処理
+                $('#'+memberlist[i]+'_profile').css("display","none");
+                $('#default').css("display","inline");
+            }
+        );
+    }
+});
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
