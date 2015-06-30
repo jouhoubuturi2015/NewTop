@@ -2,11 +2,26 @@
 ページ全体
 -------------------------------------*/
 body {
-    margin: 0;
+    margin: 0 auto;
     width: 100vw;
+    
+    
     //overflow-x: hidden;
+    background: url('images/flooring-pattern-gy.jpg') ;
+    background-size: contain;
         
     
+    
+    
+}
+
+#base {
+    margin: 0 auto;
+    width: 98%;
+    background: url('images/labo01.JPG') ;
+    max-width: 1200px;
+    background-size: contain;
+    background-repeat: no-repeat;
     
     
 }
@@ -19,7 +34,9 @@ a {
 
 article#page_body>section {
     position: relative;
-    
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgba(255,255,255,0.5);
     
 }
 
@@ -39,6 +56,7 @@ header {
     position: fixed;
     z-index: 1000;
     top: 0;
+    left: 0;
     width: 100%;
     background-color: #FF1493;
     
@@ -52,6 +70,9 @@ header {
     
     
 }
+#menu>h1 {
+    display: none;
+}
 
 #menu a {
     padding: 0 10px;
@@ -64,10 +85,7 @@ header {
 内容全体
 -------------------------------------*/
 #page_body {
-    margin: 0 auto;
-    width: 98%;
-    
-    
+    width: 100%;
     
 }
 
@@ -227,7 +245,7 @@ img.situ {
 twitter
 -------------------------------------*/
 #twitter {
-    display: inline-block;
+    display: block;
     
     
     

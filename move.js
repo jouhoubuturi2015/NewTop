@@ -49,9 +49,15 @@ $(function(){
 
 
 
-
-
-
+/*----------------------------------スクロール値取得（jquery使用）-----------------*//*
+$(window).on('scroll', function() {
+    // 現在のスクロール位置
+    var scrollPos = $(this).scrollTop();
+    
+    $('article#page_body>section').css("background-color","rgba("+change+","+change+","+change+",0.5)");
+    //$('#posy').html('スクロール値: ' + scrollPos + 'px');
+});
+*/
 
 
 
