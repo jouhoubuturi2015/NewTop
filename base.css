@@ -2,11 +2,7 @@
 ページ全体
 -------------------------------------*/
 body {
-    margin: 0 auto;
-    width: 100vw;
-    
-    
-    //overflow-x: hidden;
+
     background: url('images/flooring-pattern-gy.jpg') ;
     background-size: contain;
         
@@ -17,7 +13,7 @@ body {
 
 #base {
     margin: 0 auto;
-    width: 98%;
+    width: 100%;
     background: url('images/labo01.JPG') ;
     max-width: 1200px;
     background-size: contain;
