@@ -15,7 +15,7 @@ body {
     margin: 0 auto;
     width: 100%;
     background: url('images/labo01.JPG') ;
-    max-width: 1200px;
+    max-width: 93vw;
     background-size: contain;
     background-repeat: no-repeat;
     
@@ -51,20 +51,16 @@ header {
 #menu {
     position: fixed;
     z-index: 1000;
-    top: 0;
+    top: 13%;
     left: 0;
-    width: 100%;
+    width: 7.2vw;
     background-color: #FF1493;
-    
     background-color: rgba(255,0,255,0.5);
     
     /*透過
     filter:alpha(opacity=50);
     -moz-opacity: 0.5;
-    opacity: 0.5;*/
-    
-    
-    
+    opacity: 0.5;*/   
 }
 #menu>h1 {
     display: none;
@@ -72,11 +68,19 @@ header {
 
 #menu a {
     padding: 0 10px;
-    
-    
-    
 }
 
+.navi{
+    height: 7.2vw;
+}
+.navi:hover{
+    background-color: blue;
+    background-color: rgba(255,0,255,0.5);
+}
+.navi a{
+    display: block;
+    height:100%;
+}
 /*-------------------------------------
 内容全体
 -------------------------------------*/
