@@ -51,7 +51,7 @@ header {
 #menu {
     position: fixed;
     z-index: 1000;
-    top: 13%;
+    top: 13%;/*メニューバーをbodyの上から13％の所から表示する*/
     left: 0;
     width: 7.2vw;
     background-color: #FF1493;
@@ -69,7 +69,7 @@ header {
 #menu a {
     padding: 0 10px;
 }
-
+/*アンカーをボタン全体にする為にdivで囲い、それのCSS*/
 .navi{
     height: 7.2vw;
 }
