@@ -6,10 +6,11 @@
         <link rel="stylesheet" href="base.css">
         <link rel="shortcut icon" href="images/favi.gif">
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-        
+
         <script src="move.js"></script>
 <script src="thumbnail.js"></script><!--リンク先のサムネイルを表示するJS-->
 <script src="pass.js"></script><!--例のアレ-->
+
     </head>
     <body>
         <div id="base">
@@ -29,10 +30,10 @@
             <div class="navi"><a href="#history">沿革</a></div>
             <div class="navi"><a href="#link" >リンク</a></div>
         </nav>
-        
+
         <article id="page_body">
             
-            <section id="member">
+            <section id="member" >
                 <h1>メンバー・在室状況</h1>
                 <div class="member_list" id="matsubara">
                 <a href="matsubara/index.html" target="_blank"><img src="http://buturi.heteml.jp/student/2015/images/profile/matsubara.jpg" alt="No image"></a>
@@ -108,7 +109,7 @@
             </section>
             </div>
                 
-            <section id="products">
+            <section id="products" data-300=" opacity: 0.0;left:0px;" data-500="opacity: 1.0;left:100px;">
                 <h1>制作物</h1>
                 <p>各メンバーの制作物</p>
                 <ul>
@@ -311,5 +312,12 @@
         
       </article>
     </div>
+
+    <script type="text/javascript" src="skrollr.min.js"></script>
+    <script type="text/javascript">
+var s = skrollr.init();
+
+    </script>
+
     </body>
 </html>
