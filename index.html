@@ -6,13 +6,42 @@
         <link rel="stylesheet" href="base.css">
         <link rel="shortcut icon" href="images/favi.gif">
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
         <script src="move.js"></script>
 <script src="thumbnail.js"></script><!--リンク先のサムネイルを表示するJS-->
 <script src="pass.js"></script><!--例のアレ-->
-
+        <link rel="stylesheet" type="text/css" href="css/component.css" /><!--スライドメニュー-->
+<link href="font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<!--http://fontawesome.io/を使用する為に-->
     </head>
     <body>
+        <div id="st-container" class="st-container">
+
+    <!-- content push wrapper -->
+    <div class="st-pusher">
+
+        <nav class="st-menu st-effect-1" id="menu-1">
+                <h2 class="fa fa-compass">メニュー</h2>
+                <ul >
+                    <li><a class="fa fa-arrow-up" href="#top">トップ</a></li>
+                    <li><a class="fa fa-user" href="#member">メンバー</a></li>
+                    <li><a class="fa fa-plus" href="#update">更新情報</a></li>
+                    <li><a class="fa fa-laptop" href="#products">制作物</a></li>
+                    <li><a class="fa fa-twitter" href="#sns">ツイッター</a></li>
+                    <li><a class="fa fa-book" href="#history">沿革</a></li>
+                    <li><a class="fa fa-link" href="#link">リンク</a></li>
+                </ul>
+        </nav>
+
+        <div class="st-content"><!-- this is the wrapper for the content -->
+            <div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
+
+
+                </div><!-- /st-content-inner -->
+        </div><!-- /st-content -->
+
+    </div><!-- /st-pusher -->
+
+</div><!-- /st-container -->
         <div id="base">
         <header>
             <h1><a href="index.php" id="top">2015年度情報物理研究室</a></h1>
@@ -145,10 +174,7 @@
             </section>
 
             
-            <section id="event">
-                <h1>イベント</h1>
 
-            </section>
 
             <section id="history">
                 <h1>沿革</h1>
@@ -300,19 +326,18 @@
                 </ul>
             </section>
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+
       </article>
     </div>
 
+<div id="st-trigger-effects" class="column"><!--メニューボタン-->
+<button data-effect="st-effect-1"><img data-effect="st-effect-1" src="images/m.png"></button>
+</div>
+
+
+
+        <script src="js/classie.js"></script>
+        <script src="js/sidebarEffects.js"></script>
     <script type="text/javascript" src="skrollr.min.js"></script>
     <script type="text/javascript">
 var s = skrollr.init();
