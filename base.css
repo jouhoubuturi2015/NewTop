@@ -72,7 +72,7 @@ header h1 {
 #menu {
     display: none;
     position: fixed;
-    z-index: 1000;
+    z-index: 10;
     top: 13%;/*メニューバーをbodyの上から13％の所から表示する*/
     left: 0;
     width: 7.2vw;
