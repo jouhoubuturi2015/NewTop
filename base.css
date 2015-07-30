@@ -201,7 +201,7 @@ img.situ {
     //max-width: 37em;
     height: 12em;
     border: solid 1px blue;
-    
+    overflow: hidden;
     
     
     
