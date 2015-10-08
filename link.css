@@ -1,0 +1,67 @@
+/*-------------------------------------
+リンク
+-------------------------------------*/
+#link {
+    background-color: rgba(255,255,255,0.5); 
+    //display: inline-block;
+    
+    
+    
+    
+}
+
+#link h1 {
+    margin: 0;
+    
+    
+    
+}
+
+#link ul>li>ul>li{
+    display:none;
+    padding-top:5px;
+	    
+}
+/*  #link ul>li:hover>ul>li {
+    background-color:moccasin;  
+    display:block;  
+}*/
+#link ul>li:hover{
+    background-color:lightyellow;
+    
+}
+#link ul{
+    background-color:lightblue;
+    list-style:none;
+    margin-top:5px;
+    padding-right: 10px;
+}
+#link ul>li>ul>li:hover{
+    background-color:#ffb5c3;  
+}
+#link a,label{
+    display:block; 
+}
+
+#link input:checked ~ul>li {
+    background-color:moccasin;  
+    display:block;  
+}/* インプットがチェックされて 後ろにあるulの子要素li */
+#link input{
+    display:none;
+    
+}
+
+#link * {
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+
+        .moveaaa{
+    position: fixed;
+
+}
