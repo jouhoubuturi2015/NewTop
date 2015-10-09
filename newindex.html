@@ -5,9 +5,8 @@
         <title>2015年度情報物理研究室</title>
         <meta name="description" content="2015年度 近畿大学工学部 情報物理研究室のページです．">
         <meta name="viewport" content="width=device-width, initial=1.0"><!--スマホ用-->
-        <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css"><!--cssリセット-->
+        <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css"><!--リセットcss-->
         <link rel="stylesheet" href="newbase.css">
-        <link rel="stylesheet" href="link.css">
         <link rel="shortcut icon" href="images/favi.gif">
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
         <script src="move.js"></script>
@@ -15,24 +14,44 @@
         <script src="pass.js"></script><!--例のアレ-->
         <!--<link rel="stylesheet" type="text/css" href="css/component.css" /><!--スライドメニュー-->
         <link href="font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet"><!--http://fontawesome.io/を使用する為に-->
+        
+        
+        
+        <!--↓　グーグルWEBフォント-->
+        <link href='http://fonts.googleapis.com/css?family=Mystery+Quest' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Ewert' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Ribeye+Marrow' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Faster+One' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Stardos+Stencil' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Geo' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=UnifrakturMaguntia' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
+        
+        
+        
     </head>
-    <body>
+     <body>
+         
         <div id="base">
         <header>
-            <h1><a href="index.html" id="top">2015年度情報物理研究室</a></h1>
+            <h1 id="maintitle"><a href="index.html" id="top">2015年度情報物理研究室</a></h1>
+            <nav id="menu">
+                <h1>メニュー</h1>
+                <div class="navi"><a href="#top">トップ</a></div>
+                <div class="navi"><a href="#member">メンバー</a></div>
+                <div class="navi"><a href="#update">更新情報</a></div>
+                <div class="navi"><a href="#products">制作物</a></div>
+                <div class="navi"><a href="#interim_report">中間レポート</a></div>
+                <div class="navi"><a href="#sns">ツイッター</a></div>
+                <div class="navi"><a href="#history">沿革</a></div>
+                <div class="navi"><a href="#link" >リンク</a></div>
+            </nav>
         </header>
         
-        <nav id="menu">
-            <h1>メニュー</h1>
-            <div class="navi"><a href="#top">トップ</a></div>
-            <div class="navi"><a href="#member">メンバー</a></div>
-            <div class="navi"><a href="#update">更新情報</a></div>
-            <div class="navi"><a href="#products">制作物</a></div>
-            <div class="navi"><a href="#interim_report">中間レポート</a></div>
-            <div class="navi"><a href="#sns">ツイッター</a></div>
-            <div class="navi"><a href="#history">沿革</a></div>
-            <div class="navi"><a href="#link" >リンク</a></div>
-        </nav>
+        
 
         <article id="page_body">
             
@@ -76,7 +95,7 @@
                             <p><span class="na">西健太</span><br />研究内容：非接触ユーザインタフェースの研究　～インテル Realsense 3D カメラを利用した認証システム～<br /></p>
                         </div>
                         <div class="profile" id="nizato_profile">
-                            <p><span class="na">nizato</span><br />研究内容：Raspberry PiとNFCタグを用いた出席確認の自動化と高速化<br /></p><p>Python<br />PHP<br />HTML<br />CSS<br />Javascript<br />Linux</p>
+                            <p><span class="na">nizato</span><br />研究内容：Raspberry PiとNFCタグを用いた出席確認の自動化と高速化<br /></p><p>Python PHP HTML CSS Javascript Linux</p>
                         </div>
                         <div class="profile" id="okada_profile">
                             <p><span class="na">岡田裕樹</span><br />研究内容：農業支援 Raspberry Piの販売とコミュニティ形成事業による次世代農業の確立<br /></p>
@@ -91,15 +110,6 @@
                 </div>
             </section>
             
-            <div class="columu">
-            <section id="sns">
-                <h1><i class="fa fa-twitter "></i>ツイッター</h1>
-                <div id="twitter">
-                <a class="twitter-timeline" href="https://twitter.com/j_b_2015" width="400px" height="300px" data-chrome="noheader nofooter transparent noscrollbar" data-widget-id="611469774460051457">@j_b_2015さんのツイート</a>
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-                </div>
-
-            </section>
                 
             <section id="update">
                 <h1><i class="fa fa-plus "></i>更新情報</h1>
@@ -118,7 +128,18 @@
                     <li><span>2015.07.09</span>ページをリニューアルしました</li>
                 </ul>
             </section>
-            </div>
+            
+            
+            <section id="sns">
+                <h1><i class="fa fa-twitter "></i>ツイッター</h1>
+                <div id="twitter">
+                <a class="twitter-timeline" href="https://twitter.com/j_b_2015" width="400px" height="300px" data-chrome="noheader nofooter transparent noscrollbar" data-widget-id="611469774460051457">@j_b_2015さんのツイート</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                </div>
+
+            </section>
+                
+            
                 
             <section id="products">
                 <h1><i class="fa fa-laptop"></i>制作物</h1>
@@ -249,11 +270,17 @@
 
 
             
+            
+            
+            
+            
+            
             <section id="link">
                 <h1><i class="fa fa-link "></i>リンク</h1>
-                <ul>
-                   <li ><input type="checkbox" id="1" /><label for="1">情報物理研究室</label>
+                <div class="links">
+                    <h2>情報物理研究室</h2>
                     <ul >
+                        <li><a href="http://buturi.heteml.jp/student/2016/" target="blank">2016年度情報物理教室(制作され次第繋がります)</a></li>
                         <li><a href="http://buturi.heteml.jp/student/2015/misawa/test/attendance/index.php" target="blank">2015年度情報物理教室卒研支援ページ</a></li>
                         <li><a href="https://twitter.com/j_b_2015" target="blank">2015年度情報物理教室Twitter</a></li>
                         <li><a href="http://buturi.heteml.jp/student/2015/index2.html" target="blank">2015年度情報物理教室(旧デザイン)</a></li>
@@ -269,9 +296,9 @@
                         <li><a href="https://webftp.heteml.jp" target="blank">hetemlログイン</a></li>
                         <li><a href="http://www.hiro.kindai.ac.jp/" target="blank">近畿大学工学部</a></li>
                     </ul>
-                   </li>
-
-                   <li ><input type="checkbox" id="2" /><label for="2">IT系(ニュース?)下のIT系も見るといいと思う</label>
+                </div>
+                <div class="links">
+                    <h2>IT系(ニュース?)下のIT系も見るといいと思う</h2>
                     <ul >
                         <li><a href="http://www.atmarkit.co.jp/" target="blank">＠IT</a></li>
                         <li><a href="http://ggsoku.com/" target="blank">GGSOKU - ガジェット速報</a></li>
@@ -284,9 +311,9 @@
                         <li><a href="https://html5experts.jp/" target="blank">HTML5Experts.jp</a></li>
                         <li><a href="http://codezine.jp/" target="blank">CodeZine（コードジン）</a></li>
                     </ul>
-                   </li>
-
-                   <li ><input type="checkbox" id="3" /><label for="3">IT系(技術?)上のIT系も見るといいと思う</label>
+                </div>
+                <div class="links">
+                    <h2>IT系(技術?)上のIT系も見るといいと思う</h2>
                     <ul >
                         <li><a href="http://paiza.hatenablog.com/" target="blank">paiza開発日誌</a></li>
                         <li><a href="https://www.google.com/calendar/embed?src=5udlp7brhcnbuv0mq7t0jcmh04@group.calendar.google.com" target="blank">広島IT勉強会カレンダー(仮) </a></li>
@@ -298,18 +325,18 @@
                         <li><a href="http://www.moongift.jp/" target="blank">オープンソースを毎日紹介 MOONGIFT</a></li>
                         <li><a href="http://googledevjp.blogspot.jp/2014/10/html5rocks.html" target="blank">HTML5Rocks の日本語記事まとめ</a></li>
                     </ul>
-                   </li>
-
-                   <li ><input type="checkbox" id="4" /><label for="4">WEB　IDE</label>
+                </div>
+                <div class="links">
+                    <h2>WEB IDE</h2>
                     <ul >
                         <li><a href="https://paiza.io/?locale=ja-jp" target="blank">paiza.IO</a></li>
                         <li><a href="http://jsdo.it/" target="blank">jsdo.it</a></li>
                         <li><a href="http://www.tutorialspoint.com/codingground.htm" target="blank">CodingGround</a></li>
                         <li><a href="http://runnable.com/" target="blank">Runnable</a></li>
                     </ul>
-                   </li>
-
-                   <li ><input type="checkbox" id="5" /><label for="5">HP作成の時に便利</label>
+                </div>
+                <div class="links">
+                    <h2>HP作成の時に便利</h2>
                     <ul >
                         <li><a href="http://www.htmq.com/index.htm" target="blank">HTMLクイックリファレンス</a></li>
                         <li><a href="http://jsdo.it/" target="blank">jsdo.it</a></li>
@@ -321,9 +348,9 @@
                         <li><a href="https://qiita.com/tags" target="blank">Qiita - プログラマの技術情報共有サービス </a></li>
                         <li><a href="http://codepen.io/" target="blank">CodePen  </a></li>
                     </ul>
-                   </li>
-
-                   <li ><input type="checkbox" id="6"/><label for="6">プログラミング勉強</label>
+                </div>
+                <div class="links">
+                    <h2>プログラミング勉強</h2>
                     <ul >
                         <li><a href="http://dotinstall.com/" target="blank">ドットインストール</a></li>
                         <li><a href="http://prog-8.com/" target="blank">Progate | プログラミングの入門なら、基礎から学べるProgate (プロゲート)</a></li>
@@ -332,9 +359,9 @@
                         <li><a href="http://coreblog.org/ats/stuff/minpy_web/" target="blank">Pythonで学ぶWebアプリ開発のABC みんなのPython Webアプリ編 HTML版</a></li>
                         <li><a href="https://progit-ja.github.io/" target="blank">Pro Git 日本語版電子書籍公開サイト</a></li>
                     </ul>
-                   </li>
-
-                   <li ><input type="checkbox" id="7"/><label for="7">就職活動支援サイト</label>
+                </div>
+                <div class="links">
+                    <h2>就職活動支援サイト</h2>
                     <ul >
                         <li><a href="http://www.kansyuken.com/" target="blank">関就研｜関西学生就職指導研究会</a></li>
                         <li><a href="https://www.ac-lab.jp/" target="blank">就活ラボ</a></li>
@@ -347,30 +374,29 @@
                         <li><a href="hhttp://www.rikunabi.com/" target="blank">リクナビ</a></li>
                         <li><a href="http://www.nikki.ne.jp/" target="blank">みん就(みんなの就職活動日記) - 就活・新卒採用のクチコミサイト</a></li>
                     </ul>
-                   </li>
-
-
-                   <li ><input type="checkbox" id="8"/><label for="8">フリー素材</label>
+                </div>
+                <div class="links">
+                    <h2>フリー素材</h2>
                     <ul >
                         <li><a href="http://musmus.main.jp/" target="blank">フリーBGM・音楽素材 MusMus</a></li>
                         <li><a href="http://free-texture.net/" target="blank">フリーテクスチャ素材館</a></li>
                     </ul>
-                   </li>
-                   <li ><input type="checkbox" id="9"/><label for="9">統計</label>
+                </div>
+                <div class="links">
+                    <h2>統計</h2>
                     <ul >
                         <li><a href="https://www.e-stat.go.jp/SG1/estat/eStatTopPortal.do" target="blank">政府統計の総合窓口</a></li>
                         <li><a href="http://www.stat.go.jp/data/" target="blank">統計局ホームページ/統計データ</a></li>
                         <li><a href="http://www.boj.or.jp/statistics/tk/index.htm/" target="blank">短観 ：日本銀行 Bank of Japan</a></li>
                         <li><a href="http://www.e-gov.go.jp/link/white_papers.html" target="blank">白書、年次報告書等｜電子政府の総合窓口e-Gov イーガブ</a></li>
                     </ul>
-                   </li>
-                </ul>
+                </div>
             </section>
-        
+            
 
       </article>
     </div><!--base-->
 
-
+         <script src="js/modal.js"></script>
     </body>
 </html>
