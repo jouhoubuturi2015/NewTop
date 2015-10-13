@@ -13,15 +13,15 @@
 }
 
 html {
-  background-color: transparent;
-  background-image: none;
+    background-color: transparent;
+    background-image: none;
 }
 
 body {
     font-family: Arial, Verdana, sans-serif;
     font-size: 16px;
     width: 100%;
-    
+    height: 100vh;
     
         
         
@@ -39,6 +39,23 @@ a {
     
 }
 
+
+
+.pages {
+    height: 100vh;
+    
+    
+}
+
+#fp {
+    padding-top: 30vh;
+    
+    
+    
+}
+
+
+
 /*-------------------------------------
 ヘッダー
 -------------------------------------*/
@@ -46,23 +63,33 @@ header {
     background-color: rgba(125,163,200,0.5);
     position: relative;
     width: 100%;
+    height: 10vh;
+    
+    
     
     
 }
 
 header h1 {
-    //display: inline-block;
-    float: left;
-    
+    text-align: center;
+    font-size: 60px;
     
 }
+
+#era {
+    font-size: 50%;
+    
+}
+
+
 
 /*-------------------------------------
 メニュー
 -------------------------------------*/
 #menu {
-    position: relative;
-    right: 0;
+    display: none;
+    position: absolute;
+    
 }
 
 #menu h1 {
@@ -84,14 +111,16 @@ header h1 {
 メンバー
 -------------------------------------*/
 #member {
-    
-    
+    text-align: center;
 }
 
 .member_list {
     display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 100px;
     
-    
+    background-size:100px 100px;
     
 }
 
@@ -102,12 +131,76 @@ header h1 {
     
 }
 
-#member img{
-    width: 100px;
-    height: 100px;
+
+
+#member_pic {
+    position: absolute;
+    width: 100%;
+    height: 20vh;
     
+    
+    
+    
+    background-color: rgba(200,163,200,0.5);
+}
+
+.member_list a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 20% 0;
+    font-weight: 600;
+    
+    display: none;
+}
+
+
+
+
+
+.test-animation{
+  
+  /* 1秒かけてアニメーションする */
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  
+}
+
+/*-------------------------------------
+メンバープロフィール
+-------------------------------------*/
+#profile_area {
+    display: none;
+    height: 70vh;
+    text-align: left;
+    
+    background-color: rgba(125,163,100,0.5);
+    
+    /* 2秒待ってからアニメーションする */
+    -webkit-animation-duration: 1s;
+    animation-delay:1s;
+}
+
+.profile {
+    display: none;
     
 }
+
+
+#member_pic .member_list:hover {
+    
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /*-------------------------------------

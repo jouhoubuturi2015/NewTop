@@ -6,6 +6,8 @@
         <meta name="description" content="2015年度 近畿大学工学部 情報物理研究室のページです．">
         <meta name="viewport" content="width=device-width, initial=1.0"><!--スマホ用-->
         <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css"><!--リセットcss-->
+        
+        <link rel="stylesheet" href="css/animate.min.css">
         <link rel="stylesheet" href="newbase.css">
         <link rel="shortcut icon" href="images/favi.gif">
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -36,80 +38,102 @@
      <body>
          
         <div id="base">
-        <header>
-            <h1 id="maintitle"><a href="index.html" id="top">2015年度情報物理研究室</a></h1>
-            <nav id="menu">
-                <h1>メニュー</h1>
-                <div class="navi"><a href="#top">トップ</a></div>
-                <div class="navi"><a href="#member">メンバー</a></div>
-                <div class="navi"><a href="#update">更新情報</a></div>
-                <div class="navi"><a href="#products">制作物</a></div>
-                <div class="navi"><a href="#interim_report">中間レポート</a></div>
-                <div class="navi"><a href="#sns">ツイッター</a></div>
-                <div class="navi"><a href="#history">沿革</a></div>
-                <div class="navi"><a href="#link" >リンク</a></div>
-            </nav>
-        </header>
-        
-        
+        <div id="fp" class="pages">
+            <header>
+                <h1 id="maintitle"><a href="index.html" id="top">SO.Laboratory <span id="era">2015</span></a></h1>
+                <nav id="menu">
+                    <h1>メニュー</h1>
+                    <div class="navi"><a href="#top">Top</a></div>
+                    <div class="navi"><a href="#member">Member</a></div>
+                    <div class="navi"><a href="#update">New</a></div>
+                    <div class="navi"><a href="#products">Products</a></div>
+                    <div class="navi"><a href="#interim_report">Report</a></div>
+                    <div class="navi"><a href="#sns">Twitter</a></div>
+                    <div class="navi"><a href="#history">History</a></div>
+                    <div class="navi"><a href="#link" >Link</a></div>
+                </nav>
+            </header>
 
-        <article id="page_body">
-            
-            <section id="member" >
-                <h1><i class="fa fa-users "></i>メンバー</h1>
-                <div class="member_list" id="matsubara">
-                <a href="matsubara/index.html" target="_blank"><img src="http://buturi.heteml.jp/student/2015/images/profile/matsubara.jpg" alt="No image"></a>
-                </div>
-                <div class="member_list" id="misawa">
-                <a href="misawa/index.html" target="_blank"><img src="http://buturi.heteml.jp/student/2015/images/profile/misawa.jpg" alt="No image"></a>
-                </div>
-                <div class="member_list" id="nishi">
-                <a href="nishi/index.html" target="_blank"><img src="http://buturi.heteml.jp/student/2015/images/profile/nishi.jpg" alt="No image"></a>
-                </div>
-                <div class="member_list" id="nizato">
-                <a href="nizato/index.html" target="_blank"><img src="http://buturi.heteml.jp/student/2015/images/profile/nizato.jpg" alt="No image"></a>
-                </div>
-                <div class="member_list" id="okada">
-                <a href="okada/" target="_blank"><img src="http://buturi.heteml.jp/student/2015/images/profile/okada.jpg" alt="No image"></a>
-                </div>
-                <div class="member_list" id="sone">
-                <a href="sone/index.html" target="_blank"><img src="http://buturi.heteml.jp/student/2015/images/profile/sone.jpg" alt="No image"></a>
-                </div>
-                <div class="member_list" id="toyota">
-                <a href="toyota/index.html" target="_blank"><img src="http://buturi.heteml.jp/student/2015/images/profile/toyota.jpg" alt="No image"></a>
-                </div>
-                <br />
-                <div id="member2ndline">
-                    <section id="profile_area">
+
+
+            <article id="page_body">
+
+                <section id="member" >
+                    <div id="profile_area" class="animated fadeIn">
                         <h1><i class="fa fa-user"></i>プロフィール</h1>
-                        <div id="default">
-                            <p>メンバーの画像にカーソルをのせてください</p>
-                        </div>
+                        
                         <div class="profile" id="matsubara_profile">
+                            <div class="member_list" style="background-image: url(http://buturi.heteml.jp/student/2015/images/profile/matsubara.jpg);">
+                        <a href="matsubara/index.html" target="_blank">Move to<br />Matsubara<br />of page</a>
+                            </div>
                             <p><span class="na">松原侑幹</span><br />研究内容：非接触ユーザインターフェースの研究インテルRealSense3Dカメラを用いた認証システム<br /></p>
                         </div>
                         <div class="profile" id="misawa_profile">
+                            <div class="member_list" style="background-image: url(http://buturi.heteml.jp/student/2015/images/profile/misawa.jpg);">
+                        <a href="misawa/index.html" target="_blank">Move to<br />Misawa<br />of page</a>
+                            </div>
                             <p><span class="na">三澤拓弥</span><br />研究内容：Webアプリケーション制作<br />HTML・CSS・Javascript・PHP・DBを勉強中</p>
                         </div>
                         <div class="profile" id="nishi_profile">
-                            <p><span class="na">西健太</span><br />研究内容：非接触ユーザインタフェースの研究　～インテル Realsense 3D カメラを利用した認証システム～<br /></p>
+                            <div class="member_list" style="background-image: url(http://buturi.heteml.jp/student/2015/images/profile/nishi.jpg);">
+                        <a href="nishi/index.html" target="_blank">Move to<br />Nishi<br />of page</a>
+                        </div><p><span class="na">西健太</span><br />研究内容：非接触ユーザインタフェースの研究　～インテル Realsense 3D カメラを利用した認証システム～<br /></p>
                         </div>
                         <div class="profile" id="nizato_profile">
+                            <div class="member_list" style="background-image: url(http://buturi.heteml.jp/student/2015/images/profile/nizato.jpg);">
+                        <a href="nizato/index.html" target="_blank">Move to<br />Nizato<br />of page</a>
+                            </div>
                             <p><span class="na">nizato</span><br />研究内容：Raspberry PiとNFCタグを用いた出席確認の自動化と高速化<br /></p><p>Python PHP HTML CSS Javascript Linux</p>
                         </div>
                         <div class="profile" id="okada_profile">
+                            <div class="member_list" style="background-image: url(http://buturi.heteml.jp/student/2015/images/profile/okada.jpg);">
+                        <a href="okada/" target="_blank">Move to<br />Okada<br />of page</a>
+                            </div>
                             <p><span class="na">岡田裕樹</span><br />研究内容：農業支援 Raspberry Piの販売とコミュニティ形成事業による次世代農業の確立<br /></p>
                         </div>
                         <div class="profile" id="sone_profile">
+                            <div class="member_list" style="background-image: url(http://buturi.heteml.jp/student/2015/images/profile/sone.jpg);">
+                        <a href="sone/index.html" target="_blank">Move to<br />Sone<br />of page</a>
+                            </div>
                             <p><span class="na">曽根潤治</span><br />研究内容：スマートフォン用アプリケーション制作 自転車向けフィットネス用アプリの開発<br /></p>
                         </div>
                         <div class="profile" id="toyota_profile">
+                            <div class="member_list" style="background-image: url(http://buturi.heteml.jp/student/2015/images/profile/toyota.jpg);">
+                        <a href="toyota/index.html" target="_blank">Move to<br />Toyota<br />of page</a>
+                            </div>
                             <p><span class="na">豊田晃己</span><br />研究内容：NICT音声認識・翻訳アプリSDKを用いた改良インターフェースAndroidアプリケーション開発<br /></p>
                         </div>
-                    </section>
-                </div>
-            </section>
-            
+                    </div>
+                    
+                    
+                    <div id="member_pic" class="animated fadeInDown test-animation">
+                        <h1><i class="fa fa-users "></i>Member</h1>
+                        <div class="member_list" id="matsubara" style="background-image: url(http://buturi.heteml.jp/student/2015/images/profile/matsubara.jpg);">
+                        <a href="matsubara/index.html" target="_blank"></a>
+                        </div>
+                        <div class="member_list" id="misawa" style="background-image: url(http://buturi.heteml.jp/student/2015/images/profile/misawa.jpg);">
+                        <a href="misawa/index.html" target="_blank"></a>
+                        </div>
+                        <div class="member_list" id="nishi" style="background-image: url(http://buturi.heteml.jp/student/2015/images/profile/nishi.jpg);">
+                        <a href="nishi/index.html" target="_blank"></a>
+                        </div>
+                        <div class="member_list" id="nizato" style="background-image: url(http://buturi.heteml.jp/student/2015/images/profile/nizato.jpg);">
+                        <a href="nizato/index.html" target="_blank"></a>
+                        </div>
+                        <div class="member_list" id="okada" style="background-image: url(http://buturi.heteml.jp/student/2015/images/profile/okada.jpg);">
+                        <a href="okada/" target="_blank"></a>
+                        </div>
+                        <div class="member_list" id="sone" style="background-image: url(http://buturi.heteml.jp/student/2015/images/profile/sone.jpg);">
+                        <a href="sone/index.html" target="_blank"></a>
+                        </div>
+                        <div class="member_list" id="toyota" style="background-image: url(http://buturi.heteml.jp/student/2015/images/profile/toyota.jpg);">
+                        <a href="toyota/index.html" target="_blank"></a>
+                        </div>
+                    </div>
+                    
+                    
+                </section>
+            </div><!--fp-->
                 
             <section id="update">
                 <h1><i class="fa fa-plus "></i>更新情報</h1>
@@ -257,6 +281,7 @@
                 <table>
                     <tr><td>10/6</td><td>全PCをリモートデスクトップ可能に　<a href="http://dorodorodoroid.hatenablog.com/entry/2015/07/17/214543" target="_blank">参考</a></td></tr>
                     <tr><td></td><td>メインPCをリニューアル</td></tr>
+                    <tr><td>10/13</td><td>冷凍庫2度目の霜取り</td></tr>
                 </table>
                 
                 <h2>通年</h2>

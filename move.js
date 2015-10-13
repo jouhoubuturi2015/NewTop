@@ -176,10 +176,112 @@ $(window).on('scroll', function() {
 
 
 
+$(function(){
+    $( '.member_list' ).click(function(){
+        $('#fp').css("padding-top","0");
+        $('#menu').css("display","inline-block");
+        $('#member_pic').css("bottom","0");
+        $('#profile_area').css("display","block");
+    });
+    
+     $( '#matsubara' ).click(function(){
+        $('.profile').css("display","none");
+        $('#matsubara_profile').css("display","inline");
+    });
+    $( '#misawa' ).click(function(){
+        $('.profile').css("display","none");
+        $('#misawa_profile').css("display","inline");
+    });
+    $( '#nishi' ).click(function(){
+        $('.profile').css("display","none");
+        $('#nishi_profile').css("display","inline");
+    });
+    $( '#nizato' ).click(function(){
+        $('.profile').css("display","none");
+        $('#nizato_profile').css("display","inline");
+    });
+    $( '#okada' ).click(function(){
+        $('.profile').css("display","none");
+        $('#okada_profile').css("display","inline");
+    });
+    $( '#sone' ).click(function(){
+        $('.profile').css("display","none");
+        $('#sone_profile').css("display","inline");
+    });
+    $( '#toyota' ).click(function(){
+        $('.profile').css("display","none");
+        $('#toyota_profile').css("display","inline");
+    });
+});
 
 
 
 
+
+
+$(function(){
+    $("#matsubara").on({
+        "click":function(){
+            $(".member_list").removeClass("animated fadeOutUp");
+            $(this).addClass("animated fadeOutUp");
+        }
+    });
+    $("#misawa").on({
+        "click":function(){
+            $(".member_list").removeClass("animated fadeOutUp");
+            $(this).addClass("animated fadeOutUp");
+        }
+    });
+    $("#nishi").on({
+        "click":function(){
+            $(".member_list").removeClass("animated fadeOutUp");
+            $(this).addClass("animated fadeOutUp");
+        }
+    });
+    $("#nizato").on({
+        "click":function(){
+            $(".member_list").removeClass("animated fadeOutUp");
+            $(this).addClass("animated fadeOutUp");
+        }
+    });
+    $("#okada").on({
+        "click":function(){
+            $(".member_list").removeClass("animated fadeOutUp");
+            $(this).addClass("animated fadeOutUp");
+        }
+    });
+    $("#sone").on({
+        "click":function(){
+            $(".member_list").removeClass("animated fadeOutUp");
+            $(this).addClass("animated fadeOutUp");
+        }
+    });
+    $("#toyota").on({
+        "click":function(){
+            $(".member_list").removeClass("animated fadeOutUp");
+            $(this).addClass("animated fadeOutUp");
+        }
+    });
+});
+
+
+
+
+
+/*----------------------------------マウスオーバープロフィール画像（jquery使用）-----------------*/
+$(function(){
+    $('.profile .member_list').hover(
+        function(){ //マウスオーバー処理
+            $('.profile .member_list a').css("display","block");
+            $('.profile .member_list a').css("background-color","block");
+            //$('#matsubara_profile').css("display","inline");
+        },
+        function(){ //マウスアウト処理
+            $('.profile .member_list a').css("display","none");
+            //$('#default').css("display","inline");
+        }
+    );
+});
 
 
 
