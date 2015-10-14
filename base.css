@@ -1,21 +1,35 @@
-/*-------------------------------------
-ページ全体
--------------------------------------*/
-body {
+@charset "utf-8";
 
-    background: url('images/flooring-pattern-gy.jpg') ;
-    background-size: contain;    
-    max-width: 1000px;
-    margin: 0 auto;
+/*--------------共通のスタイル-----------------*/
+/*=================================
+全体的なスタイル
+==================================*/
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html {
+    background-color: transparent;
+    background-image: none;
+}
+
+body {
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 16px;
+    color: whitesmoke;
+    width: 100%;
+    height: 100vh;
     
+
+        
+        
 }
 
 #base {
-    width: 100%;
-    background: url('images/labo01.JPG') ;
-    //max-width: 93vw;
-    background-size: contain;
-    background-repeat: no-repeat;
     
     
 }
@@ -24,128 +38,146 @@ a {
     text-decoration: none;
     
     
-}
-
-article#page_body>section {
-    //position: relative;
-    //width: 90%;
-    //margin: 0 auto;
-    //background-color: rgba(255,255,255,0.5);
     
 }
 
-.columu {
-    overflow: hidden;
-    margin-top: 15px;
+h1 {
+    font-family: 'Tangerine', cursive;
+    font-size: 200%;
+}
+
+
+
+.pages {
+    height: 100vh;
+    
     
 }
+
+#fp {
+    padding-top: 30vh;
+    background-color: black;
+    
+    
+    
+}
+
+#fp a{
+    color: gold;
+}
+
+#fp a:hover{
+    color: orangered;
+}
+
+#sp {
+    background-color: darkmagenta;
+    
+}
+
+#sp a {
+    color: orangered;
+}
+
+#sp a:hover {
+    border-bottom: solid 1px;
+}
+
+#tp {
+    background-color: darkred;
+    
+}
+
+#tp a {
+    color: peru;
+    
+}
+
+#tp a:hover {
+    background-color: darkviolet;
+    
+}
+
 
 /*-------------------------------------
 ヘッダー
 -------------------------------------*/
 header {
-    background-color: rgba(125,163,200,0.5);
+    //background-color: rgba(125,163,200,0.5);
     position: relative;
+    width: 100%;
+    height: 10vh;
+    font-family: 'Tangerine', cursive;
+    
     
     
 }
 
 header h1 {
-    display: inline-block;
-    
+    text-align: center;
+    font-size: 60px;
     
     
 }
 
-#posy {
-    margin: 40px;
-    //display: inline-block;
-    position: relative;
-    float: right;
-    
+#maintitle {
+    /* ５秒かけてアニメーションする */
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
     
 }
+
+#era {
+    font-size: 50%;
+    
+}
+
+
 
 /*-------------------------------------
 メニュー
 -------------------------------------*/
 #menu {
-    display: none;
-    position: fixed;
-    z-index: 10;
-    top: 13%;/*メニューバーをbodyの上から13％の所から表示する*/
-    left: 0;
-    width: 7.2vw;
-    background-color: #FF1493;
-    background-color: rgba(255,0,255,0.5);
-    
-    /*透過
-    filter:alpha(opacity=50);
-    -moz-opacity: 0.5;
-    opacity: 0.5;*/   
-}
-#menu>h1 {
-    display: none;
-}
-
-#menu a {
-    padding: 0 10px;
-}
-/*アンカーをボタン全体にする為にdivで囲い、それのCSS*/
-.navi{
-    height: 7.2vw;
-}
-.navi:hover{
-    background-color: blue;
-    background-color: rgba(255,0,255,0.5);
-}
-.navi a{
-    display: block;
-    height:100%;
-}
-/*スライドメニュー*/
-.column{
-    position: fixed;
-    top: 0;
-    left: 90vw;
-}
-button>img{
-    height: 60px;
-    width: 60px;
-}
-/*-------------------------------------
-内容全体
--------------------------------------*/
-#page_body {
+    //display: none;
+    position: absolute;
+    font-size: 200%;
     width: 100%;
+    text-align: center;
+    
+    
+    padding-top: 30vh;
+}
+
+#menu h1 {
+    display: none;
     
 }
 
-#page_body>section {
-    //width: 100%;
-    
-    
-    
+.navi {
+    display: inline-block;  
+    margin: 0 1%;
     
 }
+
+
+
+
+
 
 /*-------------------------------------
 メンバー
 -------------------------------------*/
 #member {
-    position: relative;
-    background-color: rgba(255,255,255,0.5);
-    //display: inline-block;
-    max-width: 735px;
-    padding: 0 15px;
-    margin: 0 auto;
-    
+    text-align: center;
 }
 
 .member_list {
     display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 100px;
     
-    
+    background-size:100px 100px;
     
 }
 
@@ -156,277 +188,364 @@ button>img{
     
 }
 
-#member img{
-    width: 100px;
-    height: 100px;
-    
-    
-}
 
-/*状況画像（在室等）*/
-img.situ {
-    position: relative;
-    top: 0px;
-    left: -60px;
-    margin-right: -60px;
-    
-    
-    
-    
-}
 
-#member2ndline {
-    position: relative;
-    width: 100%;
-    
-    
-    
-}
-
-#member iframe {
-    position: relative;
-    display: inline-block;
-    //width: 8em;
-    width: 18%;
-    height: 12em;
-    
-    
-}
-
-#profile_area {
+#member_pic {
     position: absolute;
-    display: inline-block;
-    margin-left: 5px;
-    width: 78%;
-    //max-width: 37em;
-    height: 12em;
-    border: solid 1px blue;
-    overflow: hidden;
+    width: 100%;
+    height: 20vh;
     
     
     
+    
+    //background-color: rgba(200,163,200,0.5);
+}
+
+#matsubara {
+    background-image: url(http://buturi.heteml.jp/student/2015/images/profile/matsubara.jpg);
+}
+#misawa {
+    background-image: url(http://buturi.heteml.jp/student/2015/images/profile/misawa.jpg);
+}
+#nishi {
+    background-image: url(http://buturi.heteml.jp/student/2015/images/profile/nishi.jpg);
+}
+#nizato {
+    background-image: url(http://buturi.heteml.jp/student/2015/images/profile/nizato.jpg);
+}
+#okada {
+    background-image: url(http://buturi.heteml.jp/student/2015/images/profile/okada.jpg);
+}
+#sone {
+    background-image: url(http://buturi.heteml.jp/student/2015/images/profile/sone.jpg);
+}
+#toyota {
+    background-image: url(http://buturi.heteml.jp/student/2015/images/profile/toyota.jpg);
+}
+
+
+
+.member_list:before {
+    border-color: darkred;
+    
+}
+
+
+
+
+.member_list a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 20% 0;
+    font-weight: 600;
+    
+    display: none;
+}
+
+
+
+
+
+.test-animation{
+  
+  /* 1秒かけてアニメーションする */
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  
+}
+
+/*-------------------------------------
+メンバープロフィール
+-------------------------------------*/
+#profile_area {
+    position: relative;
+    display: none;
+    margin: 0 auto;
+    padding: 5% 1%;
+    width: 100%;
+    max-width: 700px;
+    height: 70vh;
+    text-align: left;
+    
+    
+    //background-color: rgba(125,163,100,0.5);
+    
+    /* 2秒待ってからアニメーションする */
+    -webkit-animation-duration: 1s;
+    animation-delay:1s;
 }
 
 #profile_area h1 {
-    margin: 2px;
+    margin-bottom: 3%;
+    color: rgb(200,0,0);
+}
+
+.profile {
+    display: none;
     
 }
 
-#profile_area p {
-    margin: 2px 2px 2px 15px;
+
+.profprod {
+    position: relative;
+    margin: 3%;
+    width: 50%;
+    display: inline-block;
+}
+
+
+
+.profprod h2 {
+    font-size: 130%;
+    
+}
+
+.profprod ul {
+    margin-left: %;
+    
+}
+
+#member_pic h1 {
+    color: rgb(200,0,0);
+}
+
+#member_pic .member_list:hover {
     
 }
 
 .na {
-    font-size: 140%;
-    font-weight: 800;
+    font-size: 150%;
+    
+}
+
+.profile p {
+    padding-left: 1%;
+    
+}
+
+.member_products {
+    padding: 0 3px;
+}
+
+
+
+
+.profrepo {
+    background-color: rgba(125,163,200,0.5);
+    background: none;
+    margin: 3% 10% 3% 3%;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    right: 0;
+    
+}
+
+.profrepo:before {
+    background-color: ghostwhite;
+    
+}
+.profrepo:after {
+    //background-color: darkred;
+    
+}
+
+.profrepo a {
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 0;
+    position: absolute;
     
 }
 
 
-/*--------
-プロフィール
---------*/
-.profile {
-    display: none;
-    
-    
+.profrepo i {
+    margin-top: 10px;
     
 }
-
-#default {
-    display: inline;
-    
-    
-}
-
-
-/*-------------------------------------
-twitter
--------------------------------------*/
-#sns {
-    //display: inline-block;
-    height: 300px;
-    width: 40%;
-    max-width: 400px;
-    min-width: 200px;
-    background-color: rgba(0,0,0,0.5);
-    
-    float: left;
-}
-
-#sns h1 {
-    margin-bottom: 0;
-    color: azure;
-    
-    
-}
-
-
 
 /*-------------------------------------
 更新情報
 -------------------------------------*/
 #update {
-    background-color: rgba(255,255,255,0.5);
-    //display: inline-block;
-    width: 60%;
-    height: 300px;
-    overflow-y: auto;
-    float: left;
+    width: 70%;
+    max-width: 600px;
+    height: 20vh;
+    margin: 0 auto;
+    overflow: auto;
 }
 
-#update li {
-    list-style: none;
+#update h1{
+    padding-top: 2vh;
+}
+
+#update ul li {
+    margin: 1%;
     
 }
 
-#update li span {
-    font-size: 80%;
-    
-    
+
+#update ul li span {
+    margin-right: 1%;
     
 }
+
+
+
 
 /*-------------------------------------
-制作物
+ツイッター
 -------------------------------------*/
-#products {
-    background-color: rgba(255,255,255,0.5);
-    
-    
-    
-}
-
-li.member_products {
-    position: relative;
-    padding: 2px;
-    margin: 2px;
-    text-align: center;
+#sns {
+    position: absolute;
     display: inline-block;
+    width: 30%;
+    height: 60vh;
+    overflow: hidden;
     
-    border: solid;
-    height: 
+    padding: 1%;
+}
+#twitter {
+    margin: 0 auto;
+    max-width: 400px;
     
 }
 
-li.member_products img{
-    margin: 10px;
-    width: 70px;
-    
-    
-}
-
-li.member_products span{
-    font-weight: 800;
-    font-size: 100%;
-    
-    
-}
-
-
-li.member_products a{
-    display: block;
-    height: 100%;
-    
-    
-    
-}
-
-
-/*-------------------------------------
-中間レポート
--------------------------------------*/
-#interim_report {
-    background-color: rgba(255,255,255,0.5);
-    
-    
-    
-    
-    
-}
-
-#interim_report table{
-    text-align: center;
-}
 /*-------------------------------------
 沿革
 -------------------------------------*/
 #history {
-    background-color: rgba(255,255,255,0.5);
+    position: absolute;
+    display: inline-block;
+    right: 0;
+    width: 70%;
+    max-width: 900px;
+    height: 78vh;
+    overflow-y: scroll;
     
+    padding: 1%;
+}
+
+#history table {
+    margin-left: 3%;
+    margin-bottom: 3%;
     
-    
+}
+
+#history table tr{
     
     
 }
+
+#history table tr td{
+    margin-right: 3%;
+    
+}
+
 
 /*-------------------------------------
 リンク
 -------------------------------------*/
 #link {
-    background-color: rgba(255,255,255,0.5); 
-    //display: inline-block;
-    
-    
+    //background-color: rgba(255,255,255,0.5);
+    position: absolute;
+    height: 100%;
+    font-size: 90%;
+    padding: 0 1%;
+        
     
     
 }
 
 #link h1 {
-    margin: 0;
-    
-    
-    
+    height: 5%;
+    padding-top: 2vh;
 }
 
-#link ul>li>ul>li{
-    display:none;
-    padding-top:5px;
-	    
-}
-/*  #link ul>li:hover>ul>li {
-    background-color:moccasin;  
-    display:block;  
-}*/
-#link ul>li:hover{
-    background-color:lightyellow;
+.links {
+    width: 30%;
+    height: 30%;
+    overflow-y: auto;
+    display: inline-block;
+    position:relative;
+    padding: 1%;
     
-}
-#link ul{
-    background-color:lightblue;
-    list-style:none;
-    margin-top:5px;
-    padding-right: 10px;
-}
-#link ul>li>ul>li:hover{
-    background-color:#ffb5c3;  
-}
-#link a,label{
-    display:block; 
+    border-bottom: solid 3px whitesmoke;
+    border-left: solid 3px whitesmoke;
 }
 
-#link input:checked ~ul>li {
-    background-color:moccasin;  
-    display:block;  
-}/* インプットがチェックされて 後ろにあるulの子要素li */
-#link input{
-    display:none;
+.links h2 {
+    font-size: 120%;
+}
+
+.links ul {
+    padding-left: 2%;
     
 }
 
-#link * {
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
+
+
+
+
+
+
+
+
+
+
+
+
+/*=====================モーダルウィンドウ========================*/
+#modal-content{
+	width:50%;
+	margin:1.5em auto 0;
+	padding:10px 20px;
+	border:2px solid #aaa;
+	background:#fff;
+	z-index:2;
+    position:fixed;
+    display: none;
+}
+
+.modal-p{
+	margin-top:1em;
+}
+
+.modal-p:first-child{
+	margin-top:0;
+}
+
+.button-link{
+	color:#00f;
+	//text-decoration:underline;
+}
+ 
+.button-link:hover{
+	cursor:pointer;
+	color:#f00;
 }
 
 
-        .moveaaa{
-    position: fixed;
 
+#modal-overlay{
+	z-index:1;
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:120%;
+	background-color:rgba(0,0,0,0.75);
+}
+
+
+#modal-content a{
+    text-decoration: none;
 }
 
 
@@ -445,20 +564,31 @@ li.member_products a{
 
 
 
+/*--------------スマートフォンのスタイル-----------------*/
 
 
 
 
 
 
+/*--------------タブレットのスタイル-----------------*/
+@media all and (min-width: 480px) {
+    
+
+}
 
 
 
 
-
-
-
-
-
-
+/*--------------PCのスタイル-----------------*/
+@media all and (min-width: 768px) {
+        
+    
+    
+    
+    
+    
+    
+    
+}
 

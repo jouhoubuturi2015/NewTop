@@ -1,0 +1,464 @@
+/*-------------------------------------
+ページ全体
+-------------------------------------*/
+body {
+
+    background: url('images/flooring-pattern-gy.jpg') ;
+    background-size: contain;    
+    max-width: 1000px;
+    margin: 0 auto;
+    
+}
+
+#base {
+    width: 100%;
+    background: url('images/labo01.JPG') ;
+    //max-width: 93vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    
+}
+
+a {
+    text-decoration: none;
+    
+    
+}
+
+article#page_body>section {
+    //position: relative;
+    //width: 90%;
+    //margin: 0 auto;
+    //background-color: rgba(255,255,255,0.5);
+    
+}
+
+.columu {
+    overflow: hidden;
+    margin-top: 15px;
+    
+}
+
+/*-------------------------------------
+ヘッダー
+-------------------------------------*/
+header {
+    background-color: rgba(125,163,200,0.5);
+    position: relative;
+    
+    
+}
+
+header h1 {
+    display: inline-block;
+    
+    
+    
+}
+
+#posy {
+    margin: 40px;
+    //display: inline-block;
+    position: relative;
+    float: right;
+    
+    
+}
+
+/*-------------------------------------
+メニュー
+-------------------------------------*/
+#menu {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    top: 13%;/*メニューバーをbodyの上から13％の所から表示する*/
+    left: 0;
+    width: 7.2vw;
+    background-color: #FF1493;
+    background-color: rgba(255,0,255,0.5);
+    
+    /*透過
+    filter:alpha(opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5;*/   
+}
+#menu>h1 {
+    display: none;
+}
+
+#menu a {
+    padding: 0 10px;
+}
+/*アンカーをボタン全体にする為にdivで囲い、それのCSS*/
+.navi{
+    height: 7.2vw;
+}
+.navi:hover{
+    background-color: blue;
+    background-color: rgba(255,0,255,0.5);
+}
+.navi a{
+    display: block;
+    height:100%;
+}
+/*スライドメニュー*/
+.column{
+    position: fixed;
+    top: 0;
+    left: 90vw;
+}
+button>img{
+    height: 60px;
+    width: 60px;
+}
+/*-------------------------------------
+内容全体
+-------------------------------------*/
+#page_body {
+    width: 100%;
+    
+}
+
+#page_body>section {
+    //width: 100%;
+    
+    
+    
+    
+}
+
+/*-------------------------------------
+メンバー
+-------------------------------------*/
+#member {
+    position: relative;
+    background-color: rgba(255,255,255,0.5);
+    //display: inline-block;
+    max-width: 735px;
+    padding: 0 15px;
+    margin: 0 auto;
+    
+}
+
+.member_list {
+    display: inline-block;
+    
+    
+    
+}
+
+.member_list:hover {
+    
+    
+    
+    
+}
+
+#member img{
+    width: 100px;
+    height: 100px;
+    
+    
+}
+
+/*状況画像（在室等）*/
+img.situ {
+    position: relative;
+    top: 0px;
+    left: -60px;
+    margin-right: -60px;
+    
+    
+    
+    
+}
+
+#member2ndline {
+    position: relative;
+    width: 100%;
+    
+    
+    
+}
+
+#member iframe {
+    position: relative;
+    display: inline-block;
+    //width: 8em;
+    width: 18%;
+    height: 12em;
+    
+    
+}
+
+#profile_area {
+    position: absolute;
+    display: inline-block;
+    margin-left: 5px;
+    width: 78%;
+    //max-width: 37em;
+    height: 12em;
+    border: solid 1px blue;
+    overflow: hidden;
+    
+    
+    
+}
+
+#profile_area h1 {
+    margin: 2px;
+    
+}
+
+#profile_area p {
+    margin: 2px 2px 2px 15px;
+    
+}
+
+.na {
+    font-size: 140%;
+    font-weight: 800;
+    
+}
+
+
+/*--------
+プロフィール
+--------*/
+.profile {
+    display: none;
+    
+    
+    
+}
+
+#default {
+    display: inline;
+    
+    
+}
+
+
+/*-------------------------------------
+twitter
+-------------------------------------*/
+#sns {
+    //display: inline-block;
+    height: 300px;
+    width: 40%;
+    max-width: 400px;
+    min-width: 200px;
+    background-color: rgba(0,0,0,0.5);
+    
+    float: left;
+}
+
+#sns h1 {
+    margin-bottom: 0;
+    color: azure;
+    
+    
+}
+
+
+
+/*-------------------------------------
+更新情報
+-------------------------------------*/
+#update {
+    background-color: rgba(255,255,255,0.5);
+    //display: inline-block;
+    width: 60%;
+    height: 300px;
+    overflow-y: auto;
+    float: left;
+}
+
+#update li {
+    list-style: none;
+    
+}
+
+#update li span {
+    font-size: 80%;
+    
+    
+    
+}
+
+/*-------------------------------------
+制作物
+-------------------------------------*/
+#products {
+    background-color: rgba(255,255,255,0.5);
+    
+    
+    
+}
+
+li.member_products {
+    position: relative;
+    padding: 2px;
+    margin: 2px;
+    text-align: center;
+    display: inline-block;
+    
+    border: solid;
+    height: 
+    
+}
+
+li.member_products img{
+    margin: 10px;
+    width: 70px;
+    
+    
+}
+
+li.member_products span{
+    font-weight: 800;
+    font-size: 100%;
+    
+    
+}
+
+
+li.member_products a{
+    display: block;
+    height: 100%;
+    
+    
+    
+}
+
+
+/*-------------------------------------
+中間レポート
+-------------------------------------*/
+#interim_report {
+    background-color: rgba(255,255,255,0.5);
+    
+    
+    
+    
+    
+}
+
+#interim_report table{
+    text-align: center;
+}
+/*-------------------------------------
+沿革
+-------------------------------------*/
+#history {
+    background-color: rgba(255,255,255,0.5);
+    
+    
+    
+    
+    
+}
+
+/*-------------------------------------
+リンク
+-------------------------------------*/
+#link {
+    background-color: rgba(255,255,255,0.5); 
+    //display: inline-block;
+    
+    
+    
+    
+}
+
+#link h1 {
+    margin: 0;
+    
+    
+    
+}
+
+#link ul>li>ul>li{
+    display:none;
+    padding-top:5px;
+	    
+}
+/*  #link ul>li:hover>ul>li {
+    background-color:moccasin;  
+    display:block;  
+}*/
+#link ul>li:hover{
+    background-color:lightyellow;
+    
+}
+#link ul{
+    background-color:lightblue;
+    list-style:none;
+    margin-top:5px;
+    padding-right: 10px;
+}
+#link ul>li>ul>li:hover{
+    background-color:#ffb5c3;  
+}
+#link a,label{
+    display:block; 
+}
+
+#link input:checked ~ul>li {
+    background-color:moccasin;  
+    display:block;  
+}/* インプットがチェックされて 後ろにあるulの子要素li */
+#link input{
+    display:none;
+    
+}
+
+#link * {
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+
+        .moveaaa{
+    position: fixed;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

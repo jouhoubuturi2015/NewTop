@@ -4,221 +4,272 @@
         <meta  charset="UTF-8">
         <title>2015年度情報物理研究室</title>
         <meta name="description" content="2015年度 近畿大学工学部 情報物理研究室のページです．">
+        <meta name="viewport" content="width=device-width, initial=1.0"><!--スマホ用-->
+        <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css"><!--リセットcss-->
+        
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/hover-min.css">
         <link rel="stylesheet" href="base.css">
         <link rel="shortcut icon" href="images/favi.gif">
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
         <script src="move.js"></script>
-<script src="thumbnail.js"></script><!--リンク先のサムネイルを表示するJS-->
-<script src="pass.js"></script><!--例のアレ-->
-        <link rel="stylesheet" type="text/css" href="css/component.css" /><!--スライドメニュー-->
-<link href="font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet">
-<!--http://fontawesome.io/を使用する為に-->
-    </head>
-    <body>
-        <div id="st-container" class="st-container">
-
-    <!-- content push wrapper -->
-    <div class="st-pusher">
-
-        <nav class="st-menu st-effect-1" id="menu-1">
-                <h2 class="fa fa-compass fa-2x">メニュー</h2>
-                <ul >
-                    <li><a class="fa fa-arrow-up fa-2x" href="#top">トップ</a></li>
-                    <li><a class="fa fa-users fa-2x" href="#member">メンバー</a></li>
-                    <li><a class="fa fa-plus fa-2x" href="#update">更新情報</a></li>
-                    <li><a class="fa fa-twitter fa-2x" href="#sns">ツイッター</a></li>
-                    <li><a class="fa fa-laptop fa-2x" href="#products">制作物</a></li>
-                    <li><a class="fa fa-file-pdf-o fa-2x" href="#interim_report">中間レポート</a></li>
-                    <li><a class="fa fa-book fa-2x" href="#history">沿革</a></li>
-                    <li><a class="fa fa-link fa-2x" href="#link">リンク</a></li>
-                </ul>
-        </nav>
-
-        <div class="st-content"><!-- this is the wrapper for the content -->
-            <div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
-
-
-                </div><!-- /st-content-inner -->
-        </div><!-- /st-content -->
-
-    </div><!-- /st-pusher -->
-
-</div><!-- /st-container -->
-        <div id="base">
-        <header>
-            <h1><a href="index.html" id="top">2015年度情報物理研究室</a></h1>
-        </header>
+        <!--<script src="thumbnail.js"></script><!--リンク先のサムネイルを表示するJS-->
+        <script src="pass.js"></script><!--例のアレ-->
+        <!--<link rel="stylesheet" type="text/css" href="css/component.css" /><!--スライドメニュー-->
+        <link href="font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet"><!--http://fontawesome.io/を使用する為に-->
         
-        <nav id="menu">
-            <h1>メニュー</h1>
-            <div class="navi"><a href="#top">トップ</a></div>
-            <div class="navi"><a href="#member">メンバー</a></div>
-            <div class="navi"><a href="#update">更新情報</a></div>
-            <div class="navi"><a href="#products">制作物</a></div>
-            <div class="navi"><a href="#interim_report">中間レポート</a></div>
-            <div class="navi"><a href="#sns">ツイッター</a></div>
-            <div class="navi"><a href="#event">イベント</a></div>
-            <div class="navi"><a href="#history">沿革</a></div>
-            <div class="navi"><a href="#link" >リンク</a></div>
-        </nav>
-
-        <article id="page_body">
+        
+        
+        <!--↓　グーグルWEBフォント-->
+        <link href='https://fonts.googleapis.com/css?family=Tangerine:700' rel='stylesheet' type='text/css'>
+        
+        
+        <script type="text/javascript">
+        //https://w3g.jp/blog/js_browser_sniffing2015
+        //スマホの判定に使用
+        var _ua = (function(u){
+            return {
+                Tablet:(u.indexOf("windows") != -1 && u.indexOf("touch") != -1)
+                  || u.indexOf("ipad") != -1
+                  || (u.indexOf("android") != -1 && u.indexOf("mobile") == -1)
+                  || (u.indexOf("firefox") != -1 && u.indexOf("tablet") != -1)
+                  || u.indexOf("kindle") != -1
+                  || u.indexOf("silk") != -1
+                  || u.indexOf("playbook") != -1,
+                Mobile:(u.indexOf("windows") != -1 && u.indexOf("phone") != -1)
+                  || u.indexOf("iphone") != -1
+                  || u.indexOf("ipod") != -1
+                  || (u.indexOf("android") != -1 && u.indexOf("mobile") != -1)
+                  || (u.indexOf("firefox") != -1 && u.indexOf("mobile") != -1)
+                  || u.indexOf("blackberry") != -1
+                }
+            })(window.navigator.userAgent.toLowerCase());
             
-            <section id="member" >
-                <h1><i class="fa fa-users "></i>メンバー・<i class="fa  fa-eye  "></i>在室状況</h1>
-                <div class="member_list" id="matsubara">
-                <a href="matsubara/index.html" target="_blank"><img src="http://buturi.heteml.jp/student/2015/images/profile/matsubara.jpg" alt="No image"></a>
-                </div>
-                <div class="member_list" id="misawa">
-                <a href="misawa/index.html" target="_blank"><img src="http://buturi.heteml.jp/student/2015/images/profile/misawa.jpg" alt="No image"></a>
-                </div>
-                <div class="member_list" id="nishi">
-                <a href="nishi/index.html" target="_blank"><img src="http://buturi.heteml.jp/student/2015/images/profile/nishi.jpg" alt="No image"></a>
-                </div>
-                <div class="member_list" id="nizato">
-                <a href="nizato/index.html" target="_blank"><img src="http://buturi.heteml.jp/student/2015/images/profile/nizato.jpg" alt="No image"></a>
-                </div>
-                <div class="member_list" id="okada">
-                <a href="okada/" target="_blank"><img src="http://buturi.heteml.jp/student/2015/images/profile/okada.jpg" alt="No image"></a>
-                </div>
-                <div class="member_list" id="sone">
-                <a href="sone/index.html" target="_blank"><img src="http://buturi.heteml.jp/student/2015/images/profile/sone.jpg" alt="No image"></a>
-                </div>
-                <div class="member_list" id="toyota">
-                <a href="toyota/index.html" target="_blank"><img src="http://buturi.heteml.jp/student/2015/images/profile/toyota.jpg" alt="No image"></a>
-                </div>
-                <br />
-                <div id="member2ndline">
-                    <iframe src="http://buturi.heteml.jp/student/2015/topstate.php"
-     frameborder="1"></iframe>
-                    <section id="profile_area">
-                        <h1><i class="fa fa-user"></i>プロフィール</h1>
-                        <div id="default">
-                            <p>メンバーの画像にカーソルをのせてください</p>
-                        </div>
-                        <div class="profile" id="matsubara_profile">
-                            <p><span class="na">松原侑幹</span><br />研究内容：非接触ユーザインターフェースの研究インテルRealSense3Dカメラを用いた認証システム<br /></p>
-                        </div>
-                        <div class="profile" id="misawa_profile">
-                            <p><span class="na">三澤拓弥</span><br />研究内容：Webアプリケーション制作<br />HTML・CSS・Javascript・PHP・DBを勉強中</p>
-                        </div>
-                        <div class="profile" id="nishi_profile">
-                            <p><span class="na">西健太</span><br />研究内容：非接触ユーザインタフェースの研究　～インテル Realsense 3D カメラを利用した認証システム～<br /></p>
-                        </div>
-                        <div class="profile" id="nizato_profile">
-                            <p><span class="na">nizato</span><br />研究内容：Raspberry PiとNFCタグを用いた出席確認の自動化と高速化<br /></p><p>Python<br />PHP<br />HTML<br />CSS<br />Javascript<br />Linux</p>
-                        </div>
-                        <div class="profile" id="okada_profile">
-                            <p><span class="na">岡田裕樹</span><br />研究内容：農業支援 Raspberry Piの販売とコミュニティ形成事業による次世代農業の確立<br /></p>
-                        </div>
-                        <div class="profile" id="sone_profile">
-                            <p><span class="na">曽根潤治</span><br />研究内容：スマートフォン用アプリケーション制作 自転車向けフィットネス用アプリの開発<br /></p>
-                        </div>
-                        <div class="profile" id="toyota_profile">
-                            <p><span class="na">豊田晃己</span><br />研究内容：NICT音声認識・翻訳アプリSDKを用いた改良インターフェースAndroidアプリケーション開発<br /></p>
-                        </div>
-                    </section>
-                </div>
-            </section>
             
-            <div class="columu">
-            <section id="sns">
-                <h1><i class="fa fa-twitter "></i>ツイッター</h1>
-                <div id="twitter">
-                <a class="twitter-timeline" href="https://twitter.com/j_b_2015" width="400px" height="300px" data-chrome="noheader nofooter transparent noscrollbar" data-widget-id="611469774460051457">@j_b_2015さんのツイート</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-                </div>
-
-            </section>
+            if(_ua.Mobile){
+            //この中のコードはスマホにのみ適用
+                if(window.confirm('スマホ用のページに移動しますか？')){
+                location.href="index3.html";
+            }else if(_ua.Tablet){
+            //この中のコードはタブレットにのみ適用
                 
-            <section id="update">
-                <h1><i class="fa fa-plus "></i>更新情報</h1>
-                <ul>
-                    <li><span>2015.10.09</span><br />制作物の追加</li>
-                    <li><span>2015.10.06</span><br />沿革の追加</li>
-                    <li><span>2015.09.29</span><br />制作物の追加</li>
-                    <li><span>2015.09.15</span><br />リンク(統計)の追加</li>
-                    <li><span>2015.09.11</span><br />沿革，制作物の追加</li>
-                    <li><span>2015.08.03</span><br />沿革，中間レポートの追加</li>
-                    <li><span>2015.07.30</span><br />リンクの追加</li>
-                    <li><span>2015.07.27</span><br />制作物の追加</li>
-                    <li><span>2015.07.26</span><br />沿革の追加</li>
-                    <li><span>2015.07.26</span><br />リンクの追加</li>
-                    <li><span>2015.07.25</span><br />リンクの追加</li>
-                    <li><span>2015.07.23</span><br />リンクの追加</li>
-                    <li><span>2015.07.09</span><br />ページをリニューアルしました</li>
-                </ul>
+            }else{
+            //この中のコードはスマホとタブレット以外に適用
+                /*if(window.confirm('PC用のページに移動しますか？')){
+                location.href = "index.html";*/
+            }
             
-            </section>
-            </div>
-                
-            <section id="products" data-300=" opacity: 0.0;left:0px;" data-500="opacity: 1.0;left:100px;">
-                <h1><i class="fa fa-laptop"></i>制作物</h1>
-                <p>各メンバーの制作物</p>
-                <ul>
-                    <li class="member_products" class="nizato_product"><a class="samu" href="http://buturi.heteml.jp/student/2015/nizato/mindfulness.html" target="_blank"><span>Mindfulness</span><br /><img src="" alt="No image"><br />製作者：nizato</a>
-                    <li class="member_products" class="nizato_product"><a class="samu" href="http://buturi.heteml.jp/student/2015/nizato/unity/test.html" target="_blank"><span>Unity_3D</span><br /><img src="" alt="No image"><br />製作者：nizato</a>
-                    </li>
-                    <li class="member_products" class="nizato_product"><a class="samu" href="http://buturi.heteml.jp/student/2015/nizato/unity/index.html" target="_blank"><span>Unity_2D</span><br /><img src="" alt="No image"><br />製作者：nizato</a>
-                    </li>
-                    <li class="member_products" class="misawa_product"><a class="samu" href="http://buturi.heteml.jp/student/2015/misawa/test/mind/index.php" target="_blank"><span>Mindfulness</span><br /><img src="images/products/mind.gif" alt="No image"><br />製作者：三澤</a>  
-                    </li>
-                    <li class="member_products" class="nizato_product"><a class="samu" href="http://buturi.heteml.jp/student/2015/nizato/jthree/index.html" target="_blank"><span>jthreeでMMD</span><br /><img src="" alt="No image"><br />製作者：nizato</a>
-                    </li>
-                    <li class="member_products" class="nizato_product"><a class="samu" href="http://buturi.heteml.jp/student/2015/nizato/three.html" target="_blank"><span>three.js</span><br /><img src="http://buturi.heteml.jp/student/2015/images/products/darts2" alt="No image"><br />製作者：nizato</a>
-                    </li>
-                    <li class="member_products" class="nizato_product"><a class="samu" href="http://buturi.heteml.jp/student/2015/nizato/darts2.html" target="_blank"><span>darts（多機能）</span><br /><img src="http://buturi.heteml.jp/student/2015/images/products/darts2" alt="No image"><br />製作者：nizato</a>
-                    </li>
-                    <li class="member_products" class="nizato_product"><a class="samu" href="http://buturi.heteml.jp/student/2015/nizato/darts.html" target="_blank"><span>darts（シンプル）</span><br /><img src="http://buturi.heteml.jp/student/2015/images/products/darts" alt="No image"><br />製作者：nizato</a>
-                    </li>
-                    <li class="member_products" class="nizato_product"><a class="samu" href="http://buturi.heteml.jp/student/2015/nizato/ff/ffa.html" target="_blank"><span>FireFoxアプリ</span><br /><img src="http://buturi.heteml.jp/student/2015/images/products/firefox01" alt="No image"><br />製作者：nizato</a>
-                    </li>
-                    <li class="member_products" class="misawa_product"><a class="samu" href="http://buturi.heteml.jp/student/2015/misawa/test/attendance/index.php" target="_blank"><span>卒検支援ページ</span><br /><img src="images/products/sotsuken.gif" alt="No image"><br />製作者：三澤</a>  
-                    </li>
-                    <li class="member_products" class="matsubara_product"><a class="samu" href="http://buturi.heteml.jp/student/2015/matsubara/piano.html" target="_blank"><span>piano</span><br /><img src="images/products/piano.jpg" alt="No image"><br />製作者：松原</a>
-                    </li>
-                    <li class="member_products" class="misawa_product"><a class="samu" href="http://buturi.heteml.jp/student/2015/misawa/pianocomment.html" target="_blank"><span>pianoプログラム</span><br /><img src="images/products/piano.jpg" alt="No image"><br />製作者：三澤</a>
-                    </li>
-                    <li class="member_products" class="nishi_product"><a class="samu" href="http://buturi.heteml.jp/student/2015/nishi/piano.html" target="_blank"><span>piano</span><br /><img src="images/products/piano.jpg" alt="No image"><br />製作者：西</a>
-                    </li>
-                    <li class="member_products" id="nizato_product"><a class="samu" href="http://buturi.heteml.jp/student/2015/nizato/piano.html" target="_blank"><span>piano</span><br /><img src="images/products/piano.jpg" alt="No image"><br />製作者：nizato</a>
-                    </li>
-                    <li class="member_products" id="okada_product"><a class="samu" href="http://buturi.heteml.jp/student/2015/hiroki/piano.html" target="_blank"><span>piano</span><br /><img src="images/products/piano.jpg" alt="No image"><br />製作者：岡田</a>
-                    </li>
-                    <li class="member_products" id="sone_product"><a class="samu" href="http://buturi.heteml.jp/student/2015/sone/piano.html" target="_blank"><span>piano</span><br /><img src="images/products/piano.jpg" alt="No image"><br />製作者：曽根</a>
-                    </li>
-                    <li class="member_products" id="toyota_product"><a class="samu" href="http://buturi.heteml.jp/student/2015/sone/piano.html" target="_blank"><span>ピアノのWebアプリ</span><br /><img src="images/products/piano.jpg" alt="No image"><br />製作者：豊田</a>
-                    </li>
+        }
+        </script>
+        
+        
+    </head>
+    <body class="animated fadeIn">
+        <div id="fp" class="pages">
+            <header>
+                <h1 id="maintitle"><a href="index.html" id="top">SO.Laboratory <span id="era">2015</span></a></h1>
+                <nav id="menu">
+                    <h1>メニュー</h1>
+                    <div class="navi hvr-rotate"><a href="#update">New</a></div>
+                    <div class="navi hvr-rotate"><a href="#update">Twitter</a></div>
+                    <div class="navi hvr-rotate"><a href="#update">History</a></div>
+                    <div class="navi hvr-rotate"><a href="#link" >Link</a></div>
+                </nav>
+            </header>
+
+            <section id="member">
+                <div id="profile_area" class="animated fadeIn">
+                    <h1><i class="fa fa-user"></i>Profile</h1>
+
+                    <div class="profile" id="matsubara_profile">
+                        <div class="member_list" style="background-image: url(http://buturi.heteml.jp/student/2015/images/profile/matsubara.jpg);">
+                            <a href="matsubara/index.html" target="_blank">Move to<br />Matsubara<br />of page</a>
+                        </div>
+                        <p><span class="na">松原侑幹</span><br />研究内容：非接触ユーザインターフェースの研究インテルRealSense3Dカメラを用いた認証システム<br /></p>
+                        <div class="profprod">
+                            <h2>制作物</h2>
+                            <ul>
+                                <li class="member_products matsubara_product"><a href="http://buturi.heteml.jp/student/2015/matsubara/piano.html" target="_blank">piano</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="profrepo hvr-radial-out"> 
+                            <a href="matsubara/1210960071.pdf" target="_blank"><h2>中間レポート</h2><i class="fa fa-file-pdf-o fa-2x"></i></a>
+                        </div>
+                    </div>
                     
+                    
+                    <div class="profile" id="misawa_profile">
+                        <div class="member_list" style="background-image: url(http://buturi.heteml.jp/student/2015/images/profile/misawa.jpg);">
+                            <a href="misawa/index.html" target="_blank">Move to<br />Misawa<br />of page</a>
+                        </div>
+                        <p><span class="na">三澤拓弥</span><br />研究内容：Webアプリケーション制作<br />HTML・CSS・Javascript・PHP・DBを勉強中</p>
+                        <div class="profprod">
+                            <h2>制作物</h2>
+                            <ul>
+                                <li class="member_products misawa_product"><a href="http://buturi.heteml.jp/student/2015/misawa/test/mind/index.php" target="_blank">Mindfulnessアプリ</a>
+                                </li>
+                                <li class="member_products misawa_product"><a href="http://buturi.heteml.jp/student/2015/misawa/test/attendance/index.php" target="_blank">卒検支援ページ</a>  
+                                </li>
+                                <li class="member_products misawa_product"><a class="samu" href="http://buturi.heteml.jp/student/2015/misawa/pianocomment.html" target="_blank">pianoプログラム</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="profrepo hvr-radial-out"> 
+                            <a href="misawa/pdf/imrepo.pdf" target="_blank"><h2>中間レポート</h2><i class="fa fa-file-pdf-o fa-2x"></i></a>
+                        </div>
+
+                    </div>
+                    
+                    
+                    <div class="profile" id="nishi_profile">
+                        <div class="member_list" style="background-image: url(http://buturi.heteml.jp/student/2015/images/profile/nishi.jpg);">
+                            <a href="nishi/index.html" target="_blank">Move to<br />Nishi<br />of page</a>
+                        </div>
+                        <p><span class="na">西健太</span><br />研究内容：非接触ユーザインタフェースの研究　～インテル Realsense 3D カメラを利用した認証システム～<br /></p>
+                        <div class="profprod">
+                            <h2>制作物</h2>
+                            <ul>
+                                <li class="member_products nishi_product"><a href="http://buturi.heteml.jp/student/2015/nishi/piano.html" target="_blank">piano</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="profrepo hvr-radial-out"> 
+                            <a href="nishi/PDF/tyukan.pdf" target="_blank"><h2>中間レポート</h2><i class="fa fa-file-pdf-o fa-2x"></i></a>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="profile" id="nizato_profile">
+                        <div class="member_list" style="background-image: url(http://buturi.heteml.jp/student/2015/images/profile/nizato.jpg);">
+                            <a href="nizato/index.html" target="_blank">Move to<br />Nizato<br />of page</a>
+                        </div>
+                        <p><span class="na">nizato</span><br />研究内容：Raspberry PiとNFCタグを用いた出席確認の自動化と高速化<br /></p><p>Python PHP HTML CSS Javascript Linux</p>
+                        <div class="profprod">
+                            <h2>制作物</h2>
+                            <ul>
+                                <li class="member_products nizato_product"><a href="http://buturi.heteml.jp/student/2015/nizato/mindfulness.html" target="_blank">Mindfulness</a>
+                                <li class="member_products" class="nizato_product"><a href="http://buturi.heteml.jp/student/2015/nizato/unity/test.html" target="_blank">Unity_3D</a>
+                                </li>
+                                <li class="member_products nizato_product"><a href="http://buturi.heteml.jp/student/2015/nizato/unity/index.html" target="_blank">Unity_2D</a>
+                                </li>
+                                <li class="member_products nizato_product"><a href="http://buturi.heteml.jp/student/2015/nizato/jthree/index.html" target="_blank">jthreeでMMD</a>
+                                </li>
+                                <li class="member_products nizato_product"><a href="http://buturi.heteml.jp/student/2015/nizato/three.html" target="_blank">three.js</a>
+                                </li>
+                                <li class="member_products nizato_product"><a href="http://buturi.heteml.jp/student/2015/nizato/darts2.html" target="_blank">darts（多機能）</a>
+                                </li>
+                                <li class="member_products nizato_product"><a href="http://buturi.heteml.jp/student/2015/nizato/darts.html" target="_blank">darts（シンプル）</a>
+                                </li>
+                                <li class="member_products nizato_product"><a href="http://buturi.heteml.jp/student/2015/nizato/ff/ffa.html" target="_blank">FireFoxアプリ</a>
+                                </li>
+                                <li class="member_products nizato_product"><a href="http://buturi.heteml.jp/student/2015/nizato/piano.html" target="_blank">piano</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="profrepo hvr-radial-out"> 
+                            <a href="nizato/pdf/report.pdf" target="_blank"><h2>中間レポート</h2><i class="fa fa-file-pdf-o fa-2x"></i></a>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="profile" id="okada_profile">
+                        <div class="member_list" style="background-image: url(http://buturi.heteml.jp/student/2015/images/profile/okada.jpg);">
+                            <a href="okada/" target="_blank">Move to<br />Okada<br />of page</a>
+                        </div>
+                        <p><span class="na">岡田裕樹</span><br />研究内容：農業支援 Raspberry Piの販売とコミュニティ形成事業による次世代農業の確立<br /></p>
+                        <div class="profprod">
+                            <h2>制作物</h2>
+                            <ul>
+                                <li class="member_products okada_product"><a href="http://buturi.heteml.jp/student/2015/hiroki/piano.html" target="_blank">piano</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="profrepo hvr-radial-out"> 
+                            <a href="okada/wp-content/uploads/2015/07/2e13df89c05e0cea0166be8a7da56582.pdf" target="_blank"><h2>中間レポート</h2><i class="fa fa-file-pdf-o fa-2x"></i></a>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="profile" id="sone_profile">
+                        <div class="member_list" style="background-image: url(http://buturi.heteml.jp/student/2015/images/profile/sone.jpg);">
+                            <a href="sone/index.html" target="_blank">Move to<br />Sone<br />of page</a>
+                        </div>
+                        <p><span class="na">曽根潤治</span><br />研究内容：スマートフォン用アプリケーション制作 自転車向けフィットネス用アプリの開発<br /></p>
+                        <div class="profprod">
+                            <h2>制作物</h2>
+                            <ul>
+                                <li class="member_products sone_product"><a href="http://buturi.heteml.jp/student/2015/sone/piano.html" target="_blank">piano</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="profrepo hvr-radial-out"> 
+                            <a href="sone/pdf/report_sone.pdf" target="_blank"><h2>中間レポート</h2><i class="fa fa-file-pdf-o fa-2x"></i></a>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="profile" id="toyota_profile">
+                        <div class="member_list" style="background-image: url(http://buturi.heteml.jp/student/2015/images/profile/toyota.jpg);">
+                            <a href="toyota/index.html" target="_blank">Move to<br />Toyota<br />of page</a>
+                        </div>
+                        <p><span class="na">豊田晃己</span><br />研究内容：NICT音声認識・翻訳アプリSDKを用いた改良インターフェースAndroidアプリケーション開発<br /></p>
+                        <div class="profprod">
+                            <h2>制作物</h2>
+                            <ul>
+                                <li class="member_products toyota_product"><a href="http://buturi.heteml.jp/student/2015/sone/piano.html" target="_blank">ピアノのWebアプリ</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="profrepo hvr-radial-out"> 
+                            <a href="toyota/tyuukan.pdf" target="_blank"><h2>中間レポート</h2><i class="fa fa-file-pdf-o fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--メンバー画像-->
+                <div id="member_pic" class="animated fadeIn test-animation">
+                    <h1><i class="fa fa-users "></i>Member</h1>
+                    <div class="member_list hvr-outline-out" id="matsubara">
+                    </div>
+                    <div class="member_list hvr-outline-out" id="misawa">
+                    </div>
+                    <div class="member_list hvr-outline-out" id="nishi">
+                    </div>
+                    <div class="member_list hvr-outline-out" id="nizato">
+                    </div>
+                    <div class="member_list hvr-outline-out" id="okada">
+                    </div>
+                    <div class="member_list hvr-outline-out" id="sone">
+                    </div>
+                    <div class="member_list hvr-outline-out" id="toyota">
+                    </div>
+                </div>
+
+
+            </section>
+        </div><!--fp-->
+
+        <div id="sp" class="pages">
+            <section id="update">
+                <h1><i class="fa fa-plus "></i>New</h1>
+                <ul>
+                    <li><span>2015.10.14</span>ページをリニューアルしました 旧ページは<a href="index3.html">こちら</a></li>
                 </ul>
-                
-               
-            
             </section>
 
-            <section id="interim_report">
-                <h1><i class="fa fa-file-pdf-o fa-2x"></i>中間レポート</h1>
-                <p>8月に提出の中間レポート</p>
-                <table border="solid 1px">
-                    <thead>
-                        <tr><th>テーマ</th><th>制作者</th></tr>
-                    </thead>
-                    <tbody>
-                        <tr><td><a href="matsubara/1210960071.pdf" target="_blank">非接触ユーザインターフェースの研究インテルRealSense3Dカメラを用いた認証システム</a></td><td><a href="matsubara/index.html" target="_blank">松原</a></td></tr>
-                        <tr><td><a href="misawa/pdf/imrepo.pdf" target="_blank">Webアプリケーション制作</a></td><td><a href="misawa/index.html" target="_blank">三澤</a></td></tr>
-                        <tr><td><a href="nishi/PDF/tyukan.pdf" target="_blank">非接触ユーザインタフェースの研究　～インテル Realsense 3D カメラを利用した認証システム～</a></td><td><a href="nishi/index.html" target="_blank">西</a></td></tr>
-                        <tr><td><a href="nizato/pdf/report.pdf" target="_blank">Raspberry PiとNFCタグを用いた出席確認の自動化と高速化</a></td><td><a href="nizato/index.html" target="_blank">nizato</a></td></tr>
-                        <tr><td><a href="okada/wp-content/uploads/2015/07/2e13df89c05e0cea0166be8a7da56582.pdf" target="_blank">農業支援 Raspberry Piの販売とコミュニティ形成事業による次世代農業の確立</a></td><td><a href="okada/index.html" target="_blank">岡田</a></td></tr>
-                        <tr><td><a href="sone/pdf/report_sone.pdf" target="_blank">スマートフォン用アプリケーション制作 自転車向けフィットネス用アプリの開発</a></td><td><a href="sone/index.html" target="_blank">曽根</a></td></tr>
-                        <tr><td><a href="toyota/tyuukan.pdf" target="_blank">NICT音声認識・翻訳アプリSDKを用いた改良インターフェースAndroidアプリケーション開発</a></td><td><a href="toyota/index.html" target="_blank">豊田</a></td></tr>
-                    </tbody>
-                </table>
+
+            <section id="sns">
+                <div id="twitter">
+                    <h1><i class="fa fa-twitter "></i>Twitter</h1>
+                    <a class="twitter-timeline" href="https://twitter.com/j_b_2015" width="400px" height="600px" data-chrome="noheader nofooter transparent noscrollbar" data-widget-id="611469774460051457">@j_b_2015さんのツイート</a>
+                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                </div>
+
             </section>
             
-
-
             <section id="history">
-                <h1><i class="fa fa-book"></i>沿革</h1>
+                <h1><i class="fa fa-book"></i>History</h1>
                 <h2>12月</h2>
                 <table>
                     <tr><td>12/23</td><td>javascript勉強会</td></tr>
@@ -272,27 +323,28 @@
                 <table>
                     <tr><td>10/6</td><td>全PCをリモートデスクトップ可能に　<a href="http://dorodorodoroid.hatenablog.com/entry/2015/07/17/214543" target="_blank">参考</a></td></tr>
                     <tr><td></td><td>メインPCをリニューアル</td></tr>
+                    <tr><td>10/13</td><td>冷凍庫2度目の霜取り</td></tr>
                 </table>
                 
                 <h2>通年</h2>
                 <table>
                     <tr><td>毎週月・木曜日</td><td>ランチミーティング</td></tr>
                 </table>
-                
+
             </section>
+        </div><!--sp-->
 
-
-
-
-            
+        <div id="tp" class="pages">
             <section id="link">
-                <h1><i class="fa fa-link "></i>リンク</h1>
-                <ul>
-                   <li ><input type="checkbox" id="1" /><label for="1">情報物理研究室</label>
+                <h1><i class="fa fa-link "></i>Link</h1>
+                <div class="links">
+                    <h2>情報物理研究室</h2>
                     <ul >
+                        <li><a href="http://buturi.heteml.jp/student/2016/" target="blank">2016年度情報物理教室(制作され次第繋がります)</a></li>
                         <li><a href="http://buturi.heteml.jp/student/2015/misawa/test/attendance/index.php" target="blank">2015年度情報物理教室卒研支援ページ</a></li>
                         <li><a href="https://twitter.com/j_b_2015" target="blank">2015年度情報物理教室Twitter</a></li>
-                        <li><a href="http://buturi.heteml.jp/student/2015/index2.html" target="blank">2015年度情報物理教室(旧デザイン)</a></li>
+                        <li><a href="http://buturi.heteml.jp/student/2015/index3.html" target="blank">2015年度情報物理教室(旧デザイン2)</a></li>
+                        <li><a href="http://buturi.heteml.jp/student/2015/index2.html" target="blank">2015年度情報物理教室(旧デザイン1)</a></li>
                         <li><a href="http://buturi.heteml.jp/student/2014/" target="blank">2014年度情報物理教室</a></li>
                         <li><a href="http://buturi.heteml.jp/student/2013/" target="blank">2013年度情報物理教室</a></li>
                         <li><a href="http://buturi.heteml.jp/student/2012/" target="blank">2012年度情報物理教室</a></li>
@@ -305,9 +357,9 @@
                         <li><a href="https://webftp.heteml.jp" target="blank">hetemlログイン</a></li>
                         <li><a href="http://www.hiro.kindai.ac.jp/" target="blank">近畿大学工学部</a></li>
                     </ul>
-                   </li>
-
-                   <li ><input type="checkbox" id="2" /><label for="2">IT系(ニュース?)下のIT系も見るといいと思う</label>
+                </div>
+                <div class="links">
+                    <h2>IT系ニュース</h2>
                     <ul >
                         <li><a href="http://www.atmarkit.co.jp/" target="blank">＠IT</a></li>
                         <li><a href="http://ggsoku.com/" target="blank">GGSOKU - ガジェット速報</a></li>
@@ -320,9 +372,9 @@
                         <li><a href="https://html5experts.jp/" target="blank">HTML5Experts.jp</a></li>
                         <li><a href="http://codezine.jp/" target="blank">CodeZine（コードジン）</a></li>
                     </ul>
-                   </li>
-
-                   <li ><input type="checkbox" id="3" /><label for="3">IT系(技術?)上のIT系も見るといいと思う</label>
+                </div>
+                <div class="links">
+                    <h2>IT系 技術</h2>
                     <ul >
                         <li><a href="http://paiza.hatenablog.com/" target="blank">paiza開発日誌</a></li>
                         <li><a href="https://www.google.com/calendar/embed?src=5udlp7brhcnbuv0mq7t0jcmh04@group.calendar.google.com" target="blank">広島IT勉強会カレンダー(仮) </a></li>
@@ -334,18 +386,18 @@
                         <li><a href="http://www.moongift.jp/" target="blank">オープンソースを毎日紹介 MOONGIFT</a></li>
                         <li><a href="http://googledevjp.blogspot.jp/2014/10/html5rocks.html" target="blank">HTML5Rocks の日本語記事まとめ</a></li>
                     </ul>
-                   </li>
-
-                   <li ><input type="checkbox" id="4" /><label for="4">WEB　IDE</label>
+                </div>
+                <div class="links">
+                    <h2>WEB IDE</h2>
                     <ul >
                         <li><a href="https://paiza.io/?locale=ja-jp" target="blank">paiza.IO</a></li>
                         <li><a href="http://jsdo.it/" target="blank">jsdo.it</a></li>
                         <li><a href="http://www.tutorialspoint.com/codingground.htm" target="blank">CodingGround</a></li>
                         <li><a href="http://runnable.com/" target="blank">Runnable</a></li>
                     </ul>
-                   </li>
-
-                   <li ><input type="checkbox" id="5" /><label for="5">HP作成の時に便利</label>
+                </div>
+                <div class="links">
+                    <h2>HP作成の時に便利</h2>
                     <ul >
                         <li><a href="http://www.htmq.com/index.htm" target="blank">HTMLクイックリファレンス</a></li>
                         <li><a href="http://jsdo.it/" target="blank">jsdo.it</a></li>
@@ -357,9 +409,9 @@
                         <li><a href="https://qiita.com/tags" target="blank">Qiita - プログラマの技術情報共有サービス </a></li>
                         <li><a href="http://codepen.io/" target="blank">CodePen  </a></li>
                     </ul>
-                   </li>
-
-                   <li ><input type="checkbox" id="6"/><label for="6">プログラミング勉強</label>
+                </div>
+                <div class="links">
+                    <h2>プログラミング勉強</h2>
                     <ul >
                         <li><a href="http://dotinstall.com/" target="blank">ドットインストール</a></li>
                         <li><a href="http://prog-8.com/" target="blank">Progate | プログラミングの入門なら、基礎から学べるProgate (プロゲート)</a></li>
@@ -368,9 +420,9 @@
                         <li><a href="http://coreblog.org/ats/stuff/minpy_web/" target="blank">Pythonで学ぶWebアプリ開発のABC みんなのPython Webアプリ編 HTML版</a></li>
                         <li><a href="https://progit-ja.github.io/" target="blank">Pro Git 日本語版電子書籍公開サイト</a></li>
                     </ul>
-                   </li>
-
-                   <li ><input type="checkbox" id="7"/><label for="7">就職活動支援サイト</label>
+                </div>
+                <div class="links">
+                    <h2>就職活動支援サイト</h2>
                     <ul >
                         <li><a href="http://www.kansyuken.com/" target="blank">関就研｜関西学生就職指導研究会</a></li>
                         <li><a href="https://www.ac-lab.jp/" target="blank">就活ラボ</a></li>
@@ -383,43 +435,24 @@
                         <li><a href="hhttp://www.rikunabi.com/" target="blank">リクナビ</a></li>
                         <li><a href="http://www.nikki.ne.jp/" target="blank">みん就(みんなの就職活動日記) - 就活・新卒採用のクチコミサイト</a></li>
                     </ul>
-                   </li>
-
-
-                   <li ><input type="checkbox" id="8"/><label for="8">フリー素材</label>
+                </div>
+                <div class="links">
+                    <h2>フリー素材</h2>
                     <ul >
                         <li><a href="http://musmus.main.jp/" target="blank">フリーBGM・音楽素材 MusMus</a></li>
                         <li><a href="http://free-texture.net/" target="blank">フリーテクスチャ素材館</a></li>
                     </ul>
-                   </li>
-                   <li ><input type="checkbox" id="9"/><label for="9">統計</label>
+                </div>
+                <div class="links">
+                    <h2>統計</h2>
                     <ul >
                         <li><a href="https://www.e-stat.go.jp/SG1/estat/eStatTopPortal.do" target="blank">政府統計の総合窓口</a></li>
                         <li><a href="http://www.stat.go.jp/data/" target="blank">統計局ホームページ/統計データ</a></li>
                         <li><a href="http://www.boj.or.jp/statistics/tk/index.htm/" target="blank">短観 ：日本銀行 Bank of Japan</a></li>
                         <li><a href="http://www.e-gov.go.jp/link/white_papers.html" target="blank">白書、年次報告書等｜電子政府の総合窓口e-Gov イーガブ</a></li>
                     </ul>
-                   </li>
-                </ul>
+                </div>
             </section>
-        
-
-      </article>
-    </div>
-
-<div id="st-trigger-effects" class="column"><!--メニューボタン-->
-<button data-effect="st-effect-1"><img data-effect="st-effect-1" src="images/m.png"></button>
-</div>
-
-
-
-        <script src="js/classie.js"></script><!--スライドメニュー-->
-        <script src="js/sidebarEffects.js"></script><!--スライドメニュー-->
-    <script type="text/javascript" src="skrollr.min.js"></script>
-    <script type="text/javascript">
-var s = skrollr.init();
-
-    </script>
-
+        </div><!--tp-->
     </body>
 </html>
