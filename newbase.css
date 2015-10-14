@@ -23,6 +23,7 @@ body {
     width: 100%;
     height: 100vh;
     
+
         
         
 }
@@ -37,6 +38,11 @@ a {
     
     
     
+}
+
+h1 {
+    font-family: 'Tangerine', cursive;
+    font-size: 150%;
 }
 
 
@@ -54,17 +60,28 @@ a {
     
 }
 
+#sp {
+    //background-color: rgba(125,163,200,0.5);
+    
+}
+
+#tp {
+    
+    
+    
+}
+
 
 
 /*-------------------------------------
 ヘッダー
 -------------------------------------*/
 header {
-    background-color: rgba(125,163,200,0.5);
+    //background-color: rgba(125,163,200,0.5);
     position: relative;
     width: 100%;
     height: 10vh;
-    
+    font-family: 'Tangerine', cursive;
     
     
     
@@ -73,6 +90,14 @@ header {
 header h1 {
     text-align: center;
     font-size: 60px;
+    
+    
+}
+
+#maintitle {
+    /* ５秒かけてアニメーションする */
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
     
 }
 
@@ -87,9 +112,13 @@ header h1 {
 メニュー
 -------------------------------------*/
 #menu {
-    display: none;
+    //display: none;
     position: absolute;
+    font-size: 150%;
+    width: 100%;
+    text-align: center;
     
+    padding-top: 30vh;
 }
 
 #menu h1 {
@@ -98,8 +127,8 @@ header h1 {
 }
 
 .navi {
-  display: inline-block;  
-    
+    display: inline-block;  
+    margin: 0 1%;
 }
 
 
@@ -141,8 +170,37 @@ header h1 {
     
     
     
-    background-color: rgba(200,163,200,0.5);
+    //background-color: rgba(200,163,200,0.5);
 }
+
+#matsubara {
+    background-image: url(http://buturi.heteml.jp/student/2015/images/profile/matsubara.jpg);
+}
+#misawa {
+    background-image: url(http://buturi.heteml.jp/student/2015/images/profile/misawa.jpg);
+}
+#nishi {
+    background-image: url(http://buturi.heteml.jp/student/2015/images/profile/nishi.jpg);
+}
+#nizato {
+    background-image: url(http://buturi.heteml.jp/student/2015/images/profile/nizato.jpg);
+}
+#okada {
+    background-image: url(http://buturi.heteml.jp/student/2015/images/profile/okada.jpg);
+}
+#sone {
+    background-image: url(http://buturi.heteml.jp/student/2015/images/profile/sone.jpg);
+}
+#toyota {
+    background-image: url(http://buturi.heteml.jp/student/2015/images/profile/toyota.jpg);
+}
+
+
+
+
+
+
+
 
 .member_list a {
     position: absolute;
@@ -171,11 +229,17 @@ header h1 {
 メンバープロフィール
 -------------------------------------*/
 #profile_area {
+    position: relative;
     display: none;
+    margin: 0 auto;
+    padding: 5% 1%;
+    width: 100%;
+    max-width: 700px;
     height: 70vh;
     text-align: left;
     
-    background-color: rgba(125,163,100,0.5);
+    
+    //background-color: rgba(125,163,100,0.5);
     
     /* 2秒待ってからアニメーションする */
     -webkit-animation-duration: 1s;
@@ -188,19 +252,134 @@ header h1 {
 }
 
 
+.profprod {
+    position: relative;
+    margin: 3%;
+    width: 50%;
+    display: inline-block;
+}
+
+.profprod h2 {
+    font-size: 130%;
+    
+}
+
+.profprod ul {
+    margin-left: %;
+    
+}
+
+
 #member_pic .member_list:hover {
+    
+}
+
+.na {
+    font-size: 150%;
+    
+}
+
+.profile p {
+    padding-left: 1%;
+    
+}
+
+
+
+.profrepo {
+    background-color: rgba(125,163,200,0.5);
+    margin: 3% 10% 3% 3%;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    right: 0;
+    
+}
+.profrepo a {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.profrepo i {
+    //margin-top: 15px;
+    
+}
+
+/*-------------------------------------
+更新情報
+-------------------------------------*/
+#update {
+    width: 70%;
+    height: 20vh;
+    margin: 0 auto;
+    
+}
+
+#update ul li {
+    margin: 1%;
+    
+}
+
+
+#update ul li span {
+    margin-right: 1%;
     
 }
 
 
 
 
+/*-------------------------------------
+ツイッター
+-------------------------------------*/
+#sns {
+    position: absolute;
+    display: inline-block;
+    width: 30%;
+    height: 60vh;
+    overflow: hidden;
+    
+    padding: 1%;
+}
+#twitter {
+    margin: 0 auto;
+    max-width: 400px;
+    
+}
 
+/*-------------------------------------
+沿革
+-------------------------------------*/
+#history {
+    position: absolute;
+    display: inline-block;
+    right: 0;
+    width: 70%;
+    max-width: 900px;
+    height: 78vh;
+    overflow-y: scroll;
+    
+    padding: 1%;
+}
 
+#history table {
+    margin-left: 3%;
+    
+    
+}
 
+#history table tr{
+    
+    
+}
 
-
-
+#history table tr td{
+    
+    
+}
 
 
 /*-------------------------------------
@@ -208,7 +387,7 @@ header h1 {
 -------------------------------------*/
 #link {
     background-color: rgba(255,255,255,0.5); 
-    height: 100vh;
+    height: 100%;
         
     
     
@@ -224,6 +403,17 @@ header h1 {
     overflow-y: auto;
     display: inline-block;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -275,6 +465,13 @@ header h1 {
 #modal-content a{
     text-decoration: none;
 }
+
+
+
+
+
+
+
 
 
 

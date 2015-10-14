@@ -179,7 +179,7 @@ $(window).on('scroll', function() {
 $(function(){
     $( '.member_list' ).click(function(){
         $('#fp').css("padding-top","0");
-        $('#menu').css("display","inline-block");
+        $('#menu').css("padding-top","0");
         $('#member_pic').css("bottom","0");
         $('#profile_area').css("display","block");
     });
@@ -282,6 +282,11 @@ $(function(){
         }
     );
 });
+
+
+
+
+
 
 
 
