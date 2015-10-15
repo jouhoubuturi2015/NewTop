@@ -1,0 +1,646 @@
+@charset "utf-8";
+
+/*--------------共通のスタイル-----------------*/
+/*=================================
+全体的なスタイル
+==================================*/
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+    
+    
+}
+
+html {
+    
+}
+
+body {
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 16px;
+    color: whitesmoke;
+    width: 100%;
+    
+    
+
+    background-color: black;    
+        
+}
+
+#base {
+    
+    
+}
+
+a {
+    text-decoration: none;
+    
+    
+    
+}
+
+h1 {
+    font-family: 'Tangerine', cursive;
+    font-size: 200%;
+}
+
+
+
+
+
+
+
+
+/*-------------------------------------
+ヘッダー
+-------------------------------------*/
+header {
+    //background-color: rgba(125,163,200,0.5);
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    font-family: 'Tangerine', cursive;
+    
+    
+    
+}
+
+header h1 {
+    text-align: center;
+    font-size: 60px;
+    
+    
+}
+
+
+
+#era {
+    font-size: 50%;
+    
+}
+
+
+
+/*-------------------------------------
+メニュー
+-------------------------------------*/
+#menu {
+    position: absolute;
+    font-size: 200%;
+    width: 100%;
+    text-align: center;
+    
+    
+}
+
+#menu h1 {
+    display: none;
+    
+}
+
+.navi {
+    display: inline-block;  
+    margin: 0 1%;
+    
+}
+
+
+
+
+
+
+/*-------------------------------------
+メンバー
+-------------------------------------*/
+#member {
+    text-align: center;
+}
+
+.member_list {
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    
+    background-size:60px 60px;
+    
+}
+
+
+
+
+#member_pic {
+    position: absolute;
+    width: 100%;
+    
+    
+    
+    
+    
+    //background-color: rgba(200,163,200,0.5);
+}
+
+#matsubara {
+    background-image: url(http://buturi.heteml.jp/student/2015/images/profile/matsubara.jpg);
+}
+#misawa {
+    background-image: url(http://buturi.heteml.jp/student/2015/images/profile/misawa.jpg);
+}
+#nishi {
+    background-image: url(http://buturi.heteml.jp/student/2015/images/profile/nishi.jpg);
+}
+#nizato {
+    background-image: url(http://buturi.heteml.jp/student/2015/images/profile/nizato.jpg);
+}
+#okada {
+    background-image: url(http://buturi.heteml.jp/student/2015/images/profile/okada.jpg);
+}
+#sone {
+    background-image: url(http://buturi.heteml.jp/student/2015/images/profile/sone.jpg);
+}
+#toyota {
+    background-image: url(http://buturi.heteml.jp/student/2015/images/profile/toyota.jpg);
+}
+
+
+
+.member_list:before {
+    border-color: darkred;
+    
+}
+
+
+
+/*-------------------------------------
+メンバープロフィール
+-------------------------------------*/
+#profile_area {
+    position: relative;
+    display: none;
+    margin: 0 auto;
+    padding: 5% 1%;
+    width: 100%;
+    text-align: left;
+    
+    
+}
+
+#profile_area h1 {
+    margin-bottom: 3%;
+    color: rgb(200,0,0);
+}
+
+.profile {
+    display: none;
+    
+}
+
+
+.profprod {
+    position: relative;
+    margin: 3%;
+    width: 50%;
+    display: inline-block;
+}
+
+
+
+.profprod h2 {
+    font-size: 130%;
+    
+}
+
+.profprod ul {
+    margin-left: %;
+    
+}
+
+#member_pic h1 {
+    color: rgb(200,0,0);
+}
+
+
+.na {
+    font-size: 150%;
+    
+}
+
+.profile p {
+    padding-left: 1%;
+    
+}
+
+.member_products {
+    padding: 0 3px;
+}
+
+
+
+
+.profrepo {
+    background-color: rgba(125,163,200,0.5);
+    background: none;
+    margin: 3% 10% 3% 3%;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    right: 0;
+    
+    
+    
+}
+
+.profrepo:before {
+    background-color: ghostwhite;
+    
+}
+.profrepo:after {
+    //background-color: darkred;
+    
+}
+
+.profrepo a {
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    
+}
+
+
+.profrepo i {
+    margin-top: 10px;
+    
+}
+
+/*-------------------------------------
+更新情報
+-------------------------------------*/
+#update {
+    margin: 0 auto;
+    overflow: auto;
+}
+
+#update h1{
+    padding-top: 2vh;
+}
+
+#update ul li {
+    margin: 1%;
+    
+}
+
+
+#update ul li span {
+    margin-right: 1%;
+    
+}
+
+
+
+
+/*-------------------------------------
+ツイッター
+-------------------------------------*/
+#sns {
+    position: absolute;
+    display: inline-block;
+    //width: 30%;
+    //height: 60vh;
+    overflow: hidden;
+    
+    padding: 1%;
+}
+#twitter {
+    margin: 0 auto;
+    
+    
+}
+
+/*-------------------------------------
+沿革
+-------------------------------------*/
+#history {
+    position: absolute;
+    display: inline-block;
+    overflow-y: scroll;
+    
+    padding: 1%;
+}
+
+#history table {
+    margin-left: 3%;
+    margin-bottom: 3%;
+    
+}
+
+#history table tr{
+    
+    
+}
+
+#history table tr td{
+    margin-right: 3%;
+    
+}
+
+
+/*-------------------------------------
+リンク
+-------------------------------------*/
+#link {
+    //background-color: rgba(255,255,255,0.5);
+    position: absolute;
+    
+    padding: 0 1%;
+        
+    
+    
+}
+
+#link h1 {
+    height: 5%;
+    padding-top: 2vh;
+}
+
+.links {
+    overflow-y: auto;
+    position:relative;
+    padding: 1%;
+    
+}
+
+.links h2 {
+    font-size: 120%;
+}
+
+.links ul {
+    padding-left: 2%;
+    
+}
+
+
+
+
+
+
+
+/*--------------スマートフォンのスタイル-----------------*/
+
+
+
+
+
+
+/*--------------タブレットのスタイル-----------------*/
+@media all and (min-width: 480px) {
+    
+
+}
+
+
+
+
+/*--------------PCのスタイル-----------------*/
+@media all and (min-width: 768px) {
+    /*=================================
+    全体的なスタイル
+    ==================================*/
+    body {
+        height: 100vh;
+    
+
+    }
+    
+    .pages {
+        height: 100vh;
+
+
+    }
+    
+    #fp {
+    padding-top: 30vh;
+    background-color: black;
+
+
+
+    }
+
+    #fp a{
+        color: gold;
+    }
+
+    #fp a:hover{
+        color: orangered;
+    }
+
+    #sp {
+        background-color: darkmagenta;
+
+    }
+
+    #sp a {
+        color: orangered;
+    }
+
+    #sp a:hover {
+        border-bottom: solid 1px;
+    }
+
+    #tp {
+        background-color: darkred;
+
+    }
+
+    #tp a {
+        color: peru;
+
+    }
+
+    #tp a:hover {
+        background-color: darkviolet;
+
+    }
+        
+    
+    
+    
+    /*-------------------------------------
+    メニュー
+    -------------------------------------*/
+    #menu {
+
+        padding-top: 30vh;
+    }
+    
+    /*-------------------------------------
+    ヘッダー
+    -------------------------------------*/
+    
+    #maintitle {
+    /* ５秒かけてアニメーションする */
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    
+    }
+    
+    /*-------------------------------------
+    メンバー
+    -------------------------------------*/
+    .member_list {
+        display: inline-block;
+        position: relative;
+        width: 100px;
+        height: 100px;
+
+        background-size:100px 100px;
+
+    }
+    
+    #member_pic {
+        height: 20vh;
+    
+    }
+    
+    
+    .member_list a {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding: 20% 0;
+        font-weight: 600;
+
+        display: none;
+    }
+    
+    
+    .test-animation{
+
+      /* 1秒かけてアニメーションする */
+      -webkit-animation-duration: 1s;
+      animation-duration: 1s;
+
+    }
+    
+    
+    /*-------------------------------------
+    メンバープロフィール
+    -------------------------------------*/
+    #profile_area {
+        position: relative;
+        display: none;
+        margin: 0 auto;
+        padding: 5% 1%;
+        width: 100%;
+        max-width: 700px;
+        height: 70vh;
+        text-align: left;
+
+
+        //background-color: rgba(125,163,100,0.5);
+
+        /* 2秒待ってからアニメーションする */
+        -webkit-animation-duration: 1s;
+        animation-delay:1s;
+    }
+    
+    
+    /*-------------------------------------
+    更新情報
+    -------------------------------------*/
+    #update {
+        width: 70%;
+        max-width: 600px;
+        height: 20vh;
+    }
+    
+    
+    /*-------------------------------------
+    ツイッター
+    -------------------------------------*/
+    #sns {
+        width: 30%;
+        height: 60vh;
+
+        padding: 1%;
+    }
+    #twitter {
+        max-width: 400px;
+
+    }
+    
+    
+    /*-------------------------------------
+    沿革
+    -------------------------------------*/
+    #history {
+        right: 0;
+        width: 70%;
+        max-width: 900px;
+        height: 78vh;
+
+        padding: 1%;
+    }
+
+    
+    /*-------------------------------------
+    リンク
+    -------------------------------------*/
+    #link {
+        height: 100%;
+        font-size: 90%;
+        padding: 0 1%;
+
+
+
+    }
+
+    #link h1 {
+        height: 5%;
+        padding-top: 2vh;
+    }
+
+    .links {
+        width: 30%;
+        height: 30%;
+        overflow-y: auto;
+        display: inline-block;
+        padding: 1%;
+
+        border-bottom: solid 3px whitesmoke;
+        border-left: solid 3px whitesmoke;
+    }
+
+    .links h2 {
+        font-size: 120%;
+    }
+
+    .links ul {
+        padding-left: 2%;
+
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+

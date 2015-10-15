@@ -1,0 +1,495 @@
+@charset "utf-8";
+
+/*--------------共通のスタイル-----------------*/
+/*=================================
+全体的なスタイル
+==================================*/
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+section {
+    margin-bottom: 2%;
+}
+
+section h1 {
+    font-family: 'Tangerine', cursive;
+    font-size: 160%;
+}
+
+/*-------------------------------------
+ヘッダー
+-------------------------------------*/
+header {
+    font-family: 'Tangerine', cursive;
+    font-size: 200%;
+    background-color: rgb(34,41,40);
+}
+
+header h1 {
+    display: inline-block;
+    
+
+}
+
+header a {
+        color: rgb(183,211,50);
+    }
+
+/*-------------------------------------
+メニュー
+-------------------------------------*/
+#menu {
+    
+    
+}
+
+.navi {
+    
+    
+}
+
+
+/*-------------------------------------
+メンバー
+-------------------------------------*/
+
+.member_list {
+    display: inline-block;
+    position: relative;
+
+    background-size:100% 100%;
+
+}
+
+.member_list a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+
+}
+
+
+#matsubara {
+    background-image: url(http://buturi.heteml.jp/student/2015/images/profile/matsubara.jpg);
+}
+#misawa {
+    background-image: url(http://buturi.heteml.jp/student/2015/images/profile/misawa.jpg);
+}
+#nishi {
+    background-image: url(http://buturi.heteml.jp/student/2015/images/profile/nishi.jpg);
+}
+#nizato {
+    background-image: url(http://buturi.heteml.jp/student/2015/images/profile/nizato.jpg);
+}
+#okada {
+    background-image: url(http://buturi.heteml.jp/student/2015/images/profile/okada.jpg);
+}
+#sone {
+    background-image: url(http://buturi.heteml.jp/student/2015/images/profile/sone.jpg);
+}
+#toyota {
+    background-image: url(http://buturi.heteml.jp/student/2015/images/profile/toyota.jpg);
+}
+
+/*--------------スマートフォンのスタイル-----------------*/
+body {
+    
+}
+
+section {
+    padding: 0 1%;
+    
+}
+
+/*-------------------------------------
+ヘッダー
+-------------------------------------*/
+header {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+    
+    height: 6vh;
+    line-height: 6vh;
+    
+    
+}
+
+header a {
+    color: rgb(183,211,50);
+}
+
+/*-------------------------------------
+メニュー
+-------------------------------------*/
+#menu {
+    //display: none;
+    
+}
+
+#pcmenu {
+    text-align: center;
+    font-family: 'Tangerine', cursive;
+    font-size: 200%;
+}
+
+#pcmenu a {
+color: rgb(183,211,50);
+}
+
+#menu ul,#pcmenu ul {
+    display: none;
+    position: absolute;
+    right: 0;
+    padding: 1%;
+    
+    background-color: white;
+}
+
+.navi {
+    
+    
+}
+
+#hbg {
+    display: inline-block;
+    position: absolute;
+    
+    right: 5%;
+    top: 20%;
+    
+    
+    padding: 0 1%;
+}
+
+#top,#member_pic,#profiles,#update,#twitter,#history,#link,#products,#interim_report {
+        margin-top: -6vh;
+        padding-top: 6vh;
+    }
+
+/*-------------------------------------
+メンバー
+-------------------------------------*/
+#member {
+    padding-top: 6vh;
+    
+}
+
+.member_list {
+    width: 60px;
+    height: 60px;
+    
+}
+
+/*-------------------------------------
+制作物
+-------------------------------------*/
+#products {
+    
+}
+
+#products ul {
+    margin-left: 1%;
+    
+}
+
+#products span {
+    margin-right: 3%;
+}
+
+
+
+
+
+/*-------------------------------------
+プロフィール
+-------------------------------------*/
+#profiles {
+    width: 100%;
+}
+
+.profile {
+    position: relative;
+    width: 100%;
+    height: 110px;
+    
+}
+
+.thum {
+    position: absolute;
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    
+    
+}
+
+#profiles a {
+    display: block;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    
+    margin: 0 auto;
+}
+
+#profiles img {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    top: 10%;
+    
+}
+
+#profiles p{
+    position: absolute;
+    display: inline-block;
+    width: 80%;
+    height: 100%;
+    right: 0;
+}
+
+/*-------------------------------------
+ツイッター
+-------------------------------------*/
+#twitter {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/*-------------------------------------
+中間レポート
+-------------------------------------*/
+#interim_report {
+    
+    
+    
+    
+    
+    
+}
+
+/*-------------------------------------
+沿革
+-------------------------------------*/
+#history {
+    
+}
+
+#history table tr td {
+    padding: 1% 10px 1% 0;
+}
+
+#history h2 {
+    font-size: 110%;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+
+
+
+/*--------------タブレットのスタイル-----------------*/
+@media all and (min-width: 480px) {
+    
+
+}
+
+
+
+
+/*--------------PCのスタイル-----------------*/
+@media all and (min-width: 768px) {
+    body {
+
+    }
+
+    section {
+        
+
+    }
+    
+    #fp {
+        height: 100vh;
+        padding-top: 20vh;
+        background-color: rgb(34,41,40);
+    }
+    
+    #fp h1{
+        color: rgb(207,220,40);
+        
+    }
+
+    #fp a{
+        color: rgb(183,211,50);
+    }
+
+    #fp a:hover{
+        color: orangered;
+    }
+
+    /*-------------------------------------
+    ヘッダー
+    -------------------------------------*/
+    header {
+        position: relative;
+        width: 100%;
+        height: 10vh;
+        text-align: center;
+        z-index: 100;
+        
+        line-height: 6vh;
+        
+        padding-top: 1%;
+        padding-bottom: 3%;
+
+        background: none;
+    }
+
+   
+    
+    header h1{
+        font-size: 200%;
+    }
+
+    
+    
+    
+    
+    
+    /*-------------------------------------
+    メニュー
+    -------------------------------------*/
+    #menu {
+        background: none;
+
+    }
+
+
+    #hbg {
+       display: none; 
+
+    }
+    
+    #menu {
+        //display: none;
+
+    }
+
+    #pcmenu {
+        height: 20vh;
+        text-align: center;
+        font-family: 'Tangerine', cursive;
+        font-size: 200%;
+        padding-top: 2%;
+    }
+    
+    #pcmenu ul {
+        display: block;
+        position: relative;
+        background: none;
+
+        
+    }
+    
+    #pcmenu ul li {
+        display: inline-block;
+        margin: 0 1%;
+    }
+
+    
+    
+    #member,#top,#member_pic,#profiles,#update,#twitter,#history,#link,#products,#interim_report {
+        margin-top: 0;
+        padding-top: 0;
+    }
+    
+    
+    /*-------------------------------------
+    メンバー
+    -------------------------------------*/
+    #member {
+        text-align: center;
+        height: 20vh;
+        padding-top: 3%;
+    }
+    
+    #member h1 {
+        
+    }
+
+    .member_list {
+        width: 100px;
+        height: 100px;
+
+    }
+    
+    
+    /*-------------------------------------
+    更新情報
+    -------------------------------------*/
+    #update {
+        width: 400px;
+        height: 20vh;
+        
+        color: rgb(220,221,221);
+        
+        margin: 0 auto;
+        overflow: auto;
+    }
+    
+    #update ul {
+        padding: 2%;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
