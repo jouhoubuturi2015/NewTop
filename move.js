@@ -17,11 +17,11 @@ $(function () {
         $("#menu ul").slideToggle();
         
     });
-    /*
+    
     $(window).scroll(function() {
         $("#menu ul").hide();
     });
-    */
+    
 });
   
 
