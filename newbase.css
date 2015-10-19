@@ -301,52 +301,108 @@ header a {
     margin-left: 2%;
 }
 
+
 /*-------------------------------------
 リンク
 -------------------------------------*/
 #link {
+    //height: 100vh;
+    //background-color: #880913;
 }
-#link h1 {
+
+.menu01{
+    border: solid 4px rgb(130, 24, 221);
 }
-#link h2 {
+.menu02{
+    border: solid 4px #31dd37;
+}
+.menu03{
+    border: solid 4px #9f9faa;
+}
+.menu04{
+    border: solid 4px #e3357f;
+}
+.menu05{
+    border: solid 4px #ed73e8;
+}
+.menu06{
+    border: solid 4px #f23c3c;
+}
+.menu07{
+    border: solid 4px #00ffff;
+}
+.menu08{
+    border: solid 4px #1eba10;
+}
+.menu09{
+    border: solid 4px rgb(54, 54, 175);
+}
+
+#linkmenu {
+    position: absolute;
+    display: block;
+    list-style-type: none;
     
+
+    //background-color: #1183e6;
 }
 
-#link h2:hover {
-    
+#linkmenu li {
+    display: inline-block;
+    //padding: 2%;
+    //margin: 5% 2%;
+    //max-width: 200px;
+    //vertical-align: top;
+
+    border-radius: 5px;
+    //background-color: aquamarine;
 }
 
-#link h1 ul {
-}
-#link h1 li {
-}
-#link h1 a {
-}
-#link .fa {
-}
-#link .fa#link .fa#link .fa li {
-}
-#link .fa a {
-}
-#link .links {
-}
-#link .links h2 {
-}
-#link .links ul {
-}
-#link .links li {
-}
-#link .links a {
-}
-
-.links ul {
-    display: none;
-}
-
-.links:hover >ul {
+#pclink label {
     display: block;
 }
 
+#pclink label i{
+    padding-left: 10px;
+}
+
+#pclink label:hover i{
+    padding-left: 20px;
+}
+
+#pclink input {
+    display: none;
+}
+
+#pclink label + input:checked{
+
+}
+
+input + #linkmenu li {
+
+}
+
+input + ul {
+    width: 69%;
+    height: 450px;
+    display: inline-block;
+    position: absolute;
+    margin-top: 1%;
+    padding: 3%;
+
+    right: 0;
+    border-radius: 10px;
+    //background-color: #9a7d3b;
+    //box-shadow: 10px -5px 10px rgba(0,0,0,0.4);
+}
+
+input:not(:checked) + ul {
+    display: none;
+}
+
+.links {
+    display: none;
+}
 
 
 
@@ -542,6 +598,21 @@ header a {
     #products {
         
     }
+    #products h1 {
+    }
+    #products ul {
+    }
+    #products ul li{
+        
+    }
+    
+    #products .member_products {
+    }
+    #products .member_products#products a {
+    }
+    #products span {
+        
+    }
     
     
     /*-------------------------------------
@@ -580,10 +651,109 @@ header a {
     
     
     
+    /*-------------------------------------
+    リンク
+    -------------------------------------*/
+    #link {
+        height: 100vh;
+        //background-color: #880913;
+    }
     
+    .menu01{
+        border: solid 4px rgb(130, 24, 221);
+    }
+    .menu02{
+        border: solid 4px #31dd37;
+    }
+    .menu03{
+        border: solid 4px #9f9faa;
+    }
+    .menu04{
+        border: solid 4px #e3357f;
+    }
+    .menu05{
+        border: solid 4px #ed73e8;
+    }
+    .menu06{
+        border: solid 4px #f23c3c;
+    }
+    .menu07{
+        border: solid 4px #00ffff;
+    }
+    .menu08{
+        border: solid 4px #1eba10;
+    }
+    .menu09{
+        border: solid 4px rgb(54, 54, 175);
+    }
     
+    #linkmenu {
+        position: absolute;
+        display: inline-block;
+        list-style-type: none;
+        width: 30%;
+        margin: 0;
+        padding-left: 2%;
+        
+        //background-color: #1183e6;
+    }
     
+    #linkmenu li {
+        display: block;
+        padding: 2%;
+        margin: 5% 2%;
+        max-width: 200px;
+        //vertical-align: top;
+        
+        border-radius: 5px;
+        //background-color: aquamarine;
+    }
+
+    #pclink label {
+        display: block;
+    }
     
+    #pclink label i{
+        padding-left: 10px;
+    }
+    
+    #pclink label:hover i{
+        padding-left: 20px;
+    }
+
+    #pclink input {
+        display: none;
+    }
+    
+    #pclink label + input:checked{
+        
+    }
+
+    input + #linkmenu li {
+        
+    }
+
+    input + ul {
+        width: 69%;
+        height: 450px;
+        display: inline-block;
+        position: absolute;
+        margin-top: 1%;
+        padding: 3%;
+        
+        right: 0;
+        border-radius: 10px;
+        //background-color: #9a7d3b;
+        //box-shadow: 10px -5px 10px rgba(0,0,0,0.4);
+    }
+
+    input:not(:checked) + ul {
+        display: none;
+    }
+    
+    .links {
+        display: none;
+    }
     
     
     
