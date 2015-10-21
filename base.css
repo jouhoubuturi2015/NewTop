@@ -139,6 +139,14 @@ header {
     background-color: rgb(108,128,109);
 }
 
+header h1{
+    font-size: 90%;
+    position: absolute;
+    left: 0;
+    margin-left: 1%;
+}
+
+
 header a {
     color: rgb(237,174,144);
 }
@@ -156,6 +164,7 @@ header a {
 #menu ul,#pcmenu ul {
     display: none;
     position: absolute;
+    top: 6vh;
     right: 0;
     padding: 1%;
     
@@ -178,10 +187,14 @@ header a {
 #hbg {
     display: inline-block;
     position: absolute;
+    width: 8%;
+    height: 70%;
     
     right: 5%;
-    top: 20%;
+    top: 10%;
     
+    background: none;
+    border: none;
     
     padding: 0 1%;
 }
@@ -240,7 +253,7 @@ header a {
 .profile {
     position: relative;
     width: 100%;
-    height: 110px;
+    height: 150px;
     
 }
 
@@ -291,6 +304,15 @@ header a {
 }
 
 
+
+#twitter :not(h1) {
+    background-color: whitesmoke;
+}
+
+#twitter i {
+    background: none;
+}
+
 /*-------------------------------------
 中間レポート
 -------------------------------------*/
@@ -302,6 +324,12 @@ header a {
 
 #interim_report table{
     
+    
+    
+}
+
+#interim_report table thead tr th {
+    text-align: center;
     
     
 }
@@ -339,6 +367,9 @@ header a {
     display: none;
 }
 
+.links ul {
+    padding-left: 2%;
+}
 
 
 
@@ -786,7 +817,7 @@ header a {
     #products {
         float: left;
         width: 25%;
-        height: 50vh;
+        height: auto;
         display: inline-block;
     }
     
@@ -798,7 +829,7 @@ header a {
         top: 100vh;
         //float: right;
         width: 25%;
-        height: 50vh;
+        height: auto;
         display: inline-block;
         
     }
@@ -810,7 +841,7 @@ header a {
         position: relative;
         float: left;
         width: 50%;
-        height: 50vh;
+        height: auto;
         padding-top: 5%;
         display: inline-block;
         
