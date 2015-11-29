@@ -12,11 +12,13 @@
             box-sizing: border-box;
 }
 
+
+
 body {
     width: 100vw;
-    height: 100vh;
+    //height: 100vh;
     
-    overflow: hidden;
+    //overflow: hidden;
     
     font-size: 16px;
     font-family: curslve;
@@ -38,9 +40,15 @@ body {
     background-size: cover;
 
     /* 背景画像が読み込まれる前に表示される背景のカラー */
-    background-color: #daf2ff;
+    //background-color: #d01919;
     
     
+}
+
+#container {
+    background-color: rgba(111, 9, 119, 0.27);
+    
+    color: aliceblue;
 }
 
 a {
@@ -48,11 +56,18 @@ a {
     
 }
 
+a:hover {
+    //text-decoration: none;
+}
+
 section {
     margin-top: -50px;
     padding-top: 50px;
 }
 
+section h1 {
+    color: gold;
+}
 
 /*-------------------------------------
 ヘッダー
@@ -71,13 +86,11 @@ header {
     
 }
 
-header a {
-    display: block;
-    color: #f2f2f2;
-    padding: 0 5px;
-}
+
 
 header h1 {
+    margin: 0;
+    padding: 0;
     display: inline-block;
     font-size: 150%;
     padding: 0 10px;
@@ -87,10 +100,31 @@ header h1 {
     font-weight: 500;
 }
 
+header h1 a {
+    display: block;
+    color: #f2f2f2;
+}
+
+header a:hover {
+    color: #c0dd25;
+    text-decoration: none;
+}
+
 header nav {
     display: inline-block;
     position: absolute;
+    height: 100%;
     right: 0;
+    top: 0;
+}
+
+header nav a {
+    display: block;
+    position: absolute;
+    left: 0;
+    color: #f2f2f2;
+    border-radius: 6px;
+    width: 100%;
 }
 
 header nav ul li {
@@ -101,6 +135,9 @@ header nav ul li {
     
     padding: 0 5px;
     
+    text-align: center;
+    
+    width: 60px;
     height: 40px;
     line-height: 40px;
     
@@ -122,8 +159,12 @@ header nav ul li:hover {
 
 
 
-
-
+/*-------------------------------------
+更新情報
+-------------------------------------*/
+#update {
+    display: none;
+}
 
 
 
@@ -138,6 +179,11 @@ header nav ul li:hover {
     bottom: 0;
     
     padding-bottom: 50px;
+}
+
+#member h1 {
+    text-align: center;
+    
 }
 
 #member ul {
@@ -207,19 +253,44 @@ header nav ul li:hover {
 
 
 
+/*-------------------------------------
+制作物
+-------------------------------------*/
+#products {
+    
+}
 
+#products a {
+    font-weight: 600;
+    color: #fd0d4d;
+}
 
+#products img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
 
+#products ul li {
+    margin: 10px 0;
+}
 
+#products ul li span {
+    //display: inline-block;
+    padding: 0 5px;
+    
+    border-bottom: solid 3px #2c90f4;
+}
 
 /*-------------------------------------
 ツイッター
 -------------------------------------*/
 #twitter {
-    position: absolute;
-    width: 20%;
-    top: 100px;
-    right: 50px;
+    //position: absolute;
+    //width: 20%;
+    //max-width: 300px;
+    //top: 100px;
+    //right: 50px;
     
     
 }
@@ -231,7 +302,86 @@ header nav ul li:hover {
 
 
 
+/*-------------------------------------
+中間レポート
+-------------------------------------*/
+#interim_report {
+    //overflow: auto;
+    
+    //position: relative;
+    //width: 500px;
+    //height: 500px;
+    
+    //background-color: aliceblue;
+    //border-radius: 50%;
+    
+    
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    
+}
 
+#interim_report:hover {
+    //position: absolute;
+    //top: -50vw;
+    //left: -50vw;
+    
+    //width: 150vw;
+    //height: 150vw;
+    
+    
+    
+}
+
+#interim_report table {
+    background-color: aliceblue;
+}
+
+/*-------------------------------------
+沿革
+-------------------------------------*/
+#history {
+    position: relative;
+    margin-top: 40vh;
+}
+
+
+
+
+/*-------------------------------------
+リンク
+-------------------------------------*/
+#link {
+    text-align: center;
+}
+
+#link h2 {
+    color: blueviolet;
+}
+
+.links {
+    position: relative;
+    display: inline-block;
+    
+    margin: 1%;
+    //width: 400px;
+    //height: 400px;
+    
+    background-color: aliceblue;
+    border-radius: 50%;
+    
+    text-align: center;
+    
+    padding: 5%;
+    
+    //overflow-y: scroll;
+}
+
+.links ul {
+    text-align: left;
+    
+}
 
 
 

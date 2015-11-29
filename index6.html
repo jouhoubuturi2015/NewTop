@@ -1,0 +1,405 @@
+<!DOCTYPE html><!--HTML5で書く-->
+<html lang="ja"><!--日本語で書く-->
+
+	<head>
+		<meta  charset="UTF-8"> 
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="js/jquery.parallax.js"></script>
+    <style type="text/css">
+#mainflexbox { 
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+align-content:center;
+        //border:1px solid blue;
+        overflow: hidden;
+        align-self:center;
+        align-items:center;
+
+}
+.second { 
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    //border:1px solid red;
+    justify-content:center;
+    box-ordinal-group:0;
+
+
+overflow: hidden;
+
+}
+
+.second{    
+height: 100px;
+width: 100px;
+overflow: hidden;}
+
+.third{ 
+display: none;
+
+}
+.ppop{
+    width: 100%;
+    height: 100%;
+}
+
+
+.second>li{
+height: 100px;
+width: 100px;
+//border:1px solid green;
+}
+.links{
+height: 100%;
+width: 100%;
+//border:1px solid blue;
+overflow: scroll;
+}
+
+body{background-color: rgba( 204, 255, 204, 0.55 )}
+img{height: 100px;
+width: 100px;}
+ul{list-style-type: none;
+margin: 0 0 0 1em;
+padding: 0;}
+li{list-style-type: none;
+}
+
+span{
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    color: red;
+}
+.member_products{
+    position:relative;
+}
+
+
+               #umi {
+                position: fixed;
+z-index: -1;
+                top: -20px;
+                left: -50px;
+                 padding: 0;
+                 margin: 0;
+
+
+               }
+               .aa{ width: 105vw; 
+                height: auto;
+                }
+    </style> 
+            <title>2015年度情報物理研究室</title> 
+	</head>
+	<body>
+<ul id="mainflexbox">
+    <li>
+        <ul class="second">
+            <li class="sam"><img src="images/member.png" alt="No image"></li>
+            <li class='px100'><a href="matsubara/" target="_blank"><img src="http://buturi.heteml.jp/student/2015/images/profile/matsubara.jpg" alt="No image"></a></li>
+            <li class='px100'><a href="misawa/" target="_blank"><img src="http://buturi.heteml.jp/student/2015/images/profile/misawa.jpg" alt="No image"></a></li>
+            <li class='px100'><a href="nishi/" target="_blank"><img src="http://buturi.heteml.jp/student/2015/images/profile/nishi.jpg" alt="No image"></a></li>
+            <li class='px100'><a href="nizato/" target="_blank"><img src="http://buturi.heteml.jp/student/2015/images/profile/nizato.jpg" alt="No image"></a></li>
+            <li class='px100'><a href="okada/" target="_blank"><img src="http://buturi.heteml.jp/student/2015/images/profile/okada.jpg" alt="No image"></a></li>
+            <li class='px100'><a href="sone/" target="_blank"><img src="http://buturi.heteml.jp/student/2015/images/profile/sone.jpg" alt="No image"></a></li>
+            <li class='px100'><a href="toyota/" target="_blank"><img src="http://buturi.heteml.jp/student/2015/images/profile/toyota.jpg" alt="No image"></a></li>
+        </ul>
+
+    </li>
+    <li>
+        <ul class="second">
+            <li class="sam"><img src="images/s.png" alt="No image"></li>
+            <li class="member_products nizato_product"><a href="http://buturi.heteml.jp/student/2015/nizato/live2d/index.html" target="_blank"><span>Live2dを使ったSO教授</span><img src="http://buturi.heteml.jp/student/2015/images/profile/nizato.jpg" alt="No image"></a></li>
+            <li class="member_products nizato_product"><a href="http://buturi.heteml.jp/student/2015/nizato/unity/test.apk" target="_blank"><span>unityでアンドロイドアプリ（apkファイル30MB）</span><img src="http://buturi.heteml.jp/student/2015/images/profile/nizato.jpg" alt="No image"></a></li>
+            <li class="member_products nizato_product"><a href="http://buturi.heteml.jp/student/2015/nizato/mindfulness.html" target="_blank"><span>SVGモーフィングでMindfulness</span><img src="http://buturi.heteml.jp/student/2015/images/profile/nizato.jpg" alt="No image"></a></li>
+            <li class="member_products nizato_product"><a href="http://buturi.heteml.jp/student/2015/nizato/unity/test.html" target="_blank"><span>Unity_3D</span><img src="http://buturi.heteml.jp/student/2015/images/profile/nizato.jpg" alt="No image"></a></li>
+            <li class="member_products nizato_product"><a href="http://buturi.heteml.jp/student/2015/nizato/unity/index.html" target="_blank"><span>Unity_2D</span><img src="http://buturi.heteml.jp/student/2015/images/profile/nizato.jpg" alt="No image"></a></li>
+            <li class="member_products misawa_product"><a href="http://buturi.heteml.jp/student/2015/misawa/test/mind/index.php" target="_blank"><span>Mindfulnessアプリ</span><img src="http://buturi.heteml.jp/student/2015/images/profile/misawa.jpg" alt="No image"></a></li>
+            <li class="member_products nizato_product"><a href="http://buturi.heteml.jp/student/2015/nizato/jthree/index.html" target="_blank"><span>jthreeでMMD</span><img src="http://buturi.heteml.jp/student/2015/images/profile/nizato.jpg" alt="No image"></a></li>
+            <li class="member_products nizato_product"><a href="http://buturi.heteml.jp/student/2015/nizato/three.html" target="_blank"><span>three.js</span><img src="http://buturi.heteml.jp/student/2015/images/profile/nizato.jpg" alt="No image"></a></li>
+            <li class="member_products nizato_product"><a href="http://buturi.heteml.jp/student/2015/nizato/darts2.html" target="_blank"><span>darts（多機能）</span><img src="http://buturi.heteml.jp/student/2015/images/profile/nizato.jpg" alt="No image"></a></li>
+            <li class="member_products nizato_product"><a href="http://buturi.heteml.jp/student/2015/nizato/darts.html" target="_blank"><span>darts（シンプル）</span><img src="http://buturi.heteml.jp/student/2015/images/profile/nizato.jpg" alt="No image"></a></li>
+            <li class="member_products nizato_product"><a href="http://buturi.heteml.jp/student/2015/nizato/ff/ffa.html" target="_blank"><span>FireFoxアプリ</span><img src="http://buturi.heteml.jp/student/2015/images/profile/nizato.jpg" alt="No image"></a></li>
+            <li class="member_products misawa_product"><a href="http://buturi.heteml.jp/student/2015/misawa/test/attendance/index.php" target="_blank"><span>卒検支援ページ</span><img src="http://buturi.heteml.jp/student/2015/images/profile/misawa.jpg" alt="No image"></a></li>
+            <li class="member_products matsubara_product"><a href="http://buturi.heteml.jp/student/2015/matsubara/piano.html" target="_blank"><span>piano</span><img src="http://buturi.heteml.jp/student/2015/images/profile/matsubara.jpg" alt="No image"></a></a></li>
+            <li class="member_products misawa_product"><a href="http://buturi.heteml.jp/student/2015/misawa/pianocomment.html" target="_blank"><span>piano</span><img src="http://buturi.heteml.jp/student/2015/images/profile/misawa.jpg" alt="No image"></a></li>
+            <li class="member_products nishi_product"><a href="http://buturi.heteml.jp/student/2015/nishi/piano.html" target="_blank"><span>piano</span><img src="http://buturi.heteml.jp/student/2015/images/profile/nishi.jpg" alt="No image"></a></a></li>
+            <li class="member_products nizato_product"><a href="http://buturi.heteml.jp/student/2015/nizato/piano.html" target="_blank"><span>piano</span><img src="http://buturi.heteml.jp/student/2015/images/profile/nizato.jpg" alt="No image"></a></li>
+            <li class="member_products okada_product"><a href="http://buturi.heteml.jp/student/2015/hiroki/piano.html" target="_blank"><span>piano</span><img src="http://buturi.heteml.jp/student/2015/images/profile/okada.jpg" alt="No image"></a></a></li>
+            <li class="member_products sone_product"><a href="http://buturi.heteml.jp/student/2015/sone/piano.html" target="_blank"><span>piano</span><img src="http://buturi.heteml.jp/student/2015/images/profile/sone.jpg" alt="No image"></a></li>
+            <li class="member_products toyota_product"><a href="http://buturi.heteml.jp/student/2015/sone/piano.html" target="_blank"><span>piano</span><img src="http://buturi.heteml.jp/student/2015/images/profile/toyota.jpg" alt="No image"></a></li>
+        </ul>
+    </li>
+    
+    <li>
+        <ul class="second">
+            <li class="sam"><img src="images/calendar.png" alt="No image"></li>
+            <li class="asd"><img src="images/12.jpg" alt="No image">
+                <ul class="third">
+                    <li>23:javascript勉強会</li>
+                </ul>
+            </li>
+            <li class="asd"><img src="images/2.jpg" alt="No image">
+                <ul class="third">
+                    <li>5::企業情報・就活情報の交換</li>
+                    <li>6::企業情報・就活情報の交換</li>
+                    <li>17:先輩の卒研発表練習を聴く</li>
+                    <li>18:卒研発表</li>
+                </ul>
+            </li>
+            <li class="asd"><img src="images/3.jpg" alt="No image">
+                <ul class="third">
+                    <li>11:大掃除・冷凍庫の霜取り</li>
+                </ul>
+            </li>
+            <li class="asd"><img src="images/5.jpg" alt="No image">
+                <ul class="third">
+                    <li>9::公開講座補助　参加者：松原・三澤・西・nizato・岡田・曽根</li>
+                    <li>22:今年度初　福山大ミーティング　参加者：松原・三澤・西・nizato・岡田・曽根</li>
+                </ul>
+            </li>
+            <li class="asd"><img src="images/6.jpg" alt="No image">
+                <ul class="third">
+                    <li>8::ダーツボード・電気ケトル設置</li>
+                    <li>26:第二回　福山大ミーティング　参加者：三澤・nizato・岡田・曽根</li>
+                </ul>
+            </li>
+            <li class="asd"><img src="images/7.jpg" alt="No image">
+                <ul class="third">
+                    <li>9::ページリニューアル  <a href="http://buturi.heteml.jp/student/2015/index2.html">旧ページ</a></li>
+                    <li>25:オープンキャンパス補助(RealSense実演)　参加者：松原・西</li>
+                    <li>26:オープンキャンパス補助(模擬授業補助)　参加者：三澤・nizato</li>
+                </ul>
+            </li>
+            <li class="asd"><img src="images/8.jpg" alt="No image">
+                <ul class="third">
+                    <li>3::第三回　福山大ミーティング　参加者：松原・三澤・西・曽根・豊田</li>
+                    <li>5::中間レポート提出締め切り</li>
+                    <li>7::夏休み前最終ミーティング</li>
+                    <li>8::夏休み開始（ランチミーティングストップ）</li>
+                    <li>17:研究室ワックスがけ</li>
+                    <li>18:　　　　〃</li>
+                    <li>22:近大 本部キャンパス オープンキャンパス 学科デモ（RealSense）参加者：松原・西</li>
+                    <li>23:　　　　〃</li>
+                    <li>24:夏休み終了（ランチミーティングは27日木曜から再開）</li>
+                    <li>26:ダーツボード撤去</li>                 
+                </ul>
+            </li>
+            <li class="asd"><img src="images/9.jpg" alt="No image">
+                <ul class="third">
+                    <li>11:第四回　福山大ミーティング　参加者：松原・三澤・西・岡田・曽根</li>
+                </ul>
+            </li>
+            <li class="asd"><img src="images/10.jpg" alt="No image">
+                <ul class="third">
+                    <li>6::全PCをリモートデスクトップ可能に　<a href="http://dorodorodoroid.hatenablog.com/entry/2015/07/17/214543" target="_blank">参考</a></li>
+                    <li>6::メインPCをリニューアル</li>
+                    <li>13:冷凍庫2度目の霜取り</li>
+                    <li>14:ページリニューアル  <a href="http://buturi.heteml.jp/student/2015/index3.html">旧ページ</a></li>
+                    <li>17:公開講座補助　参加者：岡田・曽根</li>
+                    <li>23:第五回　福山大ミーティング　参加者：三澤・曽根 3年：ふじい・せやま</li> 
+                </ul>
+            </li>
+            <li class="asd"><img src="images/11.jpg" alt="No image">
+                <ul class="third">
+                    <li>5::ページリニューアル　<a href="http://buturi.heteml.jp/student/2015/index5.html">旧ページ</a></li>
+                    <li>10::卒アル用写真撮影<a href="http://buturi.heteml.jp/student/2015/privateFolder/DSC_0198.JPG">写真1</a>//<a href="http://buturi.heteml.jp/student/2015/privateFolder/DSC_0197.JPG">写真2</a></li>
+
+                </ul>
+            </li>
+</ul>
+</li>
+
+    <li>
+        <ul class="second">
+            <li class="sam"><img src="images/pdf.png" alt="No image"></li>
+            <li class="ppop">
+                <table border="2px">
+                    <thead>
+                        <tr><th>テーマ</th><th>著者</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><a href="matsubara/1210960071.pdf" target="_blank">非接触ユーザインターフェースの研究インテルRealSense3Dカメラを用いた認証システム</a></td><td><a href="matsubara/index.html" target="_blank">松原</a></td></tr>
+                        <tr><td><a href="misawa/pdf/imrepo.pdf" target="_blank">Webアプリケーション制作</a></td><td><a href="misawa/index.html" target="_blank">三澤</a></td></tr>
+                        <tr><td><a href="nishi/PDF/tyukan.pdf" target="_blank">非接触ユーザインタフェースの研究　～インテル Realsense 3D カメラを利用した認証システム～</a></td><td><a href="nishi/index.html" target="_blank">西</a></td></tr>
+                        <tr><td><a href="nizato/pdf/report.pdf" target="_blank">Raspberry PiとNFCタグを用いた出席確認の自動化と高速化</a></td><td><a href="nizato/index.html" target="_blank">nizato</a></td></tr>
+                        <tr><td><a href="okada/wp-content/uploads/2015/07/2e13df89c05e0cea0166be8a7da56582.pdf" target="_blank">農業支援 Raspberry Piの販売とコミュニティ形成事業による次世代農業の確立</a></td><td><a href="okada/index.html" target="_blank">岡田</a></td></tr>
+                        <tr><td><a href="sone/pdf/report_sone.pdf" target="_blank">スマートフォン用アプリケーション制作 自転車向けフィットネス用アプリの開発</a></td><td><a href="sone/index.html" target="_blank">曽根</a></td></tr>
+                        <tr><td><a href="toyota/tyuukan.pdf" target="_blank">NICT音声認識・翻訳アプリSDKを用いた改良インターフェースAndroidアプリケーション開発</a></td><td><a href="toyota/index.html" target="_blank">豊田</a></td></tr>
+                    </tbody>
+                </table>
+            </li>
+        </ul>
+    </li>
+<li>
+    <li>
+        <ul class="second">
+            <li class="sam"><img src="images/link.png" alt="No image"></li>
+            <li class="ppop">
+                <div class="links">
+                <h2>情報物理研究室</h2>
+                <ul class="ppop">
+                    <li><a href="http://buturi.heteml.jp/student/2016/" target="blank">2016年度情報物理教室(制作され次第繋がります)</a></li>
+                    <li><a href="http://buturi.heteml.jp/student/2015/misawa/test/attendance/index.php" target="blank">2015年度情報物理教室卒研支援ページ</a></li>
+                    <li><a href="https://twitter.com/j_b_2015" target="blank">2015年度情報物理教室Twitter</a></li>
+                    <li><a href="http://buturi.heteml.jp/student/2015/index5.html" target="blank">2015年度情報物理教室(旧デザイン3)</a></li>
+                    <li><a href="http://buturi.heteml.jp/student/2015/index3.html" target="blank">2015年度情報物理教室(旧デザイン2)</a></li>
+                    <li><a href="http://buturi.heteml.jp/student/2015/index2.html" target="blank">2015年度情報物理教室(旧デザイン1)</a></li>
+                    <li><a href="http://buturi.heteml.jp/student/2014/" target="blank">2014年度情報物理教室</a></li>
+                    <li><a href="http://buturi.heteml.jp/student/2013/" target="blank">2013年度情報物理教室</a></li>
+                    <li><a href="http://buturi.heteml.jp/student/2012/" target="blank">2012年度情報物理教室</a></li>
+                    <li><a href="http://buturi.heteml.jp/student/2011/" target="blank">2011年度情報物理教室</a></li>
+                    <li><a href="http://buturi.heteml.jp/js/" target="blank">JavaScript</a></li>
+                    <li><a href="http://buturi.heteml.jp/android/" target="blank">android programming</a></li>
+                    <li><a href="http://buturi.heteml.jp/sotuken" target="blank">情報物理研究室</a></li>
+                    <li><a href="http://buturi.heteml.jp/buturi" target="blank">物理学（徐）</a></li>
+                    <li><a href="http://buturi.heteml.jp" target="blank">科学的教育知：学習と教育を考える足場 </a></li>
+                    <li><a href="http://buturi.hiro.kindai.ac.jp/" target="blank">物理教育</a></li>
+                    <li><a href="https://webftp.heteml.jp" target="blank">hetemlログイン</a></li>
+                    <li><a href="http://www.hiro.kindai.ac.jp/" target="blank">近畿大学工学部</a></li>
+                </ul>
+            </div>
+            <div class="links">
+                <h2>IT系ニュース</h2>
+                <ul class="ppop">
+                    <li><a href="http://www.atmarkit.co.jp/" target="blank">＠IT</a></li>
+                    <li><a href="http://ggsoku.com/" target="blank">GGSOKU - ガジェット速報</a></li>
+                    <li><a href="http://blog.livedoor.jp/itsoku/" target="blank">IT速報</a></li>
+                    <li><a href="http://gigazine.net/" target="blank">GIGAZINE（ギガジン）</a></li>
+                    <li><a href="http://weekly.ascii.jp/" target="blank">週アスPLUS - 週刊アスキーのITニュースサイト</a></li>
+                    <li><a href="http://deviceplus.jp/" target="blank">Device Plus : エンジニアライフにプラス1の情報を</a></li>
+                    <li><a href="http://coliss.com/" target="blank">コリス | サイト制作に関する最新の情報をご紹介</a></li>
+                    <li><a href="http://googledevjp.blogspot.jp/" target="blank">Google Japan Developer Relations Blog</a></li>
+                    <li><a href="https://html5experts.jp/" target="blank">HTML5Experts.jp</a></li>
+                    <li><a href="http://codezine.jp/" target="blank">CodeZine（コードジン）</a></li>
+                </ul>
+            </div>
+            <div class="links">
+                <h2>IT系 技術</h2>
+                <ul class="ppop">
+                    <li><a href="http://paiza.hatenablog.com/" target="blank">paiza開発日誌</a></li>
+                    <li><a href="https://www.google.com/calendar/embed?src=5udlp7brhcnbuv0mq7t0jcmh04@group.calendar.google.com" target="blank">広島IT勉強会カレンダー(仮) </a></li>
+                    <li><a href="https://www.google.com/calendar/embed?src=ZnZpanZvaG05MXVpZnZkOWhyYXRlaGY2NWtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" target="blank">IT 勉強会カレンダー </a></li>
+                    <li><a href="https://qiita.com/" target="blank">Qiita - プログラマの技術情報共有サービス </a></li>
+                    <li><a href="http://プログラマが知るべき97のこと.com/" target="blank">プログラマが知るべき97のこと</a></li>
+                    <li><a href="http://www.ic.is.tohoku.ac.jp/~swk/lecture/yaruodsp/main.html" target="blank">やる夫で学ぶディジタル信号処理</a></li>
+                    <li><a href="https://teratail.com/" target="blank">teratail</a></li>
+                    <li><a href="http://www.moongift.jp/" target="blank">オープンソースを毎日紹介 MOONGIFT</a></li>
+                    <li><a href="http://googledevjp.blogspot.jp/2014/10/html5rocks.html" target="blank">HTML5Rocks の日本語記事まとめ</a></li>
+                </ul>
+            </div>
+            <div class="links">
+                <h2>HP作成の時に便利</h2>
+                <ul class="ppop">
+                    <li><a href="http://www.htmq.com/index.htm" target="blank">HTMLクイックリファレンス</a></li>
+                    <li><a href="http://jsdo.it/" target="blank">jsdo.it</a></li>
+                    <li><a href="http://css.uka-p.com/" target="blank">CSSレイアウト実践講座</a></li>
+                    <li><a href="http://dotinstall.com/" target="blank">ドットインストール</a></li>
+                    <li><a href="http://www.dspt.net/" target="blank">HTMLタグボード</a></li>
+                    <li><a href="http://html-linksyuu.com/" target="blank">HTMLリンク集</a></li>
+                    <li><a href="http://weboook.blog22.fc2.com/blog-entry-268.html" target="blank">意外と知らない!?CSSセレクタ20個のおさらい</a></li>
+                    <li><a href="https://qiita.com/tags" target="blank">Qiita - プログラマの技術情報共有サービス </a></li>
+                    <li><a href="http://codepen.io/" target="blank">CodePen  </a></li>
+                </ul>
+            </div>
+            <div class="links">
+                <h2>統計</h2>
+                <ul class="ppop">
+                    <li><a href="https://www.e-stat.go.jp/SG1/estat/eStatTopPortal.do" target="blank">政府統計の総合窓口</a></li>
+                    <li><a href="http://www.stat.go.jp/data/" target="blank">統計局ホームページ/統計データ</a></li>
+                    <li><a href="http://www.boj.or.jp/statistics/tk/index.htm/" target="blank">短観 ：日本銀行 Bank of Japan</a></li>
+                    <li><a href="http://www.e-gov.go.jp/link/white_papers.html" target="blank">白書、年次報告書等｜電子政府の総合窓口e-Gov イーガブ</a></li>
+                </ul>
+            </div>
+
+            </li>
+        </ul>
+    </li>
+</li>
+
+
+
+
+</ul>
+
+<div id="umi">
+<ul id="scene" class="aa">
+      <li class="layer" data-depth="0.00"><img class="aa" src="images/umi.png"></li>
+      <li class="layer" data-depth="0.95"><img class="aa" src="images/umi2.png"></li>
+      <li class="layer" data-depth="0.90"><img class="aa" src="images/umi1.png"></li>
+      <li class="layer" data-depth="0.80"><img class="aa" src="images/umi3.png"></li>
+      <li class="layer" data-depth="0.00"><img class="aa" src="images/umi4.png"></li>
+      <li class="layer" data-depth="0.40"><img class="aa" src="images/umi5.png"></li>
+      <li class="layer" data-depth="0.99"><img class="aa" src="images/umi7.png"></li>
+</ul>
+
+
+
+
+
+
+
+<script>
+var count=-1;
+var asdasd=1;
+    $('.second').click(function(){
+        count--;
+        //alert(count);
+        $('ul').not(this).not('#mainflexbox').not('.third').css('height','100px');
+        $('ul').not(this).not('#mainflexbox').not('.third').css('width','100px');
+        $('.sam').css('display','block');
+        $(this).css('height','500px');
+        $(this).css('width','90vw');
+        $(this).find('.sam').css('display','none');
+        $(this).find('.ppop').css('width','100%');
+        $(this).parent("li").css("order",count);
+        
+    });
+    $('.asd').click(function(){
+        //alert(count);
+        $('.asd img').css('display','block');
+        $(this).find('img').css('display','none');
+        $('.third').css('display','none');
+        $('.asd').css('height','100px');
+        $('.asd').css('width','100px');
+        $(this).css('height','50%');
+        $(this).css('width','100%');
+        $(this).find('.third').css('display','block');
+        $(this).find('.third').css('width','100%');
+        $(this).find('.third').css('height','100%');
+        $(this).css("order",asdasd);
+        asdasd++;
+
+    });
+
+      $('#scene').parallax({
+    calibrateX: false,
+    calibrateY: true,
+    invertX: false,
+    invertY: true,
+    limitX: false,
+    limitY: 10,
+    scalarX: 4,
+    scalarY: 8,
+    frictionX: 0.5,
+    frictionY: 0.5
+  });
+</script>
+
+
+	</body>
+
+
+
+
+
+
+
+
+
+
+</html>
