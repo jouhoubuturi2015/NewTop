@@ -174,9 +174,9 @@ header nav ul li:hover {
 メンバー
 -------------------------------------*/
 #member {
-    position: absolute;
+    position: relative;
     width: 100%;
-    bottom: 0;
+    //bottom: 0;
     
     padding-bottom: 50px;
 }
