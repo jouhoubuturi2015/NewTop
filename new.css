@@ -1,0 +1,429 @@
+@charset "utf-8";
+
+/*--------------共通のスタイル-----------------*/
+/*=================================
+全体的なスタイル
+==================================*/
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+
+
+body {
+    width: 100%;
+    
+    
+    box-sizing: border-box;
+    
+    font-size: 16px;
+    font-family: curslve;
+    
+    
+    /* 画像ファイルの指定 */
+    background-image: url(images/IMG_3385.JPG);
+
+    /* 画像を常に天地左右の中央に配置 */
+    background-position: center center;
+
+    /* 画像をタイル状に繰り返し表示しない */
+    background-repeat: no-repeat;
+
+    /* コンテンツの高さが画像の高さより大きい時、動かないように固定 */
+    background-attachment: fixed;
+
+    /* 表示するコンテナの大きさに基づいて、背景画像を調整 */
+    background-size: cover;
+
+    /* 背景画像が読み込まれる前に表示される背景のカラー */
+    //background-color: #d01919;
+    
+    
+}
+
+#container {
+    background-color: rgba(0, 0, 0, 0.27);
+    
+    //color: aliceblue;
+    border: solid white 10px;
+    //width: 100vw;
+    //height: 100vh;
+    //overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+a:hover {
+    //text-decoration: none;
+}
+
+section {
+    margin-top: -50px;
+    padding-top: 50px;
+    
+    margin-bottom: 20px;
+}
+
+section h1 {
+    color: gold;
+    font-size: 150%;
+}
+
+/*-------------------------------------
+ヘッダー
+-------------------------------------*/
+header {
+    background-color: #ffffff;
+    
+    width: 100%;
+    height: 50px;
+    
+    position: fixed;
+    //display: block;
+    
+    z-index: 5;
+    
+}
+
+header h1 {
+    margin: 0;
+    padding: 0 5px;
+    position: absolute;
+    height: 50px;
+    display: inline-block;
+    font-size: 150%;
+    
+    line-height: 50px;
+    
+    //font-weight: 500;
+}
+
+header #favi {
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+header h1 a {
+    display: block;
+    color: #030303;
+    //width: 100%;
+    height: 50px;
+    
+    
+}
+
+header a:hover {
+    color: #c0dd25;
+    text-decoration: none;
+}
+
+header nav {
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    right: 0;
+    top: 0;
+}
+
+header nav a {
+    display: block;
+    position: absolute;
+    left: 0;
+    color: #030303;
+    //border-radius: 6px;
+    width: 100%;
+}
+
+header nav ul li {
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    margin: 5px;
+    
+    padding: 0 5px;
+    
+    text-align: center;
+    
+    width: 60px;
+    height: 40px;
+    line-height: 40px;
+    
+    //border-radius: 6px;
+}
+
+
+/*-------------------------------------
+メインコンテナ
+-------------------------------------*/
+#container {
+    padding-top: 50px; //ヘッダー分パディング
+    
+}
+
+
+
+
+/*-------------------------------------
+更新情報
+-------------------------------------*/
+#update {
+    display: none;
+}
+
+
+
+
+
+/*-------------------------------------
+メンバー
+-------------------------------------*/
+#member {
+    position: relative;
+    width: 100%;
+    //bottom: 0;
+    
+    padding-bottom: 50px;
+}
+
+#member h1 {
+    text-align: center;
+    
+}
+
+#member ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#member ul li {
+    position: relative;
+    box-sizing: border-box;
+    
+    width: 120px;
+    height: 120px;
+    
+    margin-bottom: 10px;
+    //border-radius: 50px;
+}
+
+.member_pic {
+    width: 100%;
+    height: 100%;
+    //border-radius: 50%;
+    
+    /*
+    -webkit-animation: spin 20.5s linear infinite;
+    -moz-animation: spin 20.5s linear infinite;
+    -ms-animation: spin 20.5s linear infinite;
+    -o-animation: spin 20.5s linear infinite;
+    animation: spin 20.5s linear infinite;
+    */
+}
+/*
+#member ul li img:hover {
+    animation-play-state: paused;
+}
+
+@-webkit-keyframes spin {
+	0% {-webkit-transform: rotate(0deg);}
+	100% {-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes spin {
+	0% {-moz-transform: rotate(0deg);}
+	100% {-moz-transform: rotate(360deg);}
+}
+@-ms-keyframes spin {
+	0% {-ms-transform: rotate(0deg);}
+	100% {-ms-transform: rotate(360deg);}
+}
+@-o-keyframes spin {
+	0% {-o-transform: rotate(0deg);}
+	100% {-o-transform: rotate(360deg);}
+}
+@keyframes spin {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
+}
+*/
+
+.logo {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    right: 5px;
+    bottom: 5px;
+}
+
+
+
+/*-------------------------------------
+制作物
+-------------------------------------*/
+#products {
+    margin-left: 5px;
+    display: inline-block;
+    width: 440px;
+}
+
+#products a {
+    display: block;
+    font-size: 20px;
+    height: 30px;
+    font-weight: 600;
+    color: #eaffeb;
+    
+    
+}
+
+#products img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+#products ul {
+    position: relative;
+}
+
+#products ul li {
+    height: 30px;
+    margin: 10px 0;
+    
+}
+
+#products ul li span {
+    padding: 0 10px;
+    position: absolute;
+    //border-bottom: solid 3px #2c90f4;
+    line-height: 30px;
+}
+
+/*-------------------------------------
+ツイッター
+-------------------------------------*/
+#twitter {
+    //position: absolute;
+    //width: 20%;
+    //max-width: 300px;
+    //top: 100px;
+    //right: 50px;
+    
+    
+}
+
+#twitter iframe {
+    background-color: aliceblue;
+}
+
+
+
+
+/*-------------------------------------
+中間レポート
+-------------------------------------*/
+#interim_report {
+    //overflow: auto;
+    
+    //position: relative;
+    //width: 500px;
+    //height: 500px;
+    
+    //background-color: aliceblue;
+    //border-radius: 50%;
+    
+    
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    
+}
+
+#interim_report:hover {
+    //position: absolute;
+    //top: -50vw;
+    //left: -50vw;
+    
+    //width: 150vw;
+    //height: 150vw;
+    
+    
+    
+}
+
+#interim_report table {
+    background-color: aliceblue;
+}
+
+/*-------------------------------------
+沿革
+-------------------------------------*/
+#history {
+    position: relative;
+    margin-top: 40vh;
+}
+
+
+
+
+/*-------------------------------------
+リンク
+-------------------------------------*/
+#link {
+    text-align: center;
+}
+
+#link h2 {
+    color: blueviolet;
+    font-size: 120%;
+    margin-bottom: 5px;
+}
+
+.links {
+    position: relative;
+    display: inline-block;
+    
+    margin: 1%;
+    //width: 400px;
+    //height: 400px;
+    
+    background-color: aliceblue;
+    //border-radius: 50%;
+    
+    text-align: center;
+    
+    padding: 2%;
+    
+    //overflow-y: scroll;
+}
+
+.links ul {
+    text-align: left;
+    width: 200px;
+    display: inline-block;
+}
+
+
+
+
+
+
+/*--------------タブレットのスタイル-----------------*/
+@media all and (max-width: 480px) {
+    
+
+}
+
+
+
+
