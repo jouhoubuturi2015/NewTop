@@ -7,23 +7,24 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css"><!--リセットcss-->
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="base5.css">
+        <link rel="stylesheet" href="base.css">
         <link rel="shortcut icon" href="images/favi.gif">
         <script src="pass.js"></script><!--例のアレ-->
         <link href="font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet"><!--http://fontawesome.io/を使用する為に-->
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
         <script src="move5.js"></script>
     </head>
     <body>
         <header>
+            <a href="index.html"><img id="favi" src="images/favi.gif" alt=""></a>
             <h1><a href="index.html">情報物理研究室 2015</a></h1>
             
             <nav id="menu">
-                <ul><!--
-                    <li><a href="#member">人</a></li>-->
-                    <li><a href="#products">トップ</a></li><!--
-                    <li><a href="#interim_report">書</a></li>
-                    <li><a href="#twitter">呟0a</a></li>-->
+                <ul>
+                    <li><a href="#member">トップ</a></li>
+                    <li><a href="#products">制作物</a></li>
+                    <li><a href="#pc_interim_report">レポート</a></li>
+                    <li><a href="#twitter">ツイッター</a></li>
                     <li><a href="#history">沿革</a></li>
                     <li><a href="#link">リンク</a></li>
                 </ul>
@@ -41,23 +42,22 @@
             </section>
 
 
-            <section id="member" class="container">
+            <section id="member">
                 <h1><i class="fa fa-users "></i>メンバー</h1>
                 <ul>
-                    <li><a href="matsubara/" target="_blank"><img class="member_pic" src="http://buturi.heteml.jp/student/2015/images/profile/matsubara.jpg" alt="No image"><img class="logo" src="images/creative-cam.png" alt="No image"></a></li>
-                    <li><a href="misawa/" target="_blank"><img class="member_pic" src="http://buturi.heteml.jp/student/2015/images/profile/misawa.jpg" alt="No image"><img class="logo" src="images/HTML5_logo.png" alt="No image"></a></li>
-                    <li><a href="nishi/" target="_blank"><img class="member_pic" src="http://buturi.heteml.jp/student/2015/images/profile/nishi.jpg" alt="No image"><img class="logo" src="images/creative-cam.png" alt="No image"></a></li>
-                    <li><a href="nizato/" target="_blank"><img class="member_pic" src="http://buturi.heteml.jp/student/2015/images/profile/nizato.jpg" alt="No image"><img class="logo" src="images/RaspberryPi.png" alt="No image"></a></li>
-                    <li><a href="okada/" target="_blank"><img class="member_pic" src="http://buturi.heteml.jp/student/2015/images/profile/okada.jpg" alt="No image"><img class="logo" src="images/RaspberryPi.png" alt="No image"></a></li>
-                    <li><a href="sone/" target="_blank"><img class="member_pic" src="http://buturi.heteml.jp/student/2015/images/profile/sone.jpg" alt="No image"><img class="logo" src="images/Android-logo_t.png" alt="No image"></a></li>
-                    <li><a href="toyota/" target="_blank"><img class="member_pic" src="http://buturi.heteml.jp/student/2015/images/profile/toyota.jpg" alt="No image"><img class="logo" src="images/Android-logo_t.png" alt="No image"></a></li>
+                    <li><a href="matsubara/" target="_blank"><img class="member_pic" src="http://buturi.heteml.jp/student/2015/images/profile/matsubara.jpg" alt="No image"><!--<img class="logo" src="images/creative-cam.png" alt="No image">--><span id="memhov">松原のページヘ</span></a></li>
+                    <li><a href="misawa/" target="_blank"><img class="member_pic" src="http://buturi.heteml.jp/student/2015/images/profile/misawa.jpg" alt="No image"><!--<img class="logo" src="images/HTML5_logo.png" alt="No image">--><span id="memhov">三澤のページヘ</span></a></li>
+                    <li><a href="nishi/" target="_blank"><img class="member_pic" src="http://buturi.heteml.jp/student/2015/images/profile/nishi.jpg" alt="No image"><!--<img class="logo" src="images/creative-cam.png" alt="No image">--><span id="memhov">西のページヘ</span></a></li>
+                    <li><a href="nizato/" target="_blank"><img class="member_pic" src="http://buturi.heteml.jp/student/2015/images/profile/nizato.jpg" alt="No image"><!--<img class="logo" src="images/RaspberryPi.png" alt="No image">--><span id="memhov">nizatoのページヘ</span></a></li>
+                    <li><a href="okada/" target="_blank"><img class="member_pic" src="http://buturi.heteml.jp/student/2015/images/profile/okada.jpg" alt="No image"><!--<img class="logo" src="images/RaspberryPi.png" alt="No image">--><span id="memhov">岡田のページヘ</span></a></li>
+                    <li><a href="sone/" target="_blank"><img class="member_pic" src="http://buturi.heteml.jp/student/2015/images/profile/sone.jpg" alt="No image"><!--<img class="logo" src="images/Android-logo_t.png" alt="No image">--><span id="memhov">曽根のページヘ</span></a></li>
+                    <li><a href="toyota/" target="_blank"><img class="member_pic" src="http://buturi.heteml.jp/student/2015/images/profile/toyota.jpg" alt="No image"><!--<img class="logo" src="images/Android-logo_t.png" alt="No image">--><span id="memhov">豊田のページヘ</span></a></li>
                 </ul>
             </section>
             
             <div class="container-fluid">
             <section id="products" class="col-md-3">
                 <h1><i class="fa fa-laptop"></i>制作物</h1>
-                <p>各メンバーの制作物</p>
                 <ul>
                     <li class="member_products nishi_product"><a href="http://buturi.heteml.jp/student/2015/nishi/Unity/Web4.html" target="_blank"><img src="http://buturi.heteml.jp/student/2015/images/profile/nishi.jpg" alt="No image"><span>Unity製作物(更新)</span></a>
                     </li>
@@ -109,9 +109,8 @@
                 </ul>
             </section>
 
-            <section id="interim_report" class="container col-md-6">
+            <section id="interim_report">
                 <h1><i class="fa fa-file-pdf-o"></i>レポート</h1>
-                <p>8月に提出の中間レポート</p>
                 <table class="table table-striped table-bordered table-hover">
                     <thead>
                         <tr><th>テーマ</th><th>制作者</th></tr>
@@ -119,7 +118,7 @@
                     <tbody>
                         <tr><td><a href="matsubara/1210960071.pdf" target="_blank">非接触ユーザインターフェースの研究インテルRealSense3Dカメラを用いた認証システム</a></td><td><a href="matsubara/index.html" target="_blank">松原</a></td></tr>
                         <tr><td><a href="misawa/pdf/imrepo.pdf" target="_blank">Webアプリケーション制作</a></td><td><a href="misawa/index.html" target="_blank">三澤</a></td></tr>
-                        <tr><td><a href="nishi/PDF/tyukan.pdf" target="_blank">非接触ユーザインタフェースの研究　～インテル Realsense 3D カメラを利用した認証システム～</a></td><td><a href="nishi/index.html" target="_blank">西</a></td></tr>
+                        <tr><td><a href="nishi/PDF/tyukan.pdf" target="_blank">非接触ユーザインタフェースの研究　～インテル Realsense 3D カメラを利用した認証システム～</a></td><td><a href="nishi/index.html" target="_blank"><img src="http://buturi.heteml.jp/student/2015/images/profile/nishi.jpg" alt="No image">西</a></td></tr>
                         <tr><td><a href="nizato/pdf/report.pdf" target="_blank">Raspberry PiとNFCタグを用いた出席確認の自動化と高速化</a></td><td><a href="nizato/index.html" target="_blank">nizato</a></td></tr>
                         <tr><td><a href="okada/wp-content/uploads/2015/07/2e13df89c05e0cea0166be8a7da56582.pdf" target="_blank">農業支援 Raspberry Piの販売とコミュニティ形成事業による次世代農業の確立</a></td><td><a href="okada/index.html" target="_blank">岡田</a></td></tr>
                         <tr><td><a href="sone/pdf/report_sone.pdf" target="_blank">スマートフォン用アプリケーション制作 自転車向けフィットネス用アプリの開発</a></td><td><a href="sone/index.html" target="_blank">曽根</a></td></tr>
@@ -127,8 +126,70 @@
                     </tbody>
                 </table>
             </section>
+            
+            <section id="pc_interim_report">
+                <h1><i class="fa fa-file-pdf-o"></i>レポート</h1>
+                <div id="pc_repos">
+                <div class="pc_repo">
+                    <h2><a href="matsubara/" target="_blank"><img src="http://buturi.heteml.jp/student/2015/images/profile/matsubara.jpg" alt="No image">松原</a></h2>
+                    <h3>中間レポート</h3>
+                    <p><a href="matsubara/1210960071.pdf" target="_blank">非接触ユーザインターフェースの研究インテルRealSense3Dカメラを用いた認証システム</a></p>
+                    <h3>卒業論文</h3>
+                    <p>2月提出</p>
+                    <img class="glouppic" src="images/creative-cam.png" alt="No image">
+                </div>
+                <div class="pc_repo">
+                    <h2><a href="misawa/" target="_blank"><img src="http://buturi.heteml.jp/student/2015/images/profile/misawa.jpg" alt="No image">三澤</a></h2>
+                    <h3>中間レポート</h3>
+                    <p><a href="misawa/pdf/imrepo.pdf" target="_blank">Webアプリケーション制作</a></p>
+                    <h3>卒業論文</h3>
+                    <p>2月提出</p>
+                    <img class="glouppic" src="images/HTML5_logo.png" alt="No image">
+                </div>
+                <div class="pc_repo">
+                    <h2><a href="nishi/" target="_blank"><img src="http://buturi.heteml.jp/student/2015/images/profile/nishi.jpg" alt="No image">西</a></h2>
+                    <h3>中間レポート</h3>
+                    <p><a href="nishi/PDF/tyukan.pdf" target="_blank">非接触ユーザインタフェースの研究　～インテル Realsense 3D カメラを利用した認証システム～</a></p>
+                    <h3>卒業論文</h3>
+                    <p>2月提出</p>
+                    <img class="glouppic" src="images/RaspberryPi.png" alt="No image">
+                </div>
+                <div class="pc_repo">
+                    <h2><a href="nizato/" target="_blank"><img src="http://buturi.heteml.jp/student/2015/images/profile/nizato.jpg" alt="No image">nizato</a></h2>
+                    <h3>中間レポート</h3>
+                    <p><a href="nizato/pdf/report.pdf" target="_blank">Raspberry PiとNFCタグを用いた出席確認の自動化と高速化</a></p>
+                    <h3>卒業論文</h3>
+                    <p>2月提出</p>
+                    <img class="glouppic" src="images/creative-cam.png" alt="No image">
+                </div>
+                <div class="pc_repo">
+                    <h2><a href="okada/" target="_blank"><img src="http://buturi.heteml.jp/student/2015/images/profile/okada.jpg" alt="No image">岡田</a></h2>
+                    <h3>中間レポート</h3>
+                    <p><a href="okada/wp-content/uploads/2015/07/2e13df89c05e0cea0166be8a7da56582.pdf" target="_blank">農業支援 Raspberry Piの販売とコミュニティ形成事業による次世代農業の確立</a></p>
+                    <h3>卒業論文</h3>
+                    <p>2月提出</p>
+                    <img class="glouppic" src="images/RaspberryPi.png" alt="No image">
+                </div>
+                <div class="pc_repo">
+                    <h2><a href="sone/" target="_blank"><img src="http://buturi.heteml.jp/student/2015/images/profile/sone.jpg" alt="No image">曽根</a></h2>
+                    <h3>中間レポート</h3>
+                    <p><a href="sone/pdf/report_sone.pdf" target="_blank">スマートフォン用アプリケーション制作 自転車向けフィットネス用アプリの開発</a></p>
+                    <h3>卒業論文</h3>
+                    <p>2月提出</p>
+                    <img class="glouppic" src="images/Android-logo_t.png" alt="No image">
+                </div>
+                <div class="pc_repo">
+                    <h2><a href="toyota/" target="_blank"><img src="http://buturi.heteml.jp/student/2015/images/profile/toyota.jpg" alt="No image">豊田</a></h2>
+                    <h3>中間レポート</h3>
+                    <p><a href="toyota/tyuukan.pdf" target="_blank">NICT音声認識・翻訳アプリSDKを用いた改良インターフェースAndroidアプリケーション開発</a></p>
+                    <h3>卒業論文</h3>
+                    <p>2月提出</p>
+                    <img class="glouppic" src="images/Android-logo_t.png" alt="No image">
+                </div>
+                </div>
+            </section>
 
-            <section id="twitter" class="col-md-3">
+            <section id="twitter">
                 <h1><i class="fa fa-twitter "></i>Twitter</h1>
                 <a class="twitter-timeline" href="https://twitter.com/j_b_2015" width="400px" height="400px" data-chrome="noheader nofooter transparent noscrollbar" data-widget-id="611469774460051457">@j_b_2015さんのツイート</a>
                 <script>
@@ -137,7 +198,7 @@
             </section>
             </div><!--container-fluid-->
                 
-            <section id="history" class="container">
+            <section id="history">
                 <h1><i class="fa fa-book"></i>沿革</h1>
                 <h2>12月</h2>
                 <table>
