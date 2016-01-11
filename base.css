@@ -360,6 +360,47 @@ header nav ul li {
     
 }
 
+#pc_interim_report .pc_repo:first-child {
+    width: 100%;
+    height: auto;
+    padding-bottom: 1%;
+    
+}
+
+#pc_interim_report .pc_repo:first-child h2 {
+    background-color: #126098;
+    color: aliceblue;
+    padding-left: 10px;
+    width: 100%;
+    
+}
+
+#pc_interim_report .pc_repo:first-child div {
+    //display: flex;
+    position: relative;
+    top: 0;
+    width: 100%;
+    //max-width: 580px;
+    margin: 0 auto;
+    
+}
+
+#pc_interim_report .pc_repo:first-child h3 {
+    margin-left: 1.5%;
+}
+
+#pc_interim_report .pc_repo:first-child ul {
+    margin: 5px 2%;
+    
+    
+}
+
+#pc_interim_report .pc_repo:first-child li {
+    margin: 5px 0;
+    list-style-type: disc;
+    list-style-position: inside
+}
+
 #pc_interim_report .pc_repo {
     position: relative;
     
