@@ -352,7 +352,7 @@ header nav ul li {
     
 }
 
-#pc_interim_report #pc_repos{
+#pc_interim_report #pc_repos {
     display: flex;
     flex-wrap: wrap;
     //justify-content:space-around;
@@ -360,7 +360,13 @@ header nav ul li {
     
 }
 
+#pc_interim_report #pc_repos strong {
+    color: red;
+    font-weight: 600;
+}
+
 #pc_interim_report .pc_repo:first-child {
+    display: block;
     width: 100%;
     height: auto;
     padding-bottom: 1%;
