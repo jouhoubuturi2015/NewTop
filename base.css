@@ -370,7 +370,7 @@ header nav ul li {
     width: 100%;
     height: auto;
     padding-bottom: 1%;
-    
+    margin: 0 1%;
 }
 
 #pc_interim_report .pc_repo:first-child h2 {
