@@ -413,9 +413,9 @@ header nav ul li {
     //width: 280px;
     width: 23%;
     //max-width: 300px;
-    min-width: 280px;
+    min-width: 350px;
     
-    height: 350px;
+    height: 600px;
     
     margin: 1%;
     
@@ -424,6 +424,23 @@ header nav ul li {
     
     box-sizing: border-box;
 }
+
+#pc_interim_report .pc_repo #pptx {
+    position: relative;
+    text-align: center;
+    width: 350px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+#pc_interim_report .pc_repo iframe {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: block;
+    margin: auto;
+}
+
 
 #pc_interim_report h2 {
     width: 100%;
@@ -459,57 +476,14 @@ header nav ul li {
     margin: 15px 5px 5px 5px;
 }
 
+#pc_interim_report h3:nth-of-type(3) {
+    text-align: center;
+}
+
 #pc_interim_report p {
     margin: 10px;
 }
 
-#pc_interim_report h3:nth-of-type(3) {
-    position: absolute;
-    left: 5px;
-    bottom: 75px;
-}
-
-#pc_interim_report p:nth-of-type(3) {
-    width: 80px;
-    height: 62px;
-    
-    position: absolute;
-    left: 10px;
-    bottom: 0px;
-}
-
-#pc_interim_report p:nth-of-type(3) a {
-    display: block;
-}
-
-#pc_interim_report p:nth-of-type(3) a span {
-    display: none;
-    position: absolute;
-    width: 100px;
-    left: -10px;
-    text-align: center;
-    top: 20px;
-    
-    z-index: 2;
-}
-
-#pc_interim_report p:nth-of-type(3) a:hover span {
-    display: block;
-}
-
-#pc_interim_report p:nth-of-type(3) a:hover {
-    background-color: #ecd8ff;
-}
-
-#pc_interim_report p:nth-of-type(3) i {
-    font-size:60px;
-    color: red;
-    margin-left: 15px;
-}
-
-#pc_interim_report p:nth-of-type(3) i:hover {
-    
-}
 
 #pc_interim_report .glouppic{
     width: 80px;
@@ -656,7 +630,9 @@ header nav ul li {
 
     }
     
-    
+    #pc_interim_report .pc_repo {
+        margin: 10px auto;
+    }
     
     /*-------------------------------------
     ツイッター
@@ -691,6 +667,27 @@ header nav ul li {
 
 }
 
+/*--------------中間のスタイル-----------------*/
+@media all and (max-width: 740px) {
+        /*-------------------------------------
+    ヘッダー
+    -------------------------------------*/
+    header nav {
+        display: none;
+    }
+
+    /*-------------------------------------
+    中間レポート PC
+    -------------------------------------*/
+    #pc_interim_report {
+
+    }
+    
+    #pc_interim_report .pc_repo {
+        width: 98%;
+    }
+    
+}
 
 /*--------------スマホのスタイル-----------------*/
 @media all and (max-width: 623px) {
@@ -701,33 +698,6 @@ header nav ul li {
         padding-top: 60px;
 
         margin-bottom: 0px;
-    }
-    
-    /*-------------------------------------
-    ヘッダー
-    -------------------------------------*/
-    header {
-        
-
-    }
-
-
-
-    header nav {
-        display: none;
-    }
-
-    header nav a {
-        
-        
-    }
-
-    header nav a:hover {
-        
-    }
-
-    header nav ul li {
-        
     }
     
     /*-------------------------------------
@@ -774,7 +744,6 @@ header nav ul li {
         
         width: 98%;
         max-width: 400px;
-        
 
         margin: 1% auto;
 
