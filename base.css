@@ -544,9 +544,12 @@ header nav ul li {
 #history table {
     margin: 0 10px;
     border-collapse: separate;
-    border-spacing: 2px;
+    border-spacing: 5px;
 }
 
+#history td {
+    padding-right: 10px;
+}
 
 /*-------------------------------------
 リンク
@@ -632,6 +635,12 @@ header nav ul li {
     
     #pc_interim_report .pc_repo {
         margin: 10px auto;
+        width: 98%;
+    }
+    
+    #pc_interim_report .pc_repo:first-child {
+        margin: 10px auto;
+        width: 98%;
     }
     
     /*-------------------------------------
@@ -684,7 +693,7 @@ header nav ul li {
     }
     
     #pc_interim_report .pc_repo {
-        width: 98%;
+        
     }
     
 }
